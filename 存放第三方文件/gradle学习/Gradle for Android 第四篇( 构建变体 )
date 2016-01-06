@@ -1,0 +1,359 @@
+ Gradle for Android 第四篇( 构建变体 )
+neu neu 2 天前 发布
+
+4 推荐
+
+    18 收藏，456 浏览
+
+这是一个系列，所以如果你看完这篇文章，请看下列文章：
+
+Gradle for Android 第一篇( 从 Gradle 和 AS 开始 )
+
+Gradle for Android 第二篇( Build.gradle入门 )
+
+Gradle for Android 第三篇( 依赖管理 )
+
+Gradle for Android 第五篇( 多模块构建 )
+
+当你在开发一个app,通常你会有几个版本。大多数情况是你需要一个开发版本，用来测试app和弄清它的质量，然后还需要一个生产版本。这些版本通常有不同的设置，例如不同的URL地址。更可能的是你可能需要一个免费版和收费版本。基于上述情况，你需要处理不同的版本：开发免费版，开发付费版本，生产免费版，生产付费版，而针对不同的版本不同的配置，这极大增加的管理难度。
+
+Gradle有一些方便的方法来管理这些问题。我们很早之前谈过debug和release版本，现在我们谈到另外一个概念，不同的产品版本。构建版本和生产版本通常可以合并，构建版本和生产版本的合并版叫做构建变种。
+
+这一章我们将学习构建版本，它能使得开发更有效率，并且学习如何使用它们。然后我们会讨论构建版本和生产版本的不同，以及如何将其合并。我们会探讨签名机制，如何针对不同的变种签名等。
+
+在这一章，我们遵循如下规则：
+
+    Build types
+
+    Product flavors
+
+    Build variants
+
+    Signing configurations
+
+构建版本
+
+在Gradle的Android插件中，一个构建版本意味着定义一个app或者依赖库如何被构建。每个构建版本都要特殊的一面，比如是否需要debug，application id是什么，是否不需要的资源被删除等等。你可以定义一个构建版本通过buildTypes方法。例如：
+
+android {
+       buildTypes {
+           release {
+               minifyEnabled false
+               proguardFiles getDefaultProguardFile
+                 ('proguard-android.txt'), 'proguard-rules.pro'
+           }
+        }
+ }
+
+这个文件定义了该模块是release版本，然后定义了proguard的位置。该release版本不是唯一的构建版本，默认情况下，还有个debug版本。Android studio把它视为默认构建版本。
+创建自己的构建版本
+
+当默认的构建版本不够用的时候，创建版本也是很容易的一件事，创建构建版本你只需要在buildTypes写入自己的版本。如下所示：
+
+android {
+    buildTypes {
+        staging {
+            applicationIdSuffix ".staging"
+            versionNameSuffix "-staging"
+            buildConfigField "String", "API_URL",
+            "\"http://staging.example.com/api\""
+         }
+    }
+}
+
+我们定义了一个staging版本，该版本定义了一个新的application id，这让其与debug和release版本的applicationID不同。假设你使用了默认的配置，那么applicationID将会是这样的：
+
+    Debug: com.package
+
+    Release: com.package
+
+    Staging: com.package.staging
+
+这意味着你可以在你的设备上安装staging版本和release版本。staging版本也有自己的版本号。buildConfigField定义了一个新的URL地址。你不必事事都去创建，所以最可能的方式是去继承已有的版本。
+
+android {
+       buildTypes {
+           staging.initWith(buildTypes.debug)
+           staging {
+               applicationIdSuffix ".staging"
+               versionNameSuffix "-staging"
+               debuggable = false
+           } 
+        }
+}
+
+initWith()方法创建了一个新的版本的同时，复制所有存在的构建版本，类似继承。我们也可以复写该存在版本的所有属性。
+Source sets
+
+当你创建了一个新的构建版本，Gradle也创建了新的source set。默认情况下，该文件夹不会自动为你创建，所有你需要手工创建。
+
+app
+└── src
+├── debug
+│ ├── java
+       │   │   └── com.package
+ │ │
+│ ├── res
+│ │ └── layout
+│   │       └── activity_main.xml
+│   └── AndroidManifest.xml
+├── main
+│ ├── java
+│   │   └── com.package
+│ │
+│ ├── res
+└── MainActivity.java
+└── Constants.java
+│ │
+│ │
+│ │
+│   └── AndroidManifest.xml
+├── staging
+│ ├── java
+│   │   └── com.package
+├── drawable
+└── layout
+└── activity_main.xml
+│ │
+│ ├── res
+│ │ └── layout
+│   │       └── activity_main.xml
+│   └── AndroidManifest.xml
+└── release
+    ├── java
+    │   └── com.package
+    │       └── Constants.java
+    └── AndroidManifest.xml
+    
+
+    注意：当你添加一个Java类的时候，你需要知道以下过程，当你添加了CustomLogic.java到staging版本，你可以添加相同的类到debug和release版本，但是不能添加到main版本。如果你添加了，会抛出异常。
+
+当使用不同的source sets的时候，资源文件的处理需要特殊的方式。Drawables和layout文件将会复写在main中的重名文件，但是values文件下的资源不会。gradle将会把这些资源连同main里面的资源一起合并。
+
+举个例子，当你在main中创建了一个srings.xml的时候：
+
+<resources>
+       <string name="app_name">TypesAndFlavors</string>
+       <string name="hello_world">Hello world!</string>
+</resources>
+
+当你在你的staing版本也添加了rings.xml：
+
+<resources>
+       <string name="app_name">TypesAndFlavors STAGING</string>
+</resources>
+
+然后合并的strings.xml将会是这样的：
+
+<resources>
+       <string name="app_name">TypesAndFlavors STAGING</string>
+       <string name="hello_world">Hello world!</string>
+</resources>
+
+当你创建一个新的构建版本而不是staging，最终的strings.xml将会是main目录下的strings.xml。
+
+manifest也和value文件下的文件一样。如果你为你的构建版本创建了一个manifest文件，那么你不必要去拷贝在main文件下的manifest文件，你需要做的是添加标签。Android插件将会为你合并它们。
+
+我们将在会之后的章节讲到合并的更多细节。
+依赖包
+
+每一个构建版本都有自己的依赖包，gradle自动为每一个构建的版本创建不同的依赖配置。如果你想为debug版本添加一个logging框架，你可以这么做：
+
+dependencies {
+
+   compile fileTree(dir: 'libs', include: ['*.jar'])
+   compile 'com.android.support:appcompat-v7:22.2.0'
+   debugCompile 'de.mindpipe.android:android-logging-log4j:1.0.3'
+}
+
+你可以结合不同的构建版本着不同的构建配置，就像这种方式，这让你的不同版本的不同依赖包成为可能。
+product flavors
+
+和构建版本不同，product flavors用来为一个app创建不同版本。典型的例子是，一个app有付费和免费版。product flavors极大简化了基于相同的代码构建不同版本的app。
+
+如果你不确定你是否需要一个新的构建版本或者product flavors，你应该问你自己，你是否需要内部使用和外部使用的apk。如果你需要一个完全新的app去发布，和之前的版本完全隔离开，那么你需要product flavors。否则你只是需要构建版本。
+创建product flavors
+
+创建product flavors非常的容易。你可以在productFlavors中添加代码：
+
+android {
+    productFlavors {
+        red {
+             applicationId 'com.gradleforandroid.red'
+             versionCode 3
+        }
+        blue {
+             applicationId 'com.gradleforandroid.blue'
+             minSdkVersion 14
+             versionCode 4
+        }
+    }
+}
+
+product flavors和构建版本的配置不同。因为product flavors有自己的ProductFlavor类，就像defaultConfig，这意味着你的所有productFlavors都分享一样的属性。
+Source sets
+
+就像构建版本一样，product Flavors也有自己的代码文件夹。创建一个特殊的版本就像创建一个文件夹那么简单。举个例子，当你有的生产版本的blue flavors有一个不同的app图标，该文件夹需要被叫做blueRelease。
+多个flavors构建变体
+
+在一些例子中，你可能需要创建一些product flavors的合并版本。举个例子，client A和client B可能都想要一个free和paid的版本，而他们又都是基于一样的代码，但是有不一样的颜色等。创建四个不同的flavors意味着有重复的配置。合并flavors最简单的做法可能是使用flavor dimensions，就像这样：
+
+ android {
+       flavorDimensions "color", "price"
+       productFlavors {
+           red {
+               flavorDimension "color"
+           }
+           blue {
+               flavorDimension "color"
+           }
+           free {
+               flavorDimension "price"
+           }
+           paid {
+               flavorDimension "price"
+           }
+       }
+}
+
+当你添加了flavor dimensions，你就需要为每个flavor添加flavorDimension，否则会提示错误。flavorDimensions定义了不同的dimensions，当然其顺序也很重要。当你合并二个不同的flavors时，他们可能有一样的配置和资源。例如上例：
+
+    blueFreeDebug and blueFreeRelease
+
+    bluePaidDebug and bluePaidRelease
+
+    redFreeDebug and redFreeRelease
+
+    redPaidDebug and redPaidRelease
+
+构建变体
+
+构建变体是构建版本和生产版本的结合体。当你创建了一个构建版本或者生产版本，同样的，新的变体也会被创建。举个例子，当你有debug和release版本，你创建了red和blue的生产版本，那么变体将会有四个：
+
+你可以在Android studio的左下角找到它，或者通过VIEW|Tool Windows|Build Variants打开它。该视图列出了所有的变体，并且允许你去切换它们。改变他们将会影响到你按Run按钮。
+
+如果你没有product flavors，那么变体只是简单的包含构建版本，就算你没有定义任何构建版本，Android studio也会默认为你创建debug版本的。
+tasks
+
+android插件回味每一个变体创建不同的配置。一个新的Android项目会有debug和release版本，所有你可以使用assembleDebug和assembleRelease，当然当你使用assemble命令，会二者都执行。当你添加了一个新的构建版本，新的task也会被创建。例如：
+
+    assembleBlue uses the blue flavor configuration and assembles both BlueRelease and BlueDebug.
+
+    assembleBlueDebug combines the flavor configuration with the build type configuration, and the flavor settings override the build type settings.
+
+Source sets
+
+构建变体也可以有自己的资源文件夹，举个例子，你可以有src/blueFreeDebug/java/。
+资源文件和manifest的合并
+
+在打包app之前，Android插件会合并main中的代码和构建的代码。当然，依赖项目也可以提供额外的资源，它们也会被合并。你可能需要额外的Android权限针对debug变体。举个例子，你不想在main中申明这个权限，因为这可能导致一些问题，所以你可以添加一个额外的mainfest文件在debug的文件夹中，申明额外的权限。
+
+资源和mainfests的优先级是这样的：
+
+如果一个资源在main中和在flavor中定义了，那么那个在flavor中的资源有更高的优先级。这样那个在flavor文件夹中的资源将会被打包到apk。而在依赖项目申明的资源总是拥有最低优先级。
+创建构建变体
+
+gradle让处理构建变体变得容易。
+
+android {
+       buildTypes {
+           debug {
+               buildConfigField "String", "API_URL",
+               "\"http://test.example.com/api\""
+        }
+           staging.initWith(android.buildTypes.debug)
+           staging {
+               buildConfigField "String", "API_URL",
+                 "\"http://staging.example.com/api\""
+               applicationIdSuffix ".staging"
+           }
+       }
+       productFlavors {
+           red {
+               applicationId "com.gradleforandroid.red"
+               resValue "color", "flavor_color", "#ff0000"
+           }
+           blue {
+               applicationId "com.gradleforandroid.blue"
+               resValue "color", "flavor_color", "#0000ff"
+           } 
+     }
+}
+
+在这个例子中，我们创建了4个变体，分别是blueDebug，blueStaging，redDebug，redStaging。每一个变体都有其不同的api url以及颜色。例如：
+
+变体过滤器
+
+忽略某个变体也是可行的。这样你可以加速你的构建当使用assemble的时候，这样你列出的tasks将不会执行那么你不需要的变体。你可以使用过滤器，在build.gradle中添加代码如下所示：
+
+android.variantFilter { variant ->
+       if(variant.buildType.name.equals('release')) {
+           variant.getFlavors().each() { flavor ->
+               if (flavor.name.equals('blue')) { variant.setIgnore(true);
+            }
+        }
+    }
+}
+
+在这个例子中，我们检查下：
+
+你可以看到blueFreeRelease和bluePaidRelease被排除在外，如果你运行gradlew tasks，你会发现所有的关于上述变体的tasks不再存在。
+签名配置
+
+在你发布你的应用之前，你需要为你的app私钥签名。如果你有付费版和免费版，你需要有不同的key去签名不同的变体。这就是配置签名的好处。配置签名可以这样定义：
+
+   android {
+       signingConfigs {
+           staging.initWith(signingConfigs.debug)
+           release {
+               storeFile file("release.keystore")
+               storePassword"secretpassword"
+               keyAlias "gradleforandroid"
+               keyPassword "secretpassword"
+           }
+      }
+}
+
+在这个例子中，我们创建了2个不同的签名配置。debug配置是as默认的，其使用了公共的keystore和password，所以没有必要为debug版本创建签名配置了。staging配置使用了initWith()方法，其会复制其他的签名配置。这意味着staging和debug的key是一样的。
+
+release配置使用了storeFile，定义了key alias和密码。当然这不是一个好的选择，你需要在 Gradle properties文件中配置。
+
+当你定义了签名配置后，你需要应用它们。构建版本都有一个属性叫做signingConfig，你可以这么干：
+
+android {
+       buildTypes {
+           release {
+               signingConfig signingConfigs.release
+           } 
+       }
+}
+
+上例使用了buildTypes，但是你可能需要对每个版本生成不同的验证，你可以这么定义：
+
+android {
+       productFlavors {
+           blue {
+               signingConfig signingConfigs.release
+           }
+       }
+}
+
+当然，你在flavor中定义这些，最好会被重写，所以最好的做法是：
+
+android {
+       buildTypes {
+           release {
+               productFlavors.red.signingConfig signingConfigs.red
+               productFlavors.blue.signingConfig signingConfigs.blue
+           }
+       }
+}
+
+总结
+
+在这一章，我们讨论了构建版本和生产版本，以及如何结合它们。这将会是非常有用的工具，当你需要不同的url以及不同的keys，而你们有相同的代码和资源文件，但是有不同的类型以及版本，构建版本和生产版本将会让你的生活更美好。
+
+我们也谈论了签名配置以及如何使用他们。
+
+下一章，你将会学习到多模块构建，因为当你想把你的代码分成一个依赖包或者依赖项目的时候，或者你想把Android wear模块放在你的应用的时候，这将非常重要。
+

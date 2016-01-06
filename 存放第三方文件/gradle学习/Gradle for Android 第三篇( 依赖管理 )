@@ -1,0 +1,233 @@
+ Gradle for Android 第三篇( 依赖管理 )
+neu neu 4 天前 发布
+
+3 推荐
+
+    21 收藏，787 浏览
+
+依赖管理
+
+这会是一个系列，所以如果你还没有看我之前的几篇文章，请先查看以下文章：
+
+    Gradle for Android 第一篇( 从 Gradle 和 AS 开始 )
+
+    Gradle for Android 第二篇( Build.gradle入门 )
+
+    Gradle for Android 第四篇( 构建变体 )
+
+    Gradle for Android 第五篇( 多模块构建 )
+
+依赖管理是Gradle最闪耀的地方，最好的情景是，你仅仅只需添加一行代码在你的build文件，Gradle会自动从远程仓库为你下载相关的jar包，并且保证你能够正确使用它们。Gradle甚至可以为你做的更多，包括当你在你的工程里添加了多个相同的依赖，gradle会为你排除掉相同的jar包。在这一章我们将学习以下内容：
+
+    仓库
+
+    本地依赖
+
+    详解依赖这一概念
+
+仓库
+
+当我们讨论依赖的时候，我们通常说的是远程仓库，就像那些依赖库专门用来提供给其他开发者使用的依赖库。手动管理依赖将会为你带来很大麻烦。你必须定位到该依赖文件位置，然后下载jar文件，复制该文件到你的项目，然后引用它们。通常这些jar文件还没有具体的版本号，所以你还必须去记忆它们的版本号，这样当需要更新的时候，你才会知道需要替换成哪个版本。你同时必须将该依赖包放在svn或者git上，这样你的其他同事才可以不用手动去下载这些依赖jar。
+
+使用远程仓库可以解决这些问题，一个仓库可以被视为一些文件的集合体。Gradle不会默认为你的项目添加任何仓库。所以你需要把它们添加到repositories方法体内。如果是使用的是Android studio，那么工具已经为你准备好了这一切：
+
+repositories {
+    jcenter()
+}
+
+Gradle支持三种不同的仓库，分别是：Maven和Ivy以及文件夹。依赖包会在你执行build构建的时候从这些远程仓库下载，当然Gradle会为你在本地保留缓存，所以一个特定版本的依赖包只需要下载一次。
+
+一个依赖需要定义三个元素：group，name和version。group意味着创建该library的组织名，通常这会是包名，name是该library的唯一标示。version是该library的版本号，我们来看看如何申明依赖：
+
+dependencies {
+       compile 'com.google.code.gson:gson:2.3'
+       compile 'com.squareup.retrofit:retrofit:1.9.0'
+}
+
+上述的代码是基于groovy语法的，所以其完整的表述应该是这样的：
+
+dependencies {
+      compile group: 'com.google.code.gson', name: 'gson', version:'2.3'
+      compile group: 'com.squareup.retrofit', name: 'retrofit'
+           version: '1.9.0'
+     }
+     
+
+为你的仓库预定义
+
+为了方便，Gradle会默认预定义三个maven仓库：Jcenter和mavenCentral以及本地maven仓库。你可以同时申明它们：
+
+repositories {
+       mavenCentral()
+       jcenter()
+       mavenLocal()
+   }
+   
+
+Maven和Jcenter仓库是很出名的两大仓库。我们没必要同时使用他们，在这里我建议你们使用jcenter，jcenter是maven中心库的一个分支，这样你可以任意去切换这两个仓库。当然jcenter也支持了https，而maven仓库并没有。
+
+本地maven库是你曾使用过的所有依赖包的集合，当然你也可以添加自己的依赖包。默认情况下，你可以在你的home文件下找到.m2的文件夹。除了这些仓库外，你还可以使用其他的公有的甚至是私有仓库。
+远程仓库
+
+有些组织，创建了一些有意思的插件或者library,他们更愿意把这些放在自己的maven库，而不是maven中心库或jcenter。那么当你需要是要这些仓库的时候，你只需要在maven方法中加入url地址就好：
+
+repositories {
+       maven {
+           url "http://repo.acmecorp.com/maven2"
+       }
+}
+
+同样的，Ivy仓库也可以这么做。Apache Ivy在ant世界里是一个很出名的依赖管理工具。如果你的公司有自己的仓库，如果他们需要权限才能访问，你可以这么编写：
+
+repositories {
+       maven {
+           url "http://repo.acmecorp.com/maven2"
+           credentials {
+               username 'user'
+               password 'secretpassword'
+           }
+        } 
+   }
+   
+
+    注意：这不是一个好主意，最好的方式是把这些验证放在Gradle properties文件里，这些我们已经介绍过在第二章。
+
+本地依赖
+
+可能有些情况，你需要手动下载jar包，或者你想创建自己的library，这样你就可以复用在不同的项目，而不必将该library publish到公有或者私有库。在上述情况下，可能你不需要网络资源，接下来我将介绍如何是使用这些jar依赖，以及如何导入so包，如何为你的项目添加依赖项目。
+文件依赖
+
+如果你想为你的工程添加jar文件作为依赖，你可以这样：
+
+dependencies {
+       compile files('libs/domoarigato.jar')
+}
+
+如果你这么做，那会很愚蠢，因为当你有很多这样的jar包时，你可以改写为：
+
+dependencies {
+       compile fileTree('libs')
+ }
+ 
+
+默认情况下，新建的Android项目会有一个lib文件夹，并且会在依赖中这么定义（即添加所有在libs文件夹中的jar）：
+
+dependencies {
+       compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+这也意味着，在任何一个Android项目中，你都可以把一个jar文件放在到libs文件夹下，其会自动的将其添加到编译路径以及最后的APK文件。
+native包（so包）
+
+用c或者c++写的library会被叫做so包，Android插件默认情况下支持native包，你需要把.so文件放在对应的文件夹中：
+
+app
+   ├── AndroidManifest.xml
+   └── jniLibs
+       ├── armeabi
+       │   └── nativelib.so
+       ├── armeabi-v7a
+       │   └── nativelib.so
+       ├── mips
+       │   └── nativelib.so
+       └── x86
+           └── nativelib.so
+           
+
+aar文件
+
+如果你想分享一个library,该依赖包使用了Android api，或者包含了Android 资源文件，那么aar文件适合你。依赖库和应用工程是一样的，你可以使用相同的tasks来构建和测试你的依赖工程，当然他们也可以有不同的构建版本。应用工程和依赖工程的区别在于输出文件，应用工程会生成APK文件，并且其可以安装在Android设备上，而依赖工程会生成.aar文件。该文件可以被Android应用工程当做依赖来使用。
+创建和使用依赖工程模块
+
+不同的是，你需要加不同的插件：
+
+ apply plugin: 'com.android.library'
+ 
+
+我们有两种方式去使用一个依赖工程。一个就是在你的工程里面，直接将其作为一个模块，另外一个就是创建一个aar文件，这样其他的应用也就可以复用了。
+
+如果你把其作为模块，那你需要在settings.gradle文件中添加其为模块：
+
+   include ':app', ':library'
+   
+
+在这里，我们就把它叫做library吧，如果你想使用该模块，你需要在你的依赖里面添加它，就像这样:
+
+   dependencies {
+       compile project(':library')
+  }
+
+使用aar文件
+
+如果你想复用你的library，那么你就可以创建一个aar文件，并将其作为你的工程依赖。当你构建你的library项目，aar文件将会在 build/output/aar/下生成。把该文件作为你的依赖包，你需要创建一个文件夹来放置它，我们就叫它aars文件夹吧，然后把它拷贝到该文件夹里面，然后添加该文件夹作为依赖库：
+
+repositories {
+    flatDir {
+        dirs 'aars' 
+    }
+}
+
+这样你就可以把该文件夹下的所有aar文件作为依赖，同时你可以这么干：
+
+ dependencies {
+       compile(name:'libraryname', ext:'aar')
+}
+
+这个会告诉Gradle，在aars文件夹下，添加一个叫做libraryname的文件，且其后缀是aar的作为依赖。
+依赖的概念
+配置
+
+有些时候，你可能需要和sdk协调工作。为了能顺利编译你的代码，你需要添加SDK到你的编译环境。你不需要将sdk包含在你的APK中，因为它早已经存在于设备中，所以配置来啦，我们会有5个不同的配置：
+
+    compile
+
+    apk
+
+    provided
+
+    testCompile
+
+    androidTestCompile
+
+compile是默认的那个，其含义是包含所有的依赖包，即在APK里，compile的依赖会存在。
+
+apk的意思是apk中存在，但是不会加入编译中，这个貌似用的比较少。
+
+provided的意思是提供编译支持，但是不会写入apk。
+
+testCompile和androidTestCompile会添加额外的library支持针对测试。
+
+这些配置将会被用在测试相关的tasks中，这会对添加测试框架例如JUnit或者Espresso非常有用，因为你只是想让这些框架们能够出现在测试apk中，而不是生产apk中。
+
+除了这些特定的配置外，Android插件还为每个构建变体提供了配置，这让debugCompile或者releaseProvided等配置成为可能。如果你想针对你的debug版本添加一个logging框架，这将很有用。这些内容的详细介绍，我会在下一个博客里详细介绍。
+动态版本
+
+在一些情形中，你可能想使用最新的依赖包在构建你的app或者library的时候。实现他的最好方式是使用动态版本。我现在给你们展示几种不同的动态控制版本方式：
+
+dependencies {
+       compile 'com.android.support:support-v4:22.2.+'
+       compile 'com.android.support:appcompat-v7:22.2+'
+       compile 'com.android.support:recyclerview-v7:+'
+}
+
+第一行，我们告诉gradle,得到最新的生产版本。第二行，我们告诉gradle，我们想得到最新的minor版本，并且其最小的版本号是2. 第三行，我们告诉gradle,得到最新的library。
+
+你应该小心去使用动态版本，如果当你允许gradle去挑选最新版本，可能导致挑选的依赖版本并不是稳定版，这将会对构建产生很多问题，更糟糕的是你可能在你的服务器和私人pc上得到不同的依赖版本，这直接导致你的应用不同步。
+
+如果你在你的build.gradle中使用了动态版本，Android studio将会警告你关于动态版本的潜在问题，就像你下面看到的这样：
+
+Android studio UI操作依赖库
+
+在使用Android studio中，最简单的添加新依赖包的方法是使用工程结构弹框。从文件按钮中打开界面，导航到依赖包导航栏，然后你就可以看到你当前的依赖包了：
+
+当你想添加新的依赖包的时候，可以点击绿色的小按钮，你可以添加其他模块，文件，甚至是上网搜索。
+
+使用Android studio的界面让你能够很简单的浏览你项目中的所有依赖，并且添加新的依赖包。你不必在build.gradle中手动的添加代码了，并且你可以直接搜索JCenter库中的依赖资源。
+总结
+
+在这一章里，我们了解了多种方式添加依赖，我们学习了什么是仓库，以及如何使用他们，同时学习了如何在不使用仓库的情况下使用jar文件。
+
+你现在知道了依赖包的属性配置，动态版本控制等。
+
+我们也谈到了关于在多个环境下构建app变种，在下一章，我们将会学习到什么是构建变种，以及为什么他们很重要，构建变种将会使得开发测试以及分发app变得更加容易。理解变种的工作原理可以加快你的开发和分发效率。
+
