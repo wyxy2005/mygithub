@@ -1,0 +1,155 @@
+ Gradle for Android 第五篇( 多模块构建 )
+neu neu 1 天前 发布
+
+3 推荐
+
+    8 收藏，182 浏览
+
+这会是一个系列，所以如果你看完这篇文章，请看下列文章:
+
+Gradle for Android 第一篇( 从 Gradle 和 AS 开始 )
+
+Gradle for Android 第二篇( Build.gradle入门 )
+
+Gradle for Android 第三篇( 依赖管理 )
+
+Gradle for Android 第四篇( 构建变体 )
+
+Android studio不仅允许你为你的app和依赖库创建模块，同时也可为Android wear，Android TV，Google App Engine等创建模块，而这些单独的模块又可以在一个单独的项目中使用。举个栗子，在你的app开发后期阶段，你可能需要用到Google Clound或者Android Wear。这种情况下，你可以在你的工程下拥有三个模块：分别是app,google cloud,Android Wear整合。了解在一个工程下的多模块构建将会加速你的开发周期。
+
+在这一章，我们将学习到多模块的构建，并且展示一些实际且有用的栗子：
+
+    多模块构建的结构
+
+    为你的项目添加模块
+
+    建议
+
+多模块构建的结构
+
+通常情况下，一个工程包含多模块，这些模块会在一个父目录文件夹下。为了告诉gradle，该项目的结构以及哪一个子文件夹包含模块，你需要提供一个settings.gradle文件。每个模块可以提供其独立的build.gradle文件。我们已经学习了关于setting.gradle和build.gradle如何正常工作，现在我们只需要学习如何使用它们。
+
+这是多模块项目的结构图：
+
+ project
+   ├─── setting.gradle
+   ├─── build.gradle
+   ├─── app
+   │    └─── build.gradle
+   └─── library
+        └─── build.gradle
+        
+
+这是最简单最直接的方式来创建你的多模块项目了。setting.gradle文件申明了该项目下的所有模块，它应该是这样：
+
+include ':app', ':library'
+
+这保证了app和library模块都会包含在构建配置中。你需要做的仅仅只是为你的模块添加子文件夹。
+
+为了在你的app模块中添加library模块做为其依赖包，你需要在app的build.gradle文件中添加以下内容：
+
+dependencies {
+      compile project(':library') 
+}
+
+为了给app添加一个模块作为依赖，你需要使用project()方法，该方法的参数为模块路径。
+
+如果在你的模块中还包含了子模块，gradle可以满足你得要求。举个栗子，你可以把你的目录结构定义为这样：
+
+project
+├─── setting.gradle
+├─── build.grade
+├─── app
+│    └─── build.gradle
+└─── libraries
+     ├─── library1
+     │    └─── build.gradle
+     └─── library2
+          └─── build.gradle
+          
+
+该app模块依然位于根目录，但是现在项目有2个不同的依赖包。这些依赖模块不位于项目的根目录，而是在特定的依赖文件夹内。根据这一结构，你需要在settings.xml中这么定义：
+
+include ':app', ':libraries:library1', ':libraries:library2'
+
+你会注意到在子目录下申明模块也非常的容易。所有的路径都是围绕着根目录，即当你添加一个位于子文件夹下的模块作为另外一个模块的依赖包得实惠，你应该将路径定为根目录。这意味着如果在上例中app模块想要依赖library1,build.gradle文件需要这么申明：
+
+dependencies {
+       compile project(':libraries:library1')
+}
+
+如果你在子目录下申明了依赖，所有的路径都应该与根目录相关。这是因为gradle是根据你的项目的根目录来定义你的依赖包的。
+构建生命周期
+
+理解了构建过程让你理解多模块的构建变得容易。我们很早前谈过关于构建的生命周期。所以现在你应该知道其基本的过程，但是一些很重要的细节可能你并不是很清楚。
+
+在第一步骤中，即初始化阶段，gradle会寻找到settings.grade文件。如果该文件不存在，那么gradle就会假定你只有一个单独的构建模块。如果你有多个模块，settings.gradle文件定义了这些模块的位置。如果这些子目录包含了其自己的build.gradle文件，gradle将会运行它们，并且将他们合并到构建任务中。这就解释了为什么你需要申明在一个模块中申明的依赖是相对于根目录。
+
+一旦你理解了构建任务是如何将所有的模块聚合在一起的时候，那关于几种不同的构建多模块策略就会变得简单易懂。你可以配置所有的模块在根目录下的build.gradle。这让你能够简单的浏览到整个项目的配置，但是这将会变得一团乱麻，特别是当你的模块需要不同的插件的时候。另外一种方式是将每个模块的配置分隔开，这一策略保证了每个模块之间的互不干扰。这也让你跟踪构建的改变变得容易，因为你不需要指出哪个改变导致了哪个模块出现错误等。
+
+gradle的最大策略是混合。你可以在根目录下定义一个build文件去定义所有模块相同的熟悉，然后在每个模块中的build文件去配置只属于该模块的参数。Android studio遵循了该原则，其创建了一个build.gradle文件在根目录，然后再每个模块文件夹下创建了另外一个build文件。
+模块tasks
+
+当你在你的项目中有多个模块的时候，你需要在运行任务之前想一想。当你在命令行界面运行一个task的时候，gradle将会找到哪个模块将会执行这个任务。举个栗子，当你有个mobile app模块和一个Android Wear模块，你运行了gradlew assembleDebug任务。当你改变其中一个模块的文件夹位置，gradle将只会运行哪个特殊的模块，纵使你使用了gradle wrapper在根目录。举个栗子，当你运行../gradlew assembleDebug在Android wear模块的目录下，其只会构建Android wear模块。
+
+切换不同的文件夹去执行不同的任务会让人很不爽，幸运的是，我们有其他的办法。你可以准备一个特别的task来执行你的模块。举个栗子，为了只构建Android Wear模块，你仅仅只需在根目录下运行 gradlew :wear:assembleDebug。
+为你的项目添加模块
+
+在Android studio中添加新模块是很容易的一件事，该视图同时也会为你创建build文件。如下图所示：
+
+添加Java依赖库
+
+当你新建了一个Java模块，build.grade文件会是这样：
+
+apply plugin: 'java'
+   dependencies {
+       compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+    
+
+Java模块使用了Java插件，这意味着很多Android特性在这儿不能使用，因为你不需要。
+
+build文件也有基本的库管理，你可以添加jar文件在libs文件夹下。你可以添加更多的依赖库，根据第三章的内容。
+
+给你的app模块添加Java模块，这很简单，不是吗？
+
+dependencies {
+       compile project(':javalib')
+}
+
+这告诉了gradle去引入一个叫做javelin的模块吧，如果你为你的app模块添加了这个依赖，那么javalib模块将会总是在你的app模块构建之前构建。
+添加Android依赖库
+
+同样的，我们利用Android studio的图形化界面创建Android模块，然后其构建文件如下：
+
+apply plugin: 'com.android.library'
+
+记住：Android依赖库不仅仅包含了Java代码，同样也会包含Android资源，像manifest和strings,layout文件，在你引入该模块后，你可以使用该模块的所有类和资源文件。
+建议
+
+我有点建议关于多模块项目，并且有些东西你们应该了解清楚，知道这些将会节约你们的时间。
+在Android studio中运行模块tasks
+
+当你有多个模块，Android studio会分析出来，并且展示在cradle中：
+
+grade图形化让你运行模块间的任务变得简单，但是其没有为所有模块同时运行一个任务，所以如果你希望这么做，最快的方式是使用命令行。
+加速你的多模块构建
+
+当你构建你的多模块项目，gradle会依次执行所有的模块。当你的电脑内存够大的时候，让你的构建过程多线程将会更快。该特性在gradle早已存在，但是其默认关闭。
+
+所以如果你希望启动parallel构建，你需要在grade.properties文件中配置如下属性：
+
+org.gradle.parallel=true
+
+gradle会选择尽可能多的线程去执行你的构建过程，每个线程都会执行一个模块。parallel执行的是独立的模块，即你的模块是独立的。
+模块耦合
+
+即你可以在一个模块中引用其他模块的属性，但是我不建议你们这么做，我们完全可以在根目录下的build文件中定义这些属性。
+总结
+
+我们学习了如何在一个项目中构建多个模块，以及添加新模块是如何影响到构建任务的执行。
+
+我们学习了相关事例，并且给出了一些建议。
+
+在下一章节，我们将会学习到测试，如何利用gradle让你的测试更加简单。我们将会学习到如何在jvm中运行你的单元测试，以及如何运行测试在你的手机上。
+
