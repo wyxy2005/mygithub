@@ -14,3 +14,6 @@ http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b0
 ####
 手云 --- 有免费的微信客户端之类
 www.handyun.com
+####
+存放了很多gitignore文本文件
+https://github.com/github/gitignore
