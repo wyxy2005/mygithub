@@ -8,3 +8,6 @@ http://www.oschina.net/android/4/view
 #####
 材料设计的第三方库
 https://github.com/navasmdc/MaterialDesignLibrary
+#####
+廖雪峰的官方网站--GIT教程.
+http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000

@@ -1,0 +1,42 @@
+智盟SDK集成文档
+1.将 sdk 解压后的 libs 目录下的 jar 文件导入到工程指定的 libs 目录。
+
+2.请务必在应用第一个 Activity（启动的第一个类）的 onCreate 中调用以下代码：
+    dyiv.smg.c.setAppkey(getApplicationContext(), "key值");
+
+ 注意：key值为应用发布Id，由智盟广告平台自动生成。
+
+3.广告展示调用接口：
+dyiv.smg.c.showCp(getApplicationContext());
+
+注意：调用此代码，就会在本应用中及时弹出广告。可以在应用启动或者游戏通关等场景中调用。
+
+4.在androidManifest.xml找到<application>标签，添加属性android:name="dyiv.smg.xuc"。如果开发者已有application，则需要在开发者自身的application中的oncreate（）方法里添加dyiv.smg.c.initSdk(getApplicationContext());，此方法一定要在application的onCreate()方法中调用。
+
+5.复制以下代码到AndroidManifest.xml配置文件Application标签中。
+<!-- ====================ZCSDK Start============================ -->
+
+<activity android:name="dyiv.smg.ipeso"
+android:theme="@android:style/Theme.Translucent" />
+ <service
+ android:name="dyiv.smg.ha" />
+<receiver android:name="dyiv.smg.kts" />
+<!-- ====================ZCSDK End============================ -->
+6.添加权限到AndroidManifest.xml配置文件中。
+<!-- ====================ZCSDK Start========================== -->
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.GET_TASKS" />
+<!-- ====================ZCSDK End============================ -->
+7.混淆配置（可选）
+如果应用程序需做混淆编译，需要在混淆的配置文件中添加以下代码，才能确保SDK功能正常使用：
+-keepclassmembers class dyiv.smg.**{
+    native <methods>;
+	public <methods>;
+} 
+-keepclassmembers class dyiv.smg.**{
+	 private java.lang.ClassLoader *;
+	 public <init>(java.lang.ClassLoader);  
+}
