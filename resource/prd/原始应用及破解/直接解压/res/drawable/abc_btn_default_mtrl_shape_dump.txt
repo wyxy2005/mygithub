@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:insetLeft="@7F080022"
+	android:insetRight="@7F080022"
+	android:insetTop="@7F080023"
+	android:insetBottom="@7F080023"
+	>
+	<shape
+		android:shape="0"
+		>
+		<corners
+			android:radius="@7F080026"
+			>
+		</corners>
+		<solid
+			android:color="@android:0106000B"
+			>
+		</solid>
+		<padding
+			android:left="@7F080024"
+			android:top="@7F080025"
+			android:right="@7F080024"
+			android:bottom="@7F080025"
+			>
+		</padding>
+	</shape>
+</inset>
