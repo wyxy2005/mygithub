@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="220407" android:versionName="2.2.0407" package="com.meizu.safe"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.REMOVE_TASKS" />
+    <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.meizu.flyme.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.UPDATE_POWER_SAVING_MODE" />
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+    <permission android:name="com.meizu.safe.push.permission.MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.meizu.safe.push.permission.MESSAGE" />
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE" />
+    <uses-permission android:name="com.meizu.flyme.permission.UPDATE" />
+    <uses-permission android:name="com.android.usagestats.permission.READ_USAGESTATS" />
+    <uses-permission android:name="com.android.usagestats.permission.WRITE_USAGESTATS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.meizu.flyme.filemanager.permission.READ_REMARKPROVIDER" />
+    <application android:theme="@style/BaseTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.meizu.safe.SafeApplication" android:debuggable="false" android:allowBackup="true" android:hardwareAccelerated="true" android:uiOptions="splitActionBarWhenNarrow">
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true" />
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="9c57419ea9" />
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="meizu_internal" />
+        <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true" />
+        <meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START" />
+        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false" />
+        <meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="true" />
+        <meta-data android:name="BaiduMobAd_GPS_LOCATION" android:value="true" />
+        <meta-data android:name="BaiduMobAd_WIFI_LOCATION" android:value="true" />
+        <activity android:label="@string/security_center" android:name="com.meizu.safe.SecurityCenterActivity" android:screenOrientation="portrait" android:configChanges="locale|mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.meizu.safe.viruscleaner.SafeMainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="locale|mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode" />
+        <activity android:label="@string/app_name" android:name="com.meizu.safe.viruscleaner.VirusDetailActivity" android:screenOrientation="portrait" />
+        <receiver android:name="com.meizu.safe.viruscleaner.utils.VirusLibUpdater">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.meizu.safe.viruscleaner.utils.PackageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/trust_apps_title" android:name="com.meizu.safe.viruscleaner.TrustAppsAddActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/trust_apps_title" android:name="com.meizu.safe.viruscleaner.TrustAppsLstActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.viruscleaner.VirusSettingActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.cleaner.RubbishCleanMainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.meizu.safe.JUNK_CLEAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.meizu.safe.cleaner.RubbishSettingActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.cleaner.RubbishAppCacheListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.cleaner.RubbishFileActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.cleaner.LargeFilesActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.cleaner.LargeFilesCleanFinishActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.viruscleaner.CompleteActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.cleaner.RubbishUninstallSoftActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.cleaner.RubbishApkActivity" android:screenOrientation="portrait" />
+        <activity android:name=".cleaner.RubbishMemoryCleanActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.cleaner.RubbishDoneActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.cleaner.AppCleanActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.meizu.safe.cleaner.AppCleanFinishActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.meizu.safe.cleaner.ClearShortcutActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.meizu.safe.cleaner.ClearShortcutActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.meizu.safe.NotificationTooMuchReceiver">
+            <intent-filter>
+                <action android:name="meizu.intent.action.TOO_MUCH_NOTIFICATIONS" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.meizu.safe.InstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.meizu.safe.SafeSecureService" />
+        <receiver android:name="com.meizu.safe.SafeBootReceiver">
+            <intent-filter android:priority="-1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.meizu.update.service.MzUpdateComponentService" android:exported="false" android:stopWithTask="false" />
+        <receiver android:name="com.meizu.update.push.PushReceiver" android:permission="com.meizu.flyme.push.permission.SEND">
+            <intent-filter>
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+                <category android:name="com.meizu.safe" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.meizu.safe.DetectingService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.meizu.safe.Detecting" />
+            </intent-filter>
+        </service>
+        <service android:name="com.meizu.safe.SocketService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.meizu.safe.SocketSrv" />
+            </intent-filter>
+        </service>
+        <service android:name="com.meizu.safe.PermissionQueryService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.meizu.safe.PermissionQuery" />
+            </intent-filter>
+        </service>
+        <service android:name="com.meizu.safe.RubbishCleanService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.meizu.safe.RubbishClean" />
+            </intent-filter>
+        </service>
+        <service android:name="com.qihoo.antivirus.update.UpdateService" android:process=":update" />
+        <activity android:name="com.meizu.safe.security.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" android:uiOptions="splitActionBarWhenNarrow" />
+        <activity android:name="com.meizu.safe.security.SecAppListActivity" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="com.meizu.safe.security.SHOW_SECAPPLIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.meizu.safe.security.AppSecActivity" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="com.meizu.safe.security.SHOW_APPSEC" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="首次打开测试" android:name="com.meizu.safe.security.AppFirstLoadActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/proc_services_whitelist_add" android:name="com.meizu.safe.cleaner.ProcWhitelistAddActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/proc_services_white_list" android:name="com.meizu.safe.cleaner.ProcServicesWhiteListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <activity android:theme="@style/MainActivity_Theme" android:name="com.meizu.safe.networkmanager.MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:meizuSystemUIOptions="1" />
+        <receiver android:name="com.meizu.safe.networkmanager.boradcast.ResetAlarmBootReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.meizu.safe.networkmanager.boradcast.TrafficShutdownReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.meizu.safe.networkmanager.service.ResetAlarmService" android:exported="false">
+            <intent-filter>
+                <action android:name="android_intent_action_ResetAlarm_Service" />
+            </intent-filter>
+        </service>
+        <service android:name="com.meizu.safe.networkmanager.service.SmsResolveService" />
+        <service android:name="com.meizu.safe.networkmanager.service.AutoUpdateWidgetProviderService" android:exported="false">
+            <intent-filter>
+                <action android:name="android_intent_action_AutoUpdateWidgetProviderService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.meizu.safe.networkmanager.service.ClearDiffBytesService" android:exported="false">
+            <intent-filter>
+                <action android:name="android_intent_action_CLEAR_DIFFBYTES" />
+                <action android:name="safe_intent_action_START_IDLETRAFFIC" />
+                <action android:name="safe_intent_action_STOP_IDLETRAFFIC" />
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/SetupAndCorrectActivity_Theme" android:name="com.meizu.safe.networkmanager.SetupAndCorrectActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:meizuSystemUIOptions="1" />
+        <activity android:theme="@16974619" android:name="com.meizu.safe.networkmanager.TipActivity" android:permission="android.permission.MANAGE_NETWORK_POLICY" android:launchMode="singleInstance" android:screenOrientation="portrait" androidprv:needAccessControl="false" androidprv:needGuestControl="true" />
+        <receiver android:name="com.meizu.safe.networkmanager.boradcast.QueryOpertorBroadCast" android:exported="false">
+            <intent-filter>
+                <action android:name="send_query_sms_alarm" />
+                <action android:name="send_query_sms_alarm2" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.meizu.safe.networkmanager.boradcast.ClearDiffBroadCast" android:exported="false">
+            <intent-filter>
+                <action android:name="send_clear_diff_alarm" />
+                <action android:name="send_clear_diff_alarm_2" />
+                <action android:name="send_start_idle_alarm" />
+                <action android:name="send_stop_idle_alarm" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.meizu.safe.networkmanager.boradcast.TrafficNotificationDeletedReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.action.USER_DELETE_SNOOZED_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.meizu.safe.provider.SafeWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+                <action android:name="android.com.meizu.safe.provider.SafeWidgetProvider" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/safe_appwidget_info" />
+        </receiver>
+        <provider android:name="com.meizu.safe.provider.PermissionProvider" android:exported="true" android:authorities="com.meizu.safe.permissionprovider" />
+        <activity android:name="com.meizu.safe.powerui.PowerHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" android:uiOptions="splitActionBarWhenNarrow" />
+        <activity android:label="@string/title_power_setting" android:name="com.meizu.safe.powerui.PowerSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" android:uiOptions="splitActionBarWhenNarrow" />
+        <activity android:name="com.meizu.safe.powerui.PowerModeInfoActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/title_user_define_mode" android:name="com.meizu.safe.powerui.PowerModeConfigActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
+        <provider android:name="com.meizu.safe.provider.SafeProvider" android:exported="true" android:authorities="com.meizu.safe.provider" />
+        <service android:name="com.meizu.safe.power.PowerSavingService" />
+    </application>
+</manifest>

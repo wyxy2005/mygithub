@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.meizu.safe.powerui.PowerModeManagerFragment" android:id="@id/fragement_powermode_manager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <fragment android:name="com.meizu.safe.powerui.AppManagerFragment" android:id="@id/fragement_app_manager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/secapp_applist_list" android:paddingLeft="@dimen/listview_padding_left" android:paddingTop="10.0dip" android:paddingRight="@dimen/listview_padding_left" android:paddingBottom="@dimen/smartbar_height" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:divider="@null" android:headerDividersEnabled="true" android:footerDividersEnabled="false" android:smoothScrollbar="true" style="@style/Widget.DeviceDefault.Light.ListView.Meizu.Partition" />
+    <TextView android:textSize="@dimen/security_nodata_size" android:textColor="@color/color_black" android:gravity="top" android:layout_gravity="center" android:id="@id/tv_no_result" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/security_nodata_height" android:text="@string/text_no_app" android:alpha="0.3" />
+</FrameLayout>

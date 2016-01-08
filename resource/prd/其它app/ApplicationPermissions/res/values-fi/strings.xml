@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">Poista tämä toiminto käytöstä, jos haluat estää tätä sovellusta käynnistymästä automaattisesti, ja pakota se pysähtymään, jos sitä ei ole käytetty vähään aikaan.</string>
+</resources>

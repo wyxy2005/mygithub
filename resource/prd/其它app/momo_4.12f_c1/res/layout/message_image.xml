@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="left" android:padding="@dimen/message_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:id="@id/message_iv_msgimage" android:visibility="visible" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/ic_common_def_header" style="@style/MessageContent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layer_download" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/download_view_image" android:layout_width="59.0dip" android:layout_height="46.0dip" android:layout_margin="15.0dip" android:src="@drawable/ic_chat_def_pic" />
+        <ImageView android:layout_gravity="center" android:id="@id/download_view" android:layout_width="29.0dip" android:layout_height="5.0dip" android:layout_marginBottom="10.0px" android:src="@drawable/ic_loading_msgplus_02" />
+    </LinearLayout>
+    <com.immomo.momo.android.view.HandyTextView android:textColor="@color/white" android:id="@id/progress_text" android:background="@drawable/bg_download_process_bar" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

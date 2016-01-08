@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.ListEmptyView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/listemptyview" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:textSize="14.0sp" android:textColor="@color/text_title" android:layout_gravity="center_horizontal" android:id="@id/nearby_btn_empty_location" android:background="@drawable/btn_default" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:text="定位总是失败？" />
+</LinearLayout>

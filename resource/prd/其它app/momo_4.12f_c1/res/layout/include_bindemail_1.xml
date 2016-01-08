@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="第一步" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_title" android:id="@id/bindemail_tv_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="请点击“获取验证码”并在收到短信验证码后的3分钟内输入，若未接收到短信，请点击按钮重新获取。\n如果绑定的手机无法接收短信，请先修改绑定手机。" />
+            <Button android:id="@id/bindemail_btn_sendmsg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="获取验证码" style="@style/Style_SubmitButton" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="第二步" />
+            <EditText android:id="@id/bindemail_et_verifycode" android:background="@drawable/edittext_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:hint="输入短信验证码" android:singleLine="true" android:imeOptions="actionNext" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_title" android:id="@id/bindemail_tv_title3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="第三步" />
+            <EditText android:id="@id/bindemail_et_pwd" android:background="@drawable/edittext_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:hint="输入陌陌登录密码" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionDone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

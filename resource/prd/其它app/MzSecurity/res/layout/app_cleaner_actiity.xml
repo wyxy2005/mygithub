@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/actionbar_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:meizu="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/hint" android:layout_width="fill_parent" android:layout_height="@dimen/smartbar_height" android:layout_marginTop="5.0dip">
+        <TextView android:id="@id/app_num" android:paddingLeft="@dimen/detail_padding_left_and_right" android:paddingRight="@dimen/detail_padding_left_and_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/detail_padding_left_and_right" />
+        <com.meizu.common.widget.LoadingView android:id="@id/progress_load" android:layout_width="@dimen/rubbish_file_progress_width_height" android:layout_height="@dimen/rubbish_file_progress_width_height" android:layout_centerVertical="true" android:layout_marginEnd="28.0dip" android:layout_alignParentEnd="true" meizu:mcLoadingRadius="9.0dip" meizu:mcRingWidth="2.0dip" />
+        <TextView android:id="@id/app_total_size" android:paddingLeft="@dimen/detail_padding_left_and_right" android:paddingRight="@dimen/detail_padding_left_and_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/detail_padding_left_and_right" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/underline" android:background="#ffc8c8c8" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/hint" android:layout_marginStart="@dimen/detail_padding_left_and_right" android:layout_marginEnd="@dimen/detail_padding_left_and_right" />
+    <ListView android:id="@id/app_cleaner_list" android:paddingBottom="@dimen/smartbar_height" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/underline" style="@style/Widget.DeviceDefault.Light.ListView.Meizu.Partition" />
+</RelativeLayout>

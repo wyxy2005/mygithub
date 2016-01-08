@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/creategroup_rg_sitetype" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+        <RadioButton android:id="@id/creategroup_rb_residential" android:checked="true" android:text="@string/editsite_sitename1" android:layout_weight="1.0" style="@style/menu_selected_btn_left" />
+        <RadioButton android:id="@id/creategroup_rb_office" android:text="@string/editsite_sitename2" android:layout_weight="1.0" style="@style/menu_selected_btn_center" />
+        <RadioButton android:id="@id/creategroup_rb_unit" android:text="@string/editsite_sitename3" android:layout_weight="1.0" style="@style/menu_selected_btn_right" />
+    </RadioGroup>
+</LinearLayout>

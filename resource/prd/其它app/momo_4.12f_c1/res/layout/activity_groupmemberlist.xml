@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <com.immomo.momo.android.view.MomoRefreshExpandableListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_transition" android:divider="@null" android:dividerHeight="0.0dip" style="@style/SimpleListView" />
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+    <com.immomo.momo.android.view.BottomTipView android:gravity="center" android:id="@id/layout_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

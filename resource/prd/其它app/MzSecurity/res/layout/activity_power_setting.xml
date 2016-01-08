@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/virus_clean_fragment_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/summary_auto_ps" layout="@layout/power_layout_summary" />
+    <include android:id="@id/mzs_auto_ps" layout="@layout/power_layout_two_msg_switch" />
+    <include android:id="@id/mzs_power_level" layout="@layout/power_layout_seek_bar" />
+    <include android:id="@id/summary_timmer_ps" layout="@layout/power_layout_summary" />
+    <include android:id="@id/mzs_timer_ps" layout="@layout/power_layout_one_msg_switch" />
+    <include android:id="@id/mzs_mode_select" layout="@layout/power_layout_two_msg_spinner" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_start_time" android:layout_width="fill_parent" android:layout_height="@dimen/security_appsec_item_spinner_height" android:layout_marginLeft="@dimen/listview_item_padding_left" android:layout_marginRight="@dimen/listview_item_padding_left">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/applist_item_title_text_height" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_start_time" android:singleLine="true" android:layout_weight="9.0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/applist_item_title_text_height" android:layout_gravity="center_vertical" android:id="@id/tv_start_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="4.0" />
+        <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:src="@drawable/spinner_selector" android:layout_weight="0.0" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/applist_item_title_margin_image" android:layout_marginRight="@dimen/applist_item_title_margin_image" android:src="@color/color_black" android:alpha="0.2" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_end_time" android:layout_width="fill_parent" android:layout_height="@dimen/settings_single_line_height" android:layout_marginLeft="@dimen/listview_item_padding_left" android:layout_marginRight="@dimen/listview_item_padding_left">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/applist_item_title_text_height" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_end_time" android:singleLine="true" android:layout_weight="9.0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/applist_item_title_text_height" android:layout_gravity="center_vertical" android:id="@id/tv_end_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="4.0" />
+        <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:src="@drawable/spinner_selector" android:layout_weight="0.0" />
+    </LinearLayout>
+</LinearLayout>

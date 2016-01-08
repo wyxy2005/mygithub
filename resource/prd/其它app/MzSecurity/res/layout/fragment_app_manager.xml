@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/power_layout_title" />
+    <LinearLayout android:gravity="center" android:id="@id/ll_no_result" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/security_nodata_size" android:textColor="@color/color_black" android:gravity="top|center" android:id="@id/tv_no_result" android:layout_width="fill_parent" android:layout_height="@dimen/security_nodata_height" android:text="@string/text_loading" android:alpha="0.3" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/security_item__small_title_margin_top" android:layout_marginBottom="@dimen/security_item__height">
+        <ListView android:id="@id/lv_app_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" />
+    </LinearLayout>
+</LinearLayout>

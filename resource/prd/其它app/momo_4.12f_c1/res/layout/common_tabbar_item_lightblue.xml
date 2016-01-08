@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_maintab_item_lightblue" style="@style/TabItem_Layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/tabitem_ligthblue_driver_left" android:background="#ffa5a9ad" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="18.0dip" />
+    <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_title" android:gravity="center" android:id="@id/tab_item_tv_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Title" />
+    <View android:id="@id/tabitem_ligthblue_driver_right" android:background="#ffa5a9ad" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="18.0dip" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@color/friend_search_bar_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/layout_sitename" android:background="@drawable/btn_default" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip">
+        <TextView android:textColor="@color/text_content" android:gravity="center" android:id="@id/tv_sitename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/editsite_defaultbtn_text" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dropdown_arrow" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/header_layout_holder" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <EditText android:textSize="16.0sp" android:textColor="@color/text_content" android:gravity="center_vertical" android:id="@id/search_edittext" android:background="@drawable/edittext_sendmsg" android:paddingLeft="32.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="4.0dip" android:maxHeight="40.0dip" android:hint="@string/selectsite_search" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" style="@style/EditTextStyle" />
+        <ImageView android:id="@id/header_iv_logo" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/ic_searchbar_search" android:scaleType="fitXY" android:layout_alignLeft="@id/search_edittext" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

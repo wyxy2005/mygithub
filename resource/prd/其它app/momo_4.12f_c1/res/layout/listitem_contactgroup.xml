@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="clip_vertical" style="@style/style_patterns_sectionbar_title_bg">
+        <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:id="@id/sitelist_tv_name" android:maxWidth="200.0dip" android:singleLine="true" android:layout_weight="1.0" style="@style/style_patterns_sectionbar_title_text" />
+        <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_content" android:ellipsize="end" android:id="@id/tv_groupcount" android:layout_width="100.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

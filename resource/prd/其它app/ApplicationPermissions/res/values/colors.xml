@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_list_textcolor">#fff5f5f5</color>
+    <color name="permission_description_textcolor">#ff8d9ca3</color>
+    <color name="text_noapplication">#ff606060</color>
+</resources>

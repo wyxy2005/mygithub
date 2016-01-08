@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/body" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/security_center_panel" android:background="@color/cecurity_center_panle_background" android:layout_width="fill_parent" android:layout_height="@dimen/security_center_panle_height" />
+    <RelativeLayout android:id="@id/security_center_function" android:background="@color/security_center_items_nomal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/security_center_func_panel_height" android:layout_below="@id/security_center_panel" />
+    <RelativeLayout android:id="@id/scan_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="277.0dip" android:layout_below="@id/security_center_panel" />
+</RelativeLayout>

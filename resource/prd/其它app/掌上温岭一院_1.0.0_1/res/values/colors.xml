@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_type_home_header">#ffbb9a64</color>
+    <color name="color_type_home_header_alpha">#3e5686f2</color>
+    <color name="color_type_home_header_select">#ffa78247</color>
+    <color name="color_type_left_select">#ffa78247</color>
+    <color name="color_type_left_unselect">#ffbb9a64</color>
+    <color name="color_type_right_select">#ffbb9a64</color>
+    <color name="color_type_right_unselect">#ff79ad35</color>
+    <color name="color_type_btn_unable">#ffaaaaaa</color>
+    <color name="background">#fff5f9f8</color>
+    <color name="detail_title_text">#ffbb9a64</color>
+    <color name="color_type_logout_select">#ffb52727</color>
+    <color name="color_type_logout_unselect">#ffd04444</color>
+    <color name="color_type_login_select">#ffd27f11</color>
+    <color name="color_type_login_unselect">#fff39d2e</color>
+    <color name="color_type_gray_unselect">#ffdcdcdc</color>
+    <color name="color_type_gray_select">#ffe2e2e2</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="article_sub_text">#ffaeaeae</color>
+    <color name="symptom_color">#ffbebebe</color>
+    <color name="checkbox_check">#ffe8b15b</color>
+    <color name="checkbox_uncheck">#ffb1b1b1</color>
+    <color name="alpha_20">#3eececec</color>
+</resources>

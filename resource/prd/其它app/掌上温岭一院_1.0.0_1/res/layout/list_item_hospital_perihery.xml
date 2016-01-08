@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="4.0dip">
+        <TextView android:textSize="@dimen/large_text_size" android:textColor="@color/color_type_home_header" android:id="@id/hospital_perihery_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/black" android:id="@id/hospital_perihery_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/hospital_perihery_distance" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:id="@id/hospital_perihery_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/hospital_perihery_name" />
+    </RelativeLayout>
+</LinearLayout>

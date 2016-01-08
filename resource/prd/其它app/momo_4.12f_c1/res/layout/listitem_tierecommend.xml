@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bglistitem_selector_user" android:layout_width="fill_parent" android:layout_height="59.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tierecommend_layout_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true">
+            <ImageView android:id="@id/tierecommend_iv_face" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/ic_common_def_header" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tierecommend_layout_tieba" android:background="@drawable/bg_triangle_btn_background" android:layout_width="70.0dip" android:layout_height="59.0dip" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tieba_goto" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_content" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tierecommend_tv_tiebaname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxWidth="59.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/tierecommend_layout_tieba" android:layout_toRightOf="@id/tierecommend_layout_header" android:layout_centerInParent="true">
+            <com.immomo.momo.android.view.EmoteTextView android:textSize="16.0sp" android:textColor="@color/text_title" android:id="@id/tierecommend_tv_tiename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="13.0sp" android:textColor="@color/text_content" android:layout_gravity="center_vertical" android:id="@id/tierecommend_tv_tiecontent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:minWidth="70.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <View android:background="@color/devideline_listview" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/tierecommend_layout_tieba" />
+    </RelativeLayout>
+    <View android:id="@id/grouplist_item_line" android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

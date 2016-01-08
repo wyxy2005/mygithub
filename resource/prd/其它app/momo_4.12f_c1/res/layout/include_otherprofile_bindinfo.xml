@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/profile_layout_bind_info" style="@style/Profile_Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.immomo.momo.android.view.HandyTextView android:text="绑定应用" style="@style/Profile_Item_Text_Title" />
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/txt_join_bind_count" style="@style/Profile_Item_Text_LeftNumeral" />
+    </LinearLayout>
+    <LinearLayout style="@style/Profile_Item_Right_Parent">
+        <LinearLayout style="@style/Profile_Item_Right_Info">
+            <com.immomo.momo.android.view.AppIconMomoGridView android:id="@id/layout_app_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+    </LinearLayout>
+</LinearLayout>

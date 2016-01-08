@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="55.0dip" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@id/profileicon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/profileicon_image_icon" android:focusable="false" android:layout_width="55.0dip" android:layout_height="55.0dip" android:scaleType="fitXY" />
+            <ImageView android:background="@drawable/bg_userpro_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/profileicon_image_icon" android:layout_alignTop="@id/profileicon_image_icon" android:layout_alignRight="@id/profileicon_image_icon" android:layout_alignBottom="@id/profileicon_image_icon" />
+        </RelativeLayout>
+        <com.immomo.momo.android.view.HandyTextView android:textSize="10.0sp" android:textColor="@color/text_content" android:ellipsize="end" android:id="@id/profileicon_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/profileicon_layout" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

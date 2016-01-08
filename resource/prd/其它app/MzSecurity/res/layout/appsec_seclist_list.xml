@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView android:id="@id/appsec_seclist_list" android:paddingBottom="@dimen/smartbar_height" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:headerDividersEnabled="false" android:footerDividersEnabled="false" style="@style/Widget.DeviceDefault.Light.ListView.Meizu.Partition"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

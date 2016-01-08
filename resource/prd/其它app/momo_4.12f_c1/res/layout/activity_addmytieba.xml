@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/addmytieba_et_keyword" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="搜索感兴趣的话题, 如游戏、宠物" android:singleLine="true" />
+            <ImageView android:id="@id/addmytieba_iv_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/btn_search_clear" android:layout_alignRight="@id/addmytieba_et_keyword" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.immomo.momo.android.view.MomoRefreshListView android:id="@id/listview" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" style="@style/SimpleListView" />
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/traffic_tv_top" android:id="@id/traffic_tv_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="本月已用: 0M," />
+            <TextView android:textSize="15.0sp" android:textColor="@color/traffic_tv_top" android:id="@id/traffic_tv_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="今日流量：0M" />
+        </LinearLayout>
+        <View style="@style/traffic_divider" />
+        <TextView android:id="@id/traffic_in_ten_minutes" android:layout_marginTop="15.0dip" android:text=" 最近10分钟流量总消耗0k " style="@style/traffic_tv_above" />
+        <RelativeLayout android:id="@id/traffic_ten_minutes" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="5.0dip" />
+        <View android:layout_marginTop="8.0dip" style="@style/traffic_divider" />
+        <TextView android:id="@id/traffic_tv_week" android:layout_marginTop="15.0dip" android:text=" 最近7日流量总消耗0M " style="@style/traffic_tv_above" />
+        <RelativeLayout android:id="@id/traffic_week" android:layout_width="fill_parent" android:layout_height="140.0dip" />
+        <View android:id="@id/traffic_in_week" android:layout_marginTop="8.0dip" style="@style/traffic_divider" />
+        <RelativeLayout android:id="@id/traffic_category" android:layout_width="fill_parent" android:layout_height="240.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/traffic_float" android:layout_marginBottom="50.0dip" style="@style/Style_traffic_float">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <com.immomo.momo.android.view.HandyTextView android:text="开启流量悬浮层" android:layout_centerVertical="true" style="@style/Text_List_Title" />
+                <CheckBox android:id="@id/traffic_cb" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" style="@style/Item_Right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

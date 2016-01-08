@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header" style="@style/Style_Scrollable">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="手把手帮好友安装" style="@style/Style_Patterns_SectionBar" />
+            <include layout="@layout/include_patterns_sectionline" />
+            <TextView android:textSize="16.0sp" android:id="@id/emotiontask_tv_desc" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/emotion_invitetype_str1" />
+            <TextView android:id="@id/emotiontask_tv_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="分享到社交网络" style="@style/Style_Patterns_SectionBar" />
+            <include layout="@layout/include_patterns_sectionline" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:id="@id/text_content_outimg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <RelativeLayout android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/layout_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享到：" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_sina" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_publish_weibo_normal" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_tx" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_publish_tweibo_normal" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_renren" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_publish_renren_normal" />
+                    </LinearLayout>
+                    <Button android:gravity="center" android:layout_gravity="right" android:id="@id/btn_share" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="分享" android:layout_alignBottom="@id/layout_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:id="@id/emotiontask_tv_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="直接在线邀请" style="@style/Style_Patterns_SectionBar" />
+            <include layout="@layout/include_patterns_sectionline" />
+            <RelativeLayout android:id="@id/layout_sms_invite" style="@style/Style_Patterns_Content_Clickable">
+                <com.immomo.momo.android.view.HandyTextView android:text="通过短信邀请" style="@style/Patterns_Text_Left" />
+                <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+            <include android:visibility="gone" layout="@layout/include_patterns_divideline" />
+            <RelativeLayout android:id="@id/layout_weibo_invite" android:visibility="gone" style="@style/Style_Patterns_Content_Clickable">
+                <com.immomo.momo.android.view.HandyTextView android:text="通过新浪微博私信邀请" style="@style/Patterns_Text_Left" />
+                <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+            <include layout="@layout/include_patterns_divideline" />
+            <RelativeLayout android:id="@id/layout_txweibo_invite" style="@style/Style_Patterns_Content_Clickable">
+                <com.immomo.momo.android.view.HandyTextView android:text="通过腾讯微博私信邀请" style="@style/Patterns_Text_Left" />
+                <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+            <include layout="@layout/include_patterns_divideline" />
+            <RelativeLayout android:id="@id/layout_renren_invite" style="@style/Style_Patterns_Content_Clickable">
+                <com.immomo.momo.android.view.HandyTextView android:text="通过人人网通知邀请" style="@style/Patterns_Text_Left" />
+                <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

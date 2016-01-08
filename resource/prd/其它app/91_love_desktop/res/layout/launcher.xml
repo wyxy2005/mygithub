@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nd.android.ilauncher.launcher.DragLayer android:id="@id/drag_layer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.nd.android.ilauncher">
+    <include layout="@layout/all_apps" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.nd.android.ilauncher.launcher.Workspace android:id="@id/workspace" android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:defaultScreen="0" />
+        <com.nd.android.ilauncher.commonview.CircleIndexView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/index_view" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginBottom="@dimen/desktop_circle_index_margin_bottom" android:layout_weight="1.0" />
+    </FrameLayout>
+    <com.nd.android.ilauncher.launcher.DeleteZone android:layout_gravity="top|center" android:id="@id/delete_zone" android:background="@drawable/delete_zone_selector" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:src="@drawable/delete_recycle" android:scaleType="center" launcher:direction="horizontal" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/quick_start_bar_height">
+        <com.nd.android.ilauncher.launcher.QuickStartBar android:id="@id/quickStartBar" android:background="@drawable/ihome_dock_background" android:layout_width="fill_parent" android:layout_height="@dimen/quick_start_bar_height" />
+    </RelativeLayout>
+    <com.nd.android.ilauncher.ui.view.TopLayer android:orientation="vertical" android:id="@id/ll_toplayer" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/menu_top_mask_layer" android:background="#aa000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.nd.android.ilauncher.launcher.DragLayer>

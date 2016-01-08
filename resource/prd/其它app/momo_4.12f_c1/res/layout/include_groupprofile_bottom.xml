@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/profile_layout_bottom" android:layout_alignParentBottom="true" style="@style/Style_BottomBar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/profile_layout_chat" android:clickable="true" android:layout_width="fill_parent" style="@style/Style_Bottom_Btn">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/profile_bottom_text_color" android:gravity="center" android:id="@id/tv_chat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/group_profile_bottom_string1" android:drawableLeft="@drawable/btn_profile_bottom_icon_chat" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/profile_layout_apply" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" style="@style/Style_Bottom_Btn">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="13.0sp" android:textColor="@color/profile_bottom_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/group_profile_bottom_string2" android:drawableLeft="@drawable/btn_profile_bottom_icon_follow" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/profile_layout_cancel_create" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" style="@style/Style_Bottom_Btn">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="13.0sp" android:textColor="@color/profile_bottom_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/group_profile_bottom_string5" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

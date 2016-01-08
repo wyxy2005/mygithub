@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="140304.01" package="com.sec.android.widgetapp.ap.hero.cmaweather"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sec.android.daemonapp.cmaweather.CMAWEATHER_DAEMON_ACCESS_PROVIDER" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <permission android:label="@string/app_name" android:name="com.sec.android.widgetapp.ap.hero.accuweather.permission.READ_ACCU_DATA" android:protectionLevel="signatureOrSystem" />
+    <permission android:label="@string/app_name" android:name="com.sec.android.widgetapp.ap.hero.accuweather.permission.WRITE_ACCU_DATA" android:protectionLevel="signatureOrSystem" />
+    <application android:label="@string/b_type_idle" android:icon="@drawable/cmaweather_trayicon" android:name=".WeatherClockApplication" android:debuggable="false" android:hardwareAccelerated="true">
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true" />
+        <provider android:name=".provider.cmaweather.CmaContentProvider" android:readPermission="com.sec.android.widgetapp.ap.hero.accuweather.permission.READ_ACCU_DATA" android:writePermission="com.sec.android.widgetapp.ap.hero.accuweather.permission.WRITE_ACCU_DATA" android:exported="true" android:authorities="com.sec.android.widgetapp.ap.hero.cmaweather" />
+        <service android:label="@string/app_name" android:name=".SurfaceWidgetWeather" android:exported="true">
+            <intent-filter>
+                <action android:name="com.samsung.sec.android.SURFACE_WIDGET_ACTION" />
+                <category android:name="com.samsung.sec.android.SURFACE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.samsung.sec.android.SURFACE_WIDGET" android:resource="@xml/surface_widget_size_info" />
+        </service>
+        <receiver android:name=".service.CmaBCService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweatherdaemon.action.SYNC_CURRENT_LOCATION_WEATHER_DATA" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweatherdaemon.action.SYNC_CURRENT_LOCATION_WEATHER_DATA_DELETE" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.MYCURRENTLOCATION" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweatherdaemon.action.SYNC_DATA_WITH_DAEMON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.AWClearDataService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/DeviceDefaultNoTitle" android:label="@string/menu_add_title" android:name=".menu.MenuAdd" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <action android:name="com.samsung.sec.android.widgetapp.intent.action.MENU_ADD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DeviceDefaultNoTitle" android:label="@string/menu_search_title" android:name=".menu.MenuSearch" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DeviceDefaultTitle" android:label="@string/menu_current_city_show" android:name="WeatherClockCurCitySetting" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DeviceDefaultTitle" android:label="@string/menu_delete_title" android:name=".menu.MenuDelete" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DeviceDefaultTitle" android:label="@string/menu_change_orders" android:name=".menu.MenuChangeOrders" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/CustomActionBar" android:label="@string/action_bar_title" android:name="WeatherClockDetailGL" android:exported="true" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+                <action android:name="com.samsung.sec.android.widgetapp.intent.action.MENU_DETAIL_GL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DeviceDefaultTitle" android:label="@string/action_bar_title" android:name="WeatherClockSearchDetailGL" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DeviceDefaultTitle" android:label="@string/action_bar_title" android:name=".WeatherClockInfoDetail" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DeviceDefaultTitle" android:label="@string/menu_settings_title" android:name=".menu.MenuSettings" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DeviceDefaultNoTitle" android:label="@string/weather_map" android:name=".MapsActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DeviceDefaultTitle" android:label="@string/menu_city_list_title" android:name=".WeatherClockCityList" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.samsung.sec.android.widgetapp.intent.action.MENU_CITYLIST" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AccountingDialogTitle" android:label="@string/app_name" android:name=".common.DataPopupActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AccountingDialogTitle" android:label="@string/app_name" android:name=".common.PermissionPopupActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name=".easy.widget.WeatherClockService">
+            <intent-filter>
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.easy.widget.WeatherClockService" />
+            </intent-filter>
+        </service>
+        <receiver android:label="@string/app_name" android:icon="@drawable/easy_weather_preview_cn" android:name=".easy.widget.WeatherClock">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/hero_widget_provider" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.EASY_MODE" />
+                <action android:name="com.android.launcher.action.EASY_MODE_CHANGE" />
+                <action android:name="clock.date_format_changed" />
+                <action android:name="sec.android.intent.action.HOME_PAUSE" />
+                <action android:name="sec.android.intent.action.HOME_RESUME" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.easy.widget.action.WEATHER_SCREEN_ON" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.easy.widget.action.WEATHER_SCREEN_OFF" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.GET_CURRENT_LOCATION_OK" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.GET_CURRENT_LOCATION_START" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.GET_CURRENT_LOCATION_EXCEPTION" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.GET_CURRENT_LOCATION_ERROR" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.GET_CURRENT_LOCATION_PROVIDER_ERR" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.GET_CURRENT_LOCATION_NETWORK_FAILED" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.ACTION_STOP_ERROR_MSG" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.GET_DATA_NETWORK_ERROR" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.ACTION_PERFORM_NETWORK_ACCESS_RESPONCE" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.easy.widget.action.MANUAL_REFRESH" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.easy.widget.action.TIME_CHANGED" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.easy.widget.action.DATE_CHANGED" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.easy.widget.action.TIMEZONE_CHANGED" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.easy.widget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.DISABLE_LOCATION_SERVICES" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.CHANGE_SETTING" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.ACTIVITY" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.CITY_CNT_ZERO" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.REFRESH_FROM_ACCOUNTING_DIALOG_EASY" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.REFRESH_FROM_ACCOUNTING_DIALOG_TO_PERMISSION_EASY" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.START_ON_FIRST_UPDATE" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.START_ON_FIRST_UPDATE_DIALOG_TO_PERMISSION_EASY" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweatherdaemon.action.SYNC_CURRENT_LOCATION_WEATHER_DATA" />
+                <action android:name="com.sec.android.widgetapp.ap.hero.cmaweather.action.REFRESH_FROM_ACCOUNTING_DIALOG_TO_PERMISSION" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.NotiReceiver">
+            <intent-filter>
+                <action android:name="com.android.launcher.action.EASY_MODE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="touchwiz" />
+        <uses-library android:name="sws" />
+    </application>
+    <uses-sdk android:targetSdkVersion="15" />
+</manifest>

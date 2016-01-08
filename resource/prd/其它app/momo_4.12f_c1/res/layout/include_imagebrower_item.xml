@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff171b19" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.photoview.PhotoView android:id="@id/imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <RelativeLayout android:gravity="center" android:id="@id/progress_layout" android:background="@drawable/bg_download_process_bar" android:padding="6.0dip" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.immomo.momo.android.view.HandyTextView android:id="@id/progress_text_percent" android:text="0%" style="@style/Download_progressbar_text_percent" />
+            <com.immomo.momo.android.view.HandyTextView android:id="@id/progress_text_size" android:visibility="gone" android:text="" style="@style/Download_progressbar_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

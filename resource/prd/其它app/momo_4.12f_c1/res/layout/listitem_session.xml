@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_layout" android:background="@drawable/bglistitem_selector_user" android:paddingLeft="11.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip">
+        <FrameLayout android:id="@id/avatar_layout" android:duplicateParentState="false" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="11.0dip">
+            <com.immomo.momo.android.view.HandyImageView android:id="@id/chatlist_item_iv_face" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <com.immomo.momo.android.view.HandyImageView android:id="@id/chatlist_item_iv_face_cover_select" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <com.immomo.momo.android.view.HandyImageView android:id="@id/chatlist_item_iv_face_cover_click" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="11.0dip">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/chatlist_item_layout_name" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/chatlist_item_layout_righttop_part" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignBaseline="@id/chatlist_item_tv_name" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/chatlist_item_tv_status_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Notice_Bubble" />
+                    <com.immomo.momo.android.view.HandyImageView android:id="@id/chatlist_item_iv_status_point" android:background="@drawable/bg_round_notice_bubble" android:visibility="visible" android:layout_width="7.0dip" android:layout_height="7.0dip" />
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/chatlist_item_tv_timestamp" style="@style/Text_List_Desc" />
+                </RelativeLayout>
+                <com.immomo.momo.android.view.EmoteTextView android:id="@id/chatlist_item_tv_name" android:layout_width="fill_parent" android:layout_marginTop="2.0dip" android:singleLine="true" android:layout_toLeftOf="@id/chatlist_item_layout_righttop_part" style="@style/Text_List_Title" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_message_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:id="@id/chatlist_item_layout_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="20.0dip">
+                    <com.immomo.momo.android.view.HandyImageView android:gravity="center" android:id="@id/chatlist_item_iv_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/chatlist_item_tv_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" style="@style/Message_Status" />
+                </LinearLayout>
+                <com.immomo.momo.android.view.HandyImageView android:id="@id/chatlist_item_iv_mute" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_common_mute" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+                <com.immomo.momo.android.view.EmoteTextView android:ellipsize="end" android:id="@id/chatlist_item_tv_content" android:layout_marginRight="50.0dip" android:singleLine="true" android:layout_toRightOf="@id/chatlist_item_layout_status" style="@style/Text_List_Content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/discover_view_line" android:layout_marginLeft="63.0dip" style="@style/Line_Vertical" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_layout" android:background="@color/black_imagepicker" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <include android:id="@id/layout_pickbar" layout="@layout/include_picker_bar" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/layout_pickbar" android:layout_below="@id/layout_header">
+        <com.immomo.momo.android.view.HandyListView android:id="@id/lv_buckets" android:background="@null" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_transition" android:divider="@null" android:dividerHeight="0.0dip" android:fastScrollEnabled="false" style="@style/Style_Scrollable" />
+        <GridView android:id="@id/gv_images" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_selector_transition" android:verticalSpacing="5.0dip" android:numColumns="4" />
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

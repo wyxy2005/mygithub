@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/prv/res/android" xmlns:meizu="http://schemas.android.com/apk/res-auto">
+    <ListPreference android:entries="@array/default_province_entry" android:title="@string/provinces" android:key="province" android:summary="@string/defualt_entry" android:entryValues="@array/default_province_entryValue" android:mzListPreferenceMode="1" />
+    <ListPreference android:entries="@array/default_city_entry" android:title="@string/citys" android:key="city" android:summary="@string/defualt_entry" android:entryValues="@array/default_city_entryValue" android:mzListPreferenceMode="1" />
+    <ListPreference android:entries="@array/operators_entry" android:title="@string/operators" android:key="operators" android:summary="@string/china_mobile" android:entryValues="@array/operators_entry_values" android:mzListPreferenceMode="1" />
+    <ListPreference android:title="@string/brands" android:key="brands" android:summary="" android:mzListPreferenceMode="1" />
+</PreferenceScreen>

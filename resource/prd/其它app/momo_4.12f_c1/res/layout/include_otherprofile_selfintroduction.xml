@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.immomo.momo.android.view.SettingInfoLayout android:orientation="vertical" android:id="@id/layout_self_introduction" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/style_patterns_profilesectionbar" />
+    <include layout="@layout/include_otherprofile_bindinfo" />
+    <LinearLayout android:id="@id/layout_interest" style="@style/Profile_Item">
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_habit" android:text="兴趣爱好" style="@style/Profile_Item_Text_Title" />
+        <LinearLayout style="@style/Profile_Item_Right_Parent">
+            <LinearLayout style="@style/Profile_Item_Right_Info">
+                <com.immomo.momo.android.view.EmoteTextView android:id="@id/profile_tv_interest" style="@style/Profile_Item_Text_content" />
+            </LinearLayout>
+            <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/layout_hangout" style="@style/Profile_Item">
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_place" android:text="常出没地" style="@style/Profile_Item_Text_Title" />
+        <LinearLayout style="@style/Profile_Item_Right_Parent">
+            <LinearLayout style="@style/Profile_Item_Right_Info">
+                <com.immomo.momo.android.view.EmoteTextView android:id="@id/profile_tv_hangout" style="@style/Profile_Item_Text_content" />
+            </LinearLayout>
+            <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/layout_website" style="@style/Profile_Item">
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_url" android:text="个人说明" style="@style/Profile_Item_Text_Title" />
+        <LinearLayout style="@style/Profile_Item_Right_Parent">
+            <LinearLayout style="@style/Profile_Item_Right_Info">
+                <com.immomo.momo.android.view.EmoteTextView android:id="@id/profile_tv_web" style="@style/Profile_Item_Text_content" />
+            </LinearLayout>
+            <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/Profile_Item">
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/textview_relation_title" android:text="关系" style="@style/Profile_Item_Text_Title" />
+        <LinearLayout style="@style/Profile_Item_Right_Parent">
+            <LinearLayout style="@style/Profile_Item_Right_Info">
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_tv_relation" style="@style/Profile_Item_Text_content" />
+            </LinearLayout>
+            <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/profile_layout_src" android:visibility="gone" style="@style/Profile_Item">
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/textview_source_title" android:text="关系来源" style="@style/Profile_Item_Text_Title" />
+        <LinearLayout style="@style/Profile_Item_Right_Parent">
+            <LinearLayout android:orientation="vertical" style="@style/Profile_Item_Right_Info">
+                <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:id="@id/profile_tv_src" style="@style/Profile_Item_Text_content" />
+            </LinearLayout>
+            <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/Profile_Item">
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/textviewtimetitle" android:text="注册时间" style="@style/Profile_Item_Text_Title" />
+        <LinearLayout style="@style/Profile_Item_Right_Parent">
+            <LinearLayout style="@style/Profile_Item_Right_Info">
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_tv_regist_time" android:layout_weight="1.0" style="@style/Profile_Item_Text_content" />
+            </LinearLayout>
+            <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</com.immomo.momo.android.view.SettingInfoLayout>

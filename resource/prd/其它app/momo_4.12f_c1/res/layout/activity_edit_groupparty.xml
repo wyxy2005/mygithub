@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:id="@id/scrollview_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/profile_layout_bottom" android:layout_below="@id/layout_header" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/profile_layout_acount_info" android:layout_marginTop="10.0dip" style="@style/Style_Patterns">
+                <com.immomo.momo.android.view.EmoteEditeText android:gravity="top|left|center" android:id="@id/tv_desc" android:padding="10.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:hint="请输入活动说明、注意事项等，10~500个字" android:minLines="3" />
+                <RelativeLayout android:id="@id/layout_time" android:background="@drawable/bglistitem_selector_user" style="@style/Style_Patterns_Content">
+                    <TextView android:id="@id/textviewmomotitle" android:text="@string/groupparty_key1" style="@style/Patterns_Text_Left" />
+                    <ImageView android:id="@id/iv_arrow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" style="@style/Item_Right" />
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="18.0sp" android:textColor="@color/text_content" android:id="@id/tv_party_starttime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_arrow1" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <include layout="@layout/include_patterns_divideline" />
+                <RelativeLayout android:orientation="horizontal" android:id="@id/layout_place" android:background="@drawable/bglistitem_selector_user" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content">
+                    <ImageView android:id="@id/iv_arrow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" style="@style/Item_Right" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_arrow2" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                        <com.immomo.momo.android.view.HandyTextView android:id="@id/textviewtimetitle" android:text="@string/groupparty_key2" android:layout_alignParentLeft="true" style="@style/Profile_Item_Top" />
+                        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <ImageView android:id="@id/iv_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ic_user_location" />
+                            <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_party_address" android:text="" style="@style/Profile_Item_Bottom" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout_settingcontainer" android:visibility="gone" style="@style/Style_Patterns_Content">
+                    <TextView android:text="报名需要填写手机" android:layout_alignParentLeft="true" style="@style/Patterns_Text_Left" />
+                    <CheckBox android:id="@id/checkbox_needphone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

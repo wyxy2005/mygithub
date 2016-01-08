@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bglistitem_selector_user" android:paddingLeft="15.0dip" android:paddingTop="12.0dip" android:paddingRight="15.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="@color/blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="群组招募" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/text_content" android:id="@id/tv_recruit_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/online_arrow" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

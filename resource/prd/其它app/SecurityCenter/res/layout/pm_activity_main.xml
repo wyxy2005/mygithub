@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/main_bg_cyan" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/pm_activity_main_back" android:gravity="center_vertical" android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="24.0dip" android:text="@string/activity_title_license_manager" android:drawableLeft="@268566638" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/back">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_perm_main" />
+        </FrameLayout>
+        <Button android:id="@id/settings" android:background="@268566629" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.699982dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/main_page_background" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@dimen/activity_splash_permcenter">
+        <LinearLayout android:id="@id/handle_item_auto_start" android:layout_width="fill_parent" android:layout_height="@dimen/list_preferred_item_height" style="@miui:style/Widget.ListView.Item.DoubleLine">
+            <TextView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/activity_title_auto_start_manager" android:layout_weight="1.0" style="@miui:style/TextAppearance.List.Primary" />
+            <TextView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@miui:style/TextAppearance.List.Secondary" />
+            <ImageView android:layout_gravity="right|center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@268566632" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/handle_item_permissions" android:layout_width="fill_parent" android:layout_height="@dimen/list_preferred_item_height" style="@miui:style/Widget.ListView.Item.DoubleLine">
+            <TextView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/activity_title_permission_manager" android:layout_weight="1.0" style="@miui:style/TextAppearance.List.Primary" />
+            <TextView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@miui:style/TextAppearance.List.Secondary" />
+            <ImageView android:layout_gravity="right|center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@268566632" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/handle_item_root" android:layout_width="fill_parent" android:layout_height="@dimen/list_preferred_item_height" style="@miui:style/Widget.ListView.Item.DoubleLine">
+            <TextView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/activity_title_root_manager" android:layout_weight="1.0" style="@miui:style/TextAppearance.List.Primary" />
+            <TextView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@miui:style/TextAppearance.List.Secondary" />
+            <ImageView android:layout_gravity="right|center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@268566632" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/handle_item_empty" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/list_preferred_item_height" style="@miui:style/Widget.ListView.Item.DoubleLine">
+            <TextView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@miui:style/TextAppearance.List.Primary" />
+            <TextView android:layout_gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@miui:style/TextAppearance.List.Secondary" />
+            <ImageView android:layout_gravity="right|center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@268566632" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

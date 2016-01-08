@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.immomo.momo.android.view.ResizeListenerLayout android:id="@id/rootlayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.immomo.momo.android.view.EmoteTextView android:textSize="14.0sp" android:textColor="@color/text_content" android:gravity="top" android:id="@id/tv_desc" android:background="@color/bg_publish_mulipic" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="263.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/layout_desc" android:layout_below="@id/layout_header">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0">
+            <RelativeLayout android:orientation="vertical" android:id="@id/layout_content" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+                <View android:id="@id/layout_line" android:background="#ffababab" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <com.immomo.momo.android.view.MEmoteEditeText android:textSize="@dimen/text_view_content" android:gravity="top" android:id="@id/signeditor_tv_text" android:background="@null" android:padding="10.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="一句话介绍自己的情况，或希望如何前往" android:maxLength="40" android:layout_below="@id/layout_line" />
+            </RelativeLayout>
+        </ScrollView>
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="right" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:id="@id/tv_textcount" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="#e5ffffff" android:id="@id/tv_sync_tip" android:background="@drawable/round_tip_publish_sync_txweibo" android:paddingLeft="20.0dip" android:paddingTop="6.0dip" android:paddingRight="20.0dip" android:paddingBottom="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:background="@drawable/bg_chatbar_textmode" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="13.0sp" android:textColor="@color/font_publish_btntext" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_syntip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="同步：" />
+            <RelativeLayout android:id="@id/signeditor_layout_syncto_feed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                <ImageView android:id="@id/signeditor_iv_icon" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_publish_feed_normal" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/signeditor_layout_syncto_sinaweibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                <ImageView android:id="@id/signeditor_iv_icon" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_publish_weibo_normal" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/signeditor_layout_syncto_renren" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                <ImageView android:id="@id/signeditor_iv_icon" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_publish_renren_normal" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/signeditor_layout_syncto_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                <ImageView android:id="@id/signeditor_iv_icon" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_publish_tweibo_normal" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/signeditor_layout_syncto_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                <ImageView android:id="@id/signeditor_iv_icon" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_publish_weixin_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.immomo.momo.android.view.ResizeListenerLayout>

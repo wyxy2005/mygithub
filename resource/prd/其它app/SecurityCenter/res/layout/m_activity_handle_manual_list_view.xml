@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.securitycenter.handlebar.HandleListManualItemView android:paddingTop="@269090828" android:paddingBottom="@269090828" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@miui:style/Widget.ListView.Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@miui:style/TextAppearance.List.Primary" />
+        <TextView android:id="@id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title" style="@miui:style/TextAppearance.List.Secondary" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:gravity="center" android:id="@id/menu" android:background="@drawable/action_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" style="@miui:style/Widget.Button.Positive" />
+    </FrameLayout>
+</com.miui.securitycenter.handlebar.HandleListManualItemView>

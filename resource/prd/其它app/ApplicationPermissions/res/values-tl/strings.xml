@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">Disable this function to prevent this app from running automatically and to force it to stop running if it has not been used for some time.</string>
+</resources>

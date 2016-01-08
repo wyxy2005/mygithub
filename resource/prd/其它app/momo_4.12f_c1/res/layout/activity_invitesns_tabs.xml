@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" style="@style/Tab_Layout">
+            <LinearLayout android:gravity="center" android:id="@id/contact_tab_sina" android:background="@drawable/bg_maintab_item_lightblue" style="@style/TabItem_Layout">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_title" android:gravity="center" android:id="@id/tab_item_tv_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="新浪微博" />
+            </LinearLayout>
+            <View android:id="@id/tabitem_ligthblue_driver_right" android:background="#ffa5a9ad" android:layout_width="1.0dip" android:layout_height="18.0dip" />
+            <LinearLayout android:gravity="center" android:id="@id/contact_tab_tencent" android:background="@drawable/bg_maintab_item_lightblue" style="@style/TabItem_Layout">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_title" android:gravity="center" android:id="@id/tab_item_tv_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="腾讯微博" />
+            </LinearLayout>
+            <View android:id="@id/tabitem_ligthblue_driver_right" android:background="#ffa5a9ad" android:layout_width="1.0dip" android:layout_height="18.0dip" />
+            <LinearLayout android:gravity="center" android:id="@id/contact_tab_renren" android:background="@drawable/bg_maintab_item_lightblue" style="@style/TabItem_Layout">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_title" android:gravity="center" android:id="@id/tab_item_tv_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="人人网" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ff33b5e5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.immomo.momo.android.view.ScrollViewPager android:id="@id/tabcontent" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

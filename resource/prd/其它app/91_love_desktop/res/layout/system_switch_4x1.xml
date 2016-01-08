@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nd.android.ilauncher.widget.systemswitch.SystemSwitch4x1 android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/widget_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/first" android:background="@drawable/switch_cell_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/firstView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/mainline1" android:background="@drawable/hr" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/second" android:background="@drawable/switch_cell_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/secondView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/mainline2" android:background="@drawable/hr" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/third" android:background="@drawable/switch_cell_selector" android:longClickable="true" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/thirdView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/mainline3" android:background="@drawable/hr" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/fourth" android:background="@drawable/switch_cell_selector" android:longClickable="true" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/fourthView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/mainline4" android:background="@drawable/hr" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/fifth" android:background="@drawable/switch_cell_selector" android:longClickable="true" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/fifthView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/mainline5" android:background="@drawable/hr" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/more" android:background="@drawable/switch_cell_selector" android:longClickable="true" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0">
+            <ImageView android:background="@drawable/dian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.nd.android.ilauncher.widget.systemswitch.SystemSwitch4x1>

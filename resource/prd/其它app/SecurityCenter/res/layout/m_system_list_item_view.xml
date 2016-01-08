@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.securitycenter.system.SystemListItemView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@miui:style/Widget.ListView.Item.DoubleLine"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@miui:style/TextAppearance.List.Primary" />
+        <TextView android:id="@id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title" style="@miui:style/TextAppearance.List.Secondary" />
+        <TextView android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@miui:style/TextAppearance.List.Primary" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:gravity="center" android:id="@id/menu" android:background="@drawable/action_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:text="@string/button_text_fix" style="@miui:style/Widget.Button.Positive" />
+        <TextView android:textAppearance="@269287512" android:textSize="11.0dip" android:textColor="@color/m_system_list_item_view_hint" android:layout_gravity="right|center" android:id="@id/hint" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_text_security" />
+    </FrameLayout>
+</com.miui.securitycenter.system.SystemListItemView>

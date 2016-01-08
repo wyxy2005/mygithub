@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View style="@style/style_patterns_sectionbar" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_online_status" style="@style/style_patterns_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="@string/setting_hide_title" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <com.immomo.momo.android.view.HandyTextView android:textColor="@color/blue" android:layout_gravity="center_vertical" android:id="@id/setting_tv_online_status" android:layout_marginRight="10.0dip" style="@style/Text_List_Desc" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/online_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_msg_notice" style="@style/style_patterns_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:layout_marginRight="10.0dip" android:text="消息提醒" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <com.immomo.momo.android.view.HandyTextView android:textColor="@color/blue" android:layout_gravity="center_vertical" android:id="@id/setting_tv_msgnotice_status" android:visibility="gone" android:layout_marginRight="10.0dip" android:text="关闭" style="@style/Text_List_Desc" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/online_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_chatbackground" style="@style/style_patterns_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="聊天背景" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/setting_tv_chatbackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/online_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View style="@style/style_patterns_sectionbar" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_updatepwd" style="@style/style_patterns_setting_item">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                        <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                            <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="修改密码" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                        </LinearLayout>
+                        <View style="@style/Line_Vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_blacklist" style="@style/style_patterns_setting_item">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                        <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                            <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="黑名单" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View style="@style/style_patterns_sectionbar" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_markfeedback" android:visibility="gone" style="@style/style_patterns_setting_item">
+                        <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                            <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                                <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="意见反馈" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                            </LinearLayout>
+                            <View style="@style/Line_Vertical" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_about" style="@style/style_patterns_setting_item">
+                        <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                            <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                                <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="陌陌帮助" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                            </LinearLayout>
+                            <View style="@style/Line_Vertical" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_logout" style="@style/style_patterns_setting_item">
+                        <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                            <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                                <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="退出陌陌" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

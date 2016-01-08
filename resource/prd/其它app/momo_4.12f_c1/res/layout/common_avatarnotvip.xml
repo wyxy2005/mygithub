@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/avatar_page" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/avatar_page_line1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/avatar_block0" android:layout_weight="1.0" layout="@layout/user_profile_avater_item" />
+        <include android:id="@id/avatar_block1" android:layout_weight="1.0" layout="@layout/user_profile_avater_item" />
+        <include android:id="@id/avatar_block2" android:layout_weight="1.0" layout="@layout/user_profile_avater_item" />
+        <include android:id="@id/avatar_block3" android:layout_weight="1.0" layout="@layout/user_profile_avater_item" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/avatar_page_line2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pic_item_margin">
+        <include android:id="@id/avatar_block4" android:layout_weight="1.0" layout="@layout/user_profile_avater_item" />
+        <include android:id="@id/avatar_block5" android:layout_weight="1.0" layout="@layout/user_profile_avater_item" />
+        <include android:id="@id/avatar_block6" android:layout_weight="1.0" layout="@layout/user_profile_avater_item" />
+        <include android:id="@id/avatar_block7" android:layout_weight="1.0" layout="@layout/user_profile_avater_item" />
+    </LinearLayout>
+</LinearLayout>

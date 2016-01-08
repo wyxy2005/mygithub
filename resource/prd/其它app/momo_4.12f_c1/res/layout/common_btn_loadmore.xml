@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/btn_layout_container" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:focusable="true" android:clickable="true" style="@style/Style_LoadMoreButton"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_iv_lefticon" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:scaleType="centerInside" />
+    <com.immomo.momo.android.view.HandyTextView android:textSize="13.0sp" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_tv_text" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <ImageView android:id="@id/btn_iv_righticon" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:scaleType="centerInside" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/profile_layout_bind_info" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/style_patterns_sectionbar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_bind" style="@style/style_patterns_setting_item">
+            <ImageView android:src="@drawable/ic_setting_8" style="@style/style_patterns_setting_item_icon" />
+            <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="账号绑定" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                        <com.immomo.momo.android.view.HandyTextView android:id="@id/setting_tv_sinaexpire" android:visibility="gone" android:text="新浪绑定已过期" style="@style/Text_Notice_Bubble" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/settingbind_layout_icons" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <View android:id="@id/settingbind_icon_sina" android:background="@drawable/ic_setting_weibo" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" />
+                            <View android:id="@id/settingbind_icon_txweibo" android:background="@drawable/ic_setting_tweibo" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" />
+                            <View android:id="@id/settingbind_icon_renren" android:background="@drawable/ic_setting_renren" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" />
+                            <View android:id="@id/settingbind_icon_phone" android:background="@drawable/ic_setting_phone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_accountgold" style="@style/style_patterns_setting_item">
+            <ImageView android:src="@drawable/ic_setting_1" style="@style/style_patterns_setting_item_icon" />
+            <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                    <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:text="账户充值" style="@style/Text_List_Title" />
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/tv_accountgold" android:layout_marginRight="10.0dip" android:layout_weight="1.0" style="@style/Text_List_Desc" />
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_vip" style="@style/style_patterns_setting_item">
+            <ImageView android:src="@drawable/ic_setting_2" style="@style/style_patterns_setting_item_icon" />
+            <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="会员中心" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                    <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:id="@id/tv_vipexpire" android:visibility="gone" android:layout_marginRight="20.0dip" android:text="即将到期" style="@style/Text_Notice_Bubble" />
+                    <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:id="@id/tv_vip_versionnewtag" android:visibility="gone" android:layout_marginRight="20.0dip" android:text="新" style="@style/Text_Notice_Bubble" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_shop" style="@style/style_patterns_setting_item">
+            <ImageView android:src="@drawable/ic_setting_3" style="@style/style_patterns_setting_item_icon" />
+            <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="表情商城" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                    <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:id="@id/setting_text_newemotion" android:visibility="gone" android:layout_marginRight="20.0dip" android:text="新" style="@style/Text_Notice_Bubble" />
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:background="@color/col_detail_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/todayImg" android:layout_width="284.0dip" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/todayBackImg" android:layout_width="284.0dip" android:layout_height="fill_parent" android:scaleType="center" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="left" android:layout_width="356.0dip" android:layout_height="fill_parent" android:layout_marginTop="?android:actionBarSize" android:layout_toLeftOf="@id/weatherInfosLayout" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/mainLayout" android:background="@drawable/detail_selector" android:focusable="true" android:layout_width="356.0dip" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_alignParentLeft="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                    <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/currentlocationicon" android:visibility="invisible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/widget_hero_ic_current_location" />
+                        <TextView android:textSize="21.0dip" android:textColor="@color/col_FFFFFF" android:gravity="left" android:id="@id/weather_city" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:shadowColor="@color/col_000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" />
+                    </FrameLayout>
+                    <TextView android:textSize="14.0dip" android:textColor="@color/col_FFFFFF" android:gravity="left" android:id="@id/detailstatetext" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/col_000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" />
+                    <TextView android:textSize="21.0dip" android:textColor="@color/col_FFFFFF" android:gravity="left" android:id="@id/date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/col_000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/today_weather" android:paddingTop="14.0dip" android:layout_width="80.0dip" android:layout_height="70.0dip" />
+                    <LinearLayout android:gravity="left" android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <TextView android:textSize="35.0dip" android:textColor="@color/col_FFFFFF" android:gravity="left" android:id="@id/current_temper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:shadowColor="@color/col_000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" />
+                        <ImageView android:id="@id/temper_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                        <TextView android:textSize="19.0dip" android:textColor="@color/col_FFFFFF" android:gravity="left" android:id="@id/detailnowhightemp" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:shadowColor="@color/col_000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" />
+                        <ImageView android:layout_gravity="bottom" android:id="@id/detail_today_hightemp_img" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/weather_2nd_depth_temperature" />
+                        <ImageView android:layout_gravity="bottom" android:id="@id/detail_today_temp_divider_img" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/weather_2nd_depth_temperature_divider" />
+                        <TextView android:textSize="19.0dip" android:textColor="@color/col_FFFFFF" android:gravity="left" android:id="@id/detatilnowlowtemp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:shadowColor="@color/col_000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" />
+                        <ImageView android:layout_gravity="bottom" android:id="@id/detail_today_lowtemp_img" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/weather_2nd_depth_temperature" />
+                    </LinearLayout>
+                    <TextView android:textSize="13.0dip" android:textColor="@color/col_FFFFFF" android:gravity="left" android:id="@id/weather_state" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:shadowColor="@color/col_000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/weatherInfosLayout" android:layout_width="341.0dip" android:layout_height="fill_parent" android:layout_marginTop="?android:actionBarSize" android:layout_marginRight="18.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="341.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/onedayofweek_select" android:background="@drawable/city_selector" android:paddingTop="16.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/col_585F64" android:id="@id/onedaytext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/col_677680" android:id="@id/onedaydatetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/twodayofweek_select" android:background="@drawable/city_selector" android:paddingTop="16.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/col_585F64" android:id="@id/twodaytext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/col_677680" android:id="@id/twodaydatetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/threedayofweek_select" android:background="@drawable/city_selector" android:paddingTop="16.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/col_585F64" android:id="@id/threedaytext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/col_677680" android:id="@id/threedaydatetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/fourdayofweek_select" android:background="@drawable/city_selector" android:paddingTop="16.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/col_585F64" android:id="@id/fourdaytext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/col_677680" android:id="@id/fourdaydatetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/fivedayofweek_select" android:background="@drawable/city_selector" android:paddingTop="16.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/col_585F64" android:id="@id/fivedaytext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/col_677680" android:id="@id/fivedaydatetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/sixdayofweek_select" android:background="@drawable/city_selector" android:paddingTop="16.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/col_585F64" android:id="@id/sixdaytext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <TextView android:textSize="11.0dip" android:textColor="@color/col_677680" android:id="@id/sixdaydatetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="right" android:id="@id/linegraph_box_layout" android:visibility="gone" android:layout_width="334.0dip" android:layout_height="155.0dip">
+                <LinearLayout android:id="@id/linegraph_box" android:background="@drawable/weather_graph_bg" android:layout_width="334.0dip" android:layout_height="155.0dip" />
+                <RelativeLayout android:gravity="center" android:id="@id/weather_back_left" android:background="@drawable/city_selector" android:focusable="true" android:layout_width="18.0dip" android:layout_height="155.0dip" android:layout_alignParentBottom="true" android:contentDescription="@string/table_button_tts">
+                    <ImageView android:id="@id/weather_back_left_icon" android:background="@drawable/btn_weather_backicon_02" android:layout_width="18.0dip" android:layout_height="18.0dip" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/weather_box_layout" android:background="@drawable/weather_box_bg" android:visibility="visible" android:layout_width="334.0dip" android:layout_height="155.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/oneday_select" android:background="@drawable/detail_city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/onedayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/onedayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/onedayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/onedayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/onedayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/onedaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/onedaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/twoday_select" android:background="@drawable/detail_city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/twodayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/twodayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/twodayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/twodayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/twodayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/twodaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/twodaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/threeday_select" android:background="@drawable/detail_city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/threedayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/threedayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/threedayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/threedayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/threedayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/threedaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/threedaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fourday_select" android:background="@drawable/detail_city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fourdayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/fourdayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fourdayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/fourdayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/fourdayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fourdaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/fourdaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fiveday_select" android:background="@drawable/detail_city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fivedayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/fivedayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fivedayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/fivedayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/fivedayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fivedaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/fivedaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sixday_select" android:background="@drawable/detail_city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sixdayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/sixdayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sixdayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/sixdayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/sixdayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sixdaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/sixdaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/nextcity_weatherInfosLayout" android:layout_width="341.0dip" android:layout_height="fill_parent" android:layout_marginTop="?android:actionBarSize" android:layout_marginRight="18.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <RelativeLayout android:gravity="right" android:id="@id/nextcity_linegraph_box_layout" android:visibility="gone" android:layout_width="334.0dip" android:layout_height="155.0dip" android:layout_marginTop="56.0dip">
+            <LinearLayout android:id="@id/nextcity_linegraph_box" android:background="@drawable/weather_graph_bg" android:layout_width="334.0dip" android:layout_height="155.0dip" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/nextcity_weather_box_layout" android:background="@drawable/weather_box_bg" android:visibility="visible" android:layout_width="334.0dip" android:layout_height="155.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_oneday_select" android:background="@drawable/city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_onedayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/nextcity_onedayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_onedayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/nextcity_onedayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/onedayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_onedaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/nextcity_onedaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_twoday_select" android:background="@drawable/city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_twodayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/nextcity_twodayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_twodayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/nextcity_twodayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/twodayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_twodaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/nextcity_twodaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_threeday_select" android:background="@drawable/city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_threedayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/nextcity_threedayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_threedayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/nextcity_threedayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/threedayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_threedaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/nextcity_threedaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_fourday_select" android:background="@drawable/city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_fourdayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/nextcity_fourdayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_fourdayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/nextcity_fourdayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/fourdayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_fourdaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/nextcity_fourdaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_fiveday_select" android:background="@drawable/city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_fivedayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/nextcity_fivedayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_fivedayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/nextcity_fivedayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/fivedayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_fivedaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/nextcity_fivedaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_sixday_select" android:background="@drawable/city_selector" android:paddingTop="10.0dip" android:focusable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_sixdayweatherimg_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/nextcity_sixdayweatherimg" android:visibility="visible" android:layout_width="55.0dip" android:layout_height="50.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="55.0dip" android:layout_height="65.0dip" android:layout_marginTop="12.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_sixdayhightemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_E85F29" android:id="@id/nextcity_sixdayhightemptext" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/sixdayhightempimg" android:background="@drawable/weather_temper_line" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nextcity_sixdaylowtemptext_l" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/col_1B80CE" android:id="@id/nextcity_sixdaylowtemptext" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/weather_back_right" android:background="@drawable/city_selector" android:focusable="true" android:layout_width="18.0dip" android:layout_height="157.0dip" android:layout_marginBottom="83.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/graph_button_tts">
+        <ImageView android:id="@id/weather_back_right_icon" android:background="@drawable/btn_weather_backicon_01" android:layout_width="18.0dip" android:layout_height="18.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="360.0dip" android:layout_height="40.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="34.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="360.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip">
+            <TextView android:textSize="19.0dip" android:textColor="@color/col_282828" android:ellipsize="marquee" android:gravity="center" android:id="@id/detailmorebt" android:background="@drawable/btn_main_b" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:focusable="true" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/more" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" android:marqueeRepeatLimit="0" />
+            <TextView android:textSize="19.0dip" android:textColor="@color/col_282828" android:ellipsize="marquee" android:gravity="center" android:id="@id/detailvideo" android:background="@drawable/btn_main_b" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:focusable="true" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/detail_video" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" android:marqueeRepeatLimit="0" />
+            <TextView android:textSize="19.0dip" android:textColor="@color/col_282828" android:ellipsize="marquee" android:gravity="center" android:id="@id/detailmapbt" android:background="@drawable/btn_main_b" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:focusable="true" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/weather_map" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" android:marqueeRepeatLimit="0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="left|center" android:background="@android:color/transparent" android:paddingRight="6.0dip" android:layout_width="360.0dip" android:layout_height="28.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/detail_logo" android:background="?android:selectableItemBackground" android:focusable="true" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/weather_cma_icon" android:layout_alignParentTop="true" android:contentDescription="@string/cma_logo" />
+        <ImageView android:id="@id/detailupdatebtn" android:background="@drawable/detail_selector" android:focusable="true" android:layout_width="23.0dip" android:layout_height="28.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/weather_update" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@string/refresh_button" />
+        <RelativeLayout android:layout_width="23.0dip" android:layout_height="28.0dip" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ProgressBar android:id="@id/detailupdateflipper" android:visibility="gone" android:drawingCacheQuality="high" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateBehavior="repeat" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:autoStart="true" style="?android:attr/progressBarStyleSmall" />
+        </RelativeLayout>
+        <TextView android:textSize="11.0dip" android:textColor="@color/col_9FA2A5" android:id="@id/detailupdatetext" android:background="@drawable/city_selector" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/detailupdatebtn" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

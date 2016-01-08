@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_bind" android:padding="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:textSize="16.0sp" android:layout_gravity="center_horizontal" android:id="@id/tv_bindinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="还没有绑定微博" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/btn_bind" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="立即绑定" style="@style/Style_SubmitButton" />
+    </LinearLayout>
+    <com.immomo.momo.android.view.MomoRefreshExpandableListView android:id="@id/listview_contact" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_transition" android:groupIndicator="@null" android:divider="@null" style="@style/Style_Scrollable" />
+</RelativeLayout>

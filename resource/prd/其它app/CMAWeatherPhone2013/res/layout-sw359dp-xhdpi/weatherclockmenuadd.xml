@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/col_detail_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_layout" android:background="@drawable/tw_ab_transparent_holo_light" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:singleLine="true" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <AutoCompleteTextView android:textSize="18.0dip" android:textColor="@drawable/searchfield_textcolor" android:gravity="center_vertical" android:id="@id/menu_add_search_edittext" android:background="@drawable/searchfield_box" android:paddingLeft="8.0dip" android:paddingRight="35.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:singleLine="true" android:includeFontPadding="false" android:maxLength="100" android:capitalize="sentences" android:completionThreshold="32" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:imeOptions="actionSearch|flagNoExtractUi" />
+            <LinearLayout android:id="@id/menu_add_search_layout" android:background="?android:selectableItemBackground" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/search_query_tts">
+                <ImageView android:id="@id/menu_add_search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tw_ic_search" />
+                <TextView android:textSize="18.0dip" android:gravity="center_vertical" android:id="@id/menu_add_search_text" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <ImageView android:id="@id/menu_add_clear_text" android:background="?android:selectableItemBackground" android:focusable="true" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="3.5dip" android:src="@drawable/tw_ic_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/clear_tts" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/gps_btn" android:background="@drawable/actionbar_btn_selector" android:focusable="true" android:layout_width="52.0dip" android:layout_height="56.0dip" android:layout_marginLeft="0.5dip" android:layout_centerVertical="true" android:contentDescription="@string/current_location_tts">
+            <ImageView android:duplicateParentState="true" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/location_icon_button" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/tw_divider_ab_holo_light" android:layout_width="1.0dip" android:layout_height="30.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/map_btn" android:background="@drawable/actionbar_btn_selector" android:focusable="true" android:layout_width="52.0dip" android:layout_height="56.0dip" android:layout_centerVertical="true" android:contentDescription="@string/weather_map_tts">
+            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_icon_button" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_layout" android:layout_centerHorizontal="true">
+        <com.sec.android.widgetapp.ap.hero.cmaweather.view.TouchListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@drawable/tw_list_divider_holo_light" android:dividerHeight="1.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@id/nosearch" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

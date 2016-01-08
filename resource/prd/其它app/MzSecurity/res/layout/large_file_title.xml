@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/actionbar_padding_left" android:paddingEnd="@dimen/actionbar_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <com.meizu.common.widget.SelectionButton android:id="@id/action_selectAll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
+</RelativeLayout>

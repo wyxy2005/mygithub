@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<favorites
+  xmlns:launcher="http://schemas.android.com/apk/res/com.nd.android.ilauncher">
+    <pandawidget launcher:uri="-1001" />
+    <pandawidget launcher:uri="-1002" />
+    <pandawidget launcher:uri="-1003" />
+    <pandawidget launcher:uri="-1004" />
+    <dock_shortcut launcher:screen="0" launcher:x="0" launcher:y="0" launcher:icon="@drawable/com_android_contacts_com_android_contacts_dialtactsactivity" launcher:title="@string/dockname_dial" launcher:uri="\#Intent;action=android.intent.action.DIAL;launchFlags=0x10000000;component=com.nd.android.ilauncher/.activity.dialog.AppResolverSelectActivity;B.is_always_select=false;end" />
+    <dock_shortcut launcher:screen="0" launcher:x="1" launcher:y="0" launcher:icon="@drawable/com_android_contacts_com_android_contacts_dialtactscontactsentryactivity" launcher:title="@string/dockname_contacts" launcher:uri="content://com.android.contacts/contacts#Intent;action=android.intent.action.VIEW;launchFlags=0x10000000;component=com.nd.android.ilauncher/.activity.dialog.AppResolverSelectActivity;B.is_always_select=false;end" />
+    <dock_shortcut launcher:screen="0" launcher:x="2" launcher:y="0" launcher:icon="@drawable/com_android_mms_com_android_mms_ui_conversationlist" launcher:title="@string/dockname_sms" launcher:uri="content://mms-sms/#Intent;action=android.intent.action.MAIN;launchFlags=0x10000000;component=com.nd.android.ilauncher/.activity.dialog.AppResolverSelectActivity;B.is_always_select=false;end" />
+    <dock_shortcut launcher:screen="0" launcher:x="3" launcher:y="0" launcher:icon="@drawable/com_android_browser_com_android_browser_browseractivity" launcher:title="@string/dockname_browser" launcher:uri="http://www.google.com#Intent;action=android.intent.action.VIEW;launchFlags=0x10000000;component=com.nd.android.ilauncher/.activity.dialog.AppResolverSelectActivity;B.is_always_select=false;end" />
+</favorites>

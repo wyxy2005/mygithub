@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.powercenter.PowerCenterDeleteButton android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/delete_button_padding" android:paddingTop="@dimen/delete_button_padding_top" android:paddingRight="@dimen/delete_button_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button_delete" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" style="@miui:style/Widget.Button.Negative" />
+    </LinearLayout>
+</com.miui.powercenter.PowerCenterDeleteButton>

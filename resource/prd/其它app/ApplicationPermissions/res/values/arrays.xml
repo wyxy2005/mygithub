@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="warning_mode_setting_entries">
+        <item>Always</item>
+        <item>Once</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="warning_mode_setting_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+</resources>

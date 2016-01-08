@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.powercenter.BrightnessView android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@269090833" android:layout_marginBottom="@269090833"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@268566567" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/power_dialog_screen_brightness_automatic" android:layout_weight="1.0" />
+        <miui.widget.SlidingButton android:id="@id/automatic_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:background="@268566567" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <SeekBar android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/adjust_summary_container" android:background="@268566567" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/adjust_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/power_dialog_screen_brightness_automatic_off" style="@miui:style/TextAppearance.PreferenceCategory" />
+    </LinearLayout>
+</com.miui.powercenter.BrightnessView>

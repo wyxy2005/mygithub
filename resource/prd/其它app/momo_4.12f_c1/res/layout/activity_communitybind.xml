@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/communitybind_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/ic_setting_bind_intro_weibo" />
+            <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_content" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/communitybind_txt_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="绑定后查看微博好友，从此不再孤单" />
+            <TextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_desc" android:layout_gravity="center_horizontal" android:id="@id/communitybind_txt_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/communitybind_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="立即绑定" style="@style/Style_SubmitButton" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

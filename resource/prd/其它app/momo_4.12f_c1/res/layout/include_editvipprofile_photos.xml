@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:background="@drawable/ic_profile_edit_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0dip" android:textColor="#9cffffff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击更换\n背景图片" android:shadowColor="#4c000000" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="2.0" android:lineSpacingExtra="5.0dip" />
+    </LinearLayout>
+    <include layout="@layout/include_vipprofile_photos" />
+</RelativeLayout>

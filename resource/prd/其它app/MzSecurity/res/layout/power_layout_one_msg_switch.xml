@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/settings_single_line_height" android:minHeight="@dimen/settings_single_line_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/settings_single_line_height" android:layout_marginLeft="@dimen/listview_item_padding_left" android:layout_marginRight="@dimen/listview_item_padding_left">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/applist_item_title_text_height" android:id="@id/mzs_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" />
+        <com.meizu.common.widget.Switch android:layout_gravity="right" android:id="@id/mzs_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/h_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/listview_line_padding_left" android:layout_marginRight="@dimen/listview_line_padding_left" android:src="@color/color_black" android:layout_alignParentBottom="true" android:alpha="0.2" />
+</RelativeLayout>

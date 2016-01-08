@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff3b3b3b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/editaudio_layout_recodecontainer" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginBottom="10.0dip">
+                <ImageView android:id="@id/editaudio_iv_playanimation" android:background="@drawable/bg_audio_record_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/editaudio_iv_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_audio_play" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/white" android:id="@id/editaudio_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/editaudio_layout_emptyview" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:src="@drawable/ic_audiodesc_empty" />
+                <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员可添加" />
+                <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最长60秒的语音介绍" />
+            </LinearLayout>
+            <Button android:id="@id/editaudio_btn_save" android:layout_width="100.0dip" android:layout_height="37.0dip" android:layout_marginTop="10.0dip" android:text="保存" style="@style/Style_SubmitButton" />
+            <Button android:id="@id/editaudio_btn_clear" android:layout_width="100.0dip" android:layout_height="37.0dip" android:layout_marginTop="10.0dip" android:text="清除" style="@style/IgnoreButton" />
+        </LinearLayout>
+        <RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="@dimen/message_editor_hight">
+            <com.immomo.momo.android.view.CustomLongClickImageButton android:id="@id/editaudio_layout_audiocontainer" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/editaudio_ib_audiorecord" android:background="@drawable/ic_chatbar_audiobtn_normal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="2.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_wifi" />
+                <TextView android:textSize="@dimen/text_view_content" android:textColor="#ff86909f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="按住录制" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

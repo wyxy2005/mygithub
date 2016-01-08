@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/dialog_backgroud_full" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/background_normal_press" android:layout_width="fill_parent" android:layout_height="300.0dip">
+        <ListView android:id="@id/listview" android:layout_width="0.0dip" android:layout_height="wrap_content" android:divider="@color/devideline" android:dividerHeight="1.0px" android:layout_weight="1.0" style="@style/Style_Scrollable" />
+        <View android:background="@color/devideline" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <ListView android:id="@id/listview_sub" android:layout_width="0.0dip" android:layout_height="wrap_content" android:divider="@color/devideline" android:dividerHeight="1.0px" android:layout_weight="1.0" style="@style/Style_Scrollable" />
+    </LinearLayout>
+</LinearLayout>

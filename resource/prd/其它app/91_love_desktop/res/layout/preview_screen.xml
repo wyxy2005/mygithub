@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nd.android.ilauncher.multitouch.view.PreviewCellLayout android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:cellWidth="110.0dip" launcher:cellHeight="160.0dip" launcher:longAxisStartPadding="0.0dip" launcher:longAxisEndPadding="0.0dip" launcher:shortAxisStartPadding="0.0dip" launcher:shortAxisEndPadding="0.0dip" launcher:shortAxisCells="3" launcher:longAxisCells="3"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.nd.android.ilauncher" />

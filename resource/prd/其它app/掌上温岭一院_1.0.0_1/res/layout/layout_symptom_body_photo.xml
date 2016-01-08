@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="45.0dip">
+        <ImageView android:id="@id/symptom_photo_rear" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/symptom_photo_front" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ffd3951d" android:gravity="left|center" android:background="@drawable/bg_floor_text_desc" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/symptom_tips" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="65.0dip">
+        <RadioButton android:gravity="center" android:id="@id/symptom_sex" android:background="@drawable/btn_small_button" android:layout_width="@dimen/symptom_sex_width" android:layout_height="@dimen/symptom_sex_height" android:button="@null" android:drawableTop="@drawable/btn_symptom_sex_selector" />
+        <Button android:textSize="@dimen/large_text_size" android:textColor="#ff72c55e" android:gravity="center" android:id="@id/symptom_age" android:background="@drawable/btn_small_button" android:paddingRight="8.0dip" android:layout_width="@dimen/symptom_sex_width" android:layout_height="@dimen/symptom_sex_height" android:layout_marginTop="16.0dip" android:drawableRight="@drawable/bg_down_arror" />
+    </LinearLayout>
+    <Button android:layout_gravity="bottom|left|center" android:id="@id/symptom_body_flip" android:background="@drawable/btn_rotate_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginBottom="16.0dip" />
+</FrameLayout>

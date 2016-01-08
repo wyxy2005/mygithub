@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_top_unselect" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="@dimen/margins" android:layout_marginRight="@dimen/margins" style="@style/ListItem">
+                <EditText android:id="@id/user_phone" android:hint="@string/user_phone" android:singleLine="true" android:inputType="phone" style="@style/EditText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_center_unselect" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins" style="@style/ListItem">
+                <EditText android:id="@id/user_pass" android:hint="@string/user_new_pass" android:singleLine="true" android:inputType="textPassword" style="@style/EditText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_center_unselect" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins" style="@style/ListItem">
+                <EditText android:id="@id/user_config_pass" android:hint="@string/user_config_pass" android:singleLine="true" android:inputType="textPassword" style="@style/EditText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_center_unselect" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins" style="@style/ListItem">
+                <EditText android:layout_gravity="center_vertical" android:id="@id/user_ver" android:layout_width="0.0dip" android:hint="@string/user_ver" android:singleLine="true" android:layout_weight="1.0" android:inputType="numberSigned" style="@style/EditText" />
+                <Button android:textSize="@dimen/basic_text_size" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/user_config_num" android:background="@drawable/color_type_button_left_corners" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:minWidth="96.0dip" android:minHeight="32.0dip" android:text="@string/user_ver_tip" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_type_home_header" android:gravity="right" android:id="@id/user_register_law" android:paddingLeft="@dimen/margins" android:paddingTop="@dimen/margins" android:paddingRight="@dimen/margins" android:paddingBottom="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/user_register_law" />
+            <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/submit" android:background="@drawable/color_type_button_left_corners" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins" android:text="@string/user_register" style="@style/ListItem" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

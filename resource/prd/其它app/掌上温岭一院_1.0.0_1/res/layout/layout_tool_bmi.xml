@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_list_one_unselect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margins" style="@style/ListItem">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_bmi_high" />
+        <EditText android:id="@id/tool_bmi_edt_high" android:background="@null" android:paddingLeft="@dimen/margins_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="number" />
+        <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_bmi_cm" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_list_one_unselect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margins" style="@style/ListItem">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_bmi_weight" />
+        <EditText android:id="@id/tool_bmi_edt_weight" android:background="@null" android:paddingLeft="@dimen/margins_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="number" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_bmi_kg" />
+    </LinearLayout>
+    <Button android:textColor="@color/white" android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margins" android:text="@string/tool_btn_test" style="@style/LeftButton" />
+</LinearLayout>

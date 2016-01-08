@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:id="@id/setpwd_et_pwd_old" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:hint="@string/setpwd_old" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionNext" style="@style/EditTextStyle" />
+                <EditText android:id="@id/setpwd_et_pwd_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:hint="@string/setpwd_new" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionNext" style="@style/EditTextStyle" />
+                <EditText android:id="@id/setpwd_et_pwd_new_confim" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:hint="@string/setpwd_confim" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionDone" style="@style/EditTextStyle" />
+                <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_color_selector_default" android:id="@id/login_tv_forgotpassword" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/forgetpassword" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout style="@style/Style_BottomBar">
+            <Button android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="@string/back" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+            <Button android:id="@id/btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/update" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

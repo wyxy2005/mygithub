@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.widgetapp.ap.hero.cmaweather.view.TouchListView android:id="@android:id/list" android:focusable="true" android:nextFocusDown="@id/deletebutton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.sec.android.widgetapp.ap.hero.cmaweather.tw.TwSoftkeyView android:layout_width="fill_parent" android:layout_height="60.0dip"
+      xmlns:weather="http://schemas.android.com/apk/res/com.sec.android.widgetapp.ap.hero.cmaweather">
+        <com.sec.android.widgetapp.ap.hero.cmaweather.tw.TwSoftkeyItem android:id="@id/deletebutton" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" weather:twSoftkeyItemType="text" weather:twSoftkeyItemText="@string/menu_delete_title" />
+        <com.sec.android.widgetapp.ap.hero.cmaweather.tw.TwSoftkeyItem android:textColor="@color/tw_textappearance_softkey" android:id="@id/deletecancelbutton" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" weather:twSoftkeyItemType="text" weather:twSoftkeyItemText="@string/dialog_cancel_button" />
+    </com.sec.android.widgetapp.ap.hero.cmaweather.tw.TwSoftkeyView>
+</LinearLayout>

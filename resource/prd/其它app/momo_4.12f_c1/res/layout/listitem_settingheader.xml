@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/style_patterns_sectionbar_title_bg">
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/membercener_item_tv_header" style="@style/style_patterns_sectionbar_title_text" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_vip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" style="@style/style_patterns_setting_item">
+            <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                    <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:text="会员状态" style="@style/Text_List_Title" />
+                    <com.immomo.momo.android.view.ScrollingTextView android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/tv_member_status" android:layout_weight="1.0" style="@style/Text_List_Desc" />
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/style_patterns_setting_item">
+            <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                    <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:text="到期时间" style="@style/Text_List_Title" />
+                    <com.immomo.momo.android.view.ScrollingTextView android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/tv_expiredtime" android:layout_weight="1.0" style="@style/Text_List_Desc" />
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_accountgold" style="@style/style_patterns_setting_item">
+            <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                    <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:text="会员热线" style="@style/Text_List_Title" />
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="right" android:layout_gravity="center_vertical" android:text="010-56693000" android:layout_weight="1.0" style="@style/Text_List_Desc" />
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_sub" style="@style/style_patterns_setting_item">
+            <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                    <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:text="自动续费" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

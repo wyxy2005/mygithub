@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margins">
+            <TextView android:textSize="@dimen/larger_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_heptitesb_title_header" />
+            <TextView android:textSize="@dimen/basic_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margins_small" android:text="@string/tool_heptitesb_choice_1" />
+            <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/tool_heptitesb_rg_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/smaller_text_size">
+                <RadioButton android:background="@drawable/btn_left_yigan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+                <RadioButton android:background="@drawable/btn_right_yigan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            </RadioGroup>
+            <TextView android:textSize="@dimen/basic_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_heptitesb_choice_2" />
+            <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/tool_heptitesb_rg_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/smaller_text_size">
+                <RadioButton android:background="@drawable/btn_left_yigan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+                <RadioButton android:background="@drawable/btn_right_yigan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            </RadioGroup>
+            <TextView android:textSize="@dimen/basic_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_heptitesb_choice_3" />
+            <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/tool_heptitesb_rg_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/smaller_text_size">
+                <RadioButton android:background="@drawable/btn_left_yigan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+                <RadioButton android:background="@drawable/btn_right_yigan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            </RadioGroup>
+            <TextView android:textSize="@dimen/basic_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_heptitesb_choice_4" />
+            <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/tool_heptitesb_rg_d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/smaller_text_size">
+                <RadioButton android:background="@drawable/btn_left_yigan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+                <RadioButton android:background="@drawable/btn_right_yigan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            </RadioGroup>
+            <TextView android:textSize="@dimen/basic_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_heptitesb_choice_5" />
+            <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/tool_heptitesb_rg_e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/smaller_text_size">
+                <RadioButton android:background="@drawable/btn_left_yigan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+                <RadioButton android:background="@drawable/btn_right_yigan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            </RadioGroup>
+            <Button android:textColor="@color/white" android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tool_btn_test" style="@style/LeftButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

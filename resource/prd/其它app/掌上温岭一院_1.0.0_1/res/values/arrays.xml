@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drug_category">
+        <item>常用药物</item>
+        <item>药物分类</item>
+        <item>用药须知</item>
+        <item>抢救药物</item>
+    </string-array>
+    <string-array name="disease_category">
+        <item>常见疾病</item>
+        <item>按部位查询</item>
+        <item>按字母查询</item>
+        <item>按科室查询</item>
+    </string-array>
+    <integer-array name="article_category_type">
+        <item>2</item>
+        <item>97</item>
+        <item>83</item>
+        <item>84</item>
+        <item>89</item>
+        <item>96</item>
+        <item>85</item>
+        <item>87</item>
+    </integer-array>
+    <string-array name="article_category_text">
+        <item>健康专题</item>
+        <item>疾病防治</item>
+        <item>热点新闻</item>
+        <item>饮食保健</item>
+        <item>健身美容</item>
+        <item>妇婴保健</item>
+        <item>中医中药</item>
+        <item>心理健康</item>
+    </string-array>
+    <integer-array name="health_padia_category_type">
+        <item>2</item>
+        <item>97</item>
+        <item>83</item>
+        <item>84</item>
+        <item>89</item>
+        <item>96</item>
+    </integer-array>
+    <string-array name="health_padia_category_text">
+        <item>疾病库</item>
+        <item>药物库</item>
+        <item>急救库</item>
+        <item>化验单解读</item>
+        <item>健康小工具</item>
+        <item>预防接种</item>
+    </string-array>
+    <string-array name="call_number_text">
+        <item>全部开诊信息</item>
+        <item>普通门诊</item>
+        <item>专家门诊</item>
+        <item>特需门诊</item>
+    </string-array>
+    <array name="health_padia_category_image">
+        <item>@drawable/ico_baike_category_1</item>
+        <item>@drawable/ico_baike_category_2</item>
+        <item>@drawable/ico_baike_category_3</item>
+        <item>@drawable/ico_baike_category_4</item>
+        <item>@drawable/ico_baike_category_5</item>
+        <item>@drawable/ico_baike_category_6</item>
+    </array>
+    <string-array name="vaccine_note_title">
+        <item>疫苗接种前注意事项</item>
+        <item>精心呵护接种疫苗后的宝宝</item>
+        <item>疫苗接种常见问题</item>
+    </string-array>
+    <string-array name="vaccine_note_content">
+        <item>"·接种疫苗前一周要精心照顾宝宝，减少感冒等不适的症状。
+
+·如宝宝有不适症状，等康复后再接种疫苗。
+
+·接种疫苗前对医生如实回答宝宝的情况。
+
+·接种脊灰糖丸(脊髓灰质炎减毒活疫苗糖丸)前半小时内不能吃奶、喝热水。"</item>
+        <item>"·接种后在医院或防疫站观察15~30分钟。
+
+·注射疫苗当天不要洗澡。
+
+·疫苗都有抗原，要预防宝宝发烧，给宝宝多喝白开水。
+
+·一些加入吸附剂的疫苗容易出现红肿、发热、疼痛等症状。家长可用热毛巾对红肿的地方进行热敷。
+
+·接种脊灰糖丸(脊髓灰质炎减毒活疫苗糖丸)后半小时内不能吃奶、喝热水。
+
+·密切关注宝宝，看有无异常发烧，注射地方有无异常反应。"</item>
+        <item>"Ｑ：打了预防针就百分百保险吗？
+
+Ａ：目前没有一种疫苗是百分之百有效的，绝大多数疫苗的有效率在95%以上，但支气管肺炎疫苗的有效率较低，大约为70–80%%。
+
+Ｑ：是不是打预防针越多越好呢？
+
+Ａ：不是。疫苗是用病菌、病毒及其产生的毒素制成的，虽然经过杀灭和减毒等特殊处理，但仍会有一定毒性，接种后可能发生一些过敏反应，轻者出现皮疹，重者发生休克。这种过敏反应的发生往往随着打针次数的增加而增多。
+
+Ｑ：国内疫苗和进口疫苗有什么区别？
+
+Ａ：国产、进口疫苗价格上的差异在于疫苗毒株及其培养工艺不同，都通过了国家卫生部门严格检查，生产线按照GMP要求，由国家药监局批准生产。可以根据自己的经济承受能力选择使用。
+
+Ｑ：注射疫苗的时间内宝宝生病了怎么办？还能打疫苗吗？
+
+Ａ：等宝宝病好后可以继续接种。因为接种疫苗时间间隔２８～５６天属于正常接种范围，可正常继续接种。
+
+Ｑ：怎么才知道预防接种后有没有产生抗体？
+
+Ａ：一般由各地疾病控制中心定期或隔几年抽出一部分已经接种过疫苗的人，按年龄组分别来进行复查。"</item>
+    </string-array>
+    <string-array name="symptom_ages">
+        <item>16岁</item>
+        <item>17岁</item>
+        <item>18岁</item>
+        <item>19岁</item>
+        <item>20岁</item>
+        <item>21岁</item>
+        <item>22岁</item>
+        <item>23岁</item>
+        <item>24岁</item>
+        <item>25岁</item>
+        <item>26岁</item>
+        <item>27岁</item>
+        <item>28岁</item>
+        <item>29岁</item>
+        <item>30岁</item>
+        <item>31岁</item>
+        <item>32岁</item>
+        <item>33岁</item>
+        <item>34岁</item>
+        <item>35岁</item>
+        <item>36岁</item>
+        <item>37岁</item>
+        <item>38岁</item>
+        <item>39岁</item>
+        <item>40岁</item>
+        <item>41岁</item>
+        <item>42岁</item>
+        <item>43岁</item>
+        <item>44岁</item>
+        <item>45岁</item>
+        <item>46岁</item>
+        <item>47岁</item>
+        <item>48岁</item>
+        <item>49岁</item>
+        <item>50岁</item>
+        <item>51岁</item>
+        <item>52岁</item>
+        <item>53岁</item>
+        <item>54岁</item>
+        <item>55岁</item>
+        <item>56岁</item>
+        <item>57岁</item>
+        <item>58岁</item>
+        <item>59岁</item>
+        <item>60岁</item>
+        <item>61岁</item>
+        <item>62岁</item>
+        <item>63岁</item>
+        <item>64岁</item>
+        <item>65岁</item>
+        <item>66岁</item>
+        <item>67岁</item>
+        <item>68岁</item>
+        <item>69岁</item>
+        <item>70岁</item>
+        <item>71岁</item>
+        <item>72岁</item>
+        <item>73岁</item>
+        <item>74岁</item>
+        <item>75岁</item>
+        <item>76岁</item>
+        <item>77岁</item>
+        <item>78岁</item>
+        <item>79岁</item>
+        <item>80岁</item>
+        <item>81岁</item>
+        <item>82岁</item>
+        <item>83岁</item>
+        <item>84岁</item>
+        <item>85岁</item>
+        <item>86岁</item>
+        <item>87岁</item>
+        <item>88岁</item>
+        <item>89岁</item>
+        <item>90岁</item>
+        <item>91岁</item>
+        <item>92岁</item>
+        <item>93岁</item>
+        <item>94岁</item>
+        <item>95岁</item>
+        <item>96岁</item>
+        <item>97岁</item>
+        <item>98岁</item>
+        <item>99岁</item>
+        <item>100岁</item>
+        <item>101岁</item>
+        <item>102岁</item>
+        <item>103岁</item>
+        <item>104岁</item>
+        <item>105岁</item>
+        <item>106岁</item>
+        <item>107岁</item>
+        <item>108岁</item>
+        <item>109岁</item>
+        <item>110岁</item>
+        <item>111岁</item>
+        <item>112岁</item>
+        <item>113岁</item>
+        <item>114岁</item>
+        <item>115岁</item>
+        <item>116岁</item>
+        <item>117岁</item>
+        <item>118岁</item>
+        <item>119岁</item>
+    </string-array>
+    <string-array name="tool_heptitesb_result">
+        <item>您好，经过测试您目前暂无病毒感染的证据。</item>
+        <item>您好！检验结果说明您可能是：1.既往感染未能测出抗-HBs；2.恢复期HBsAg已消，抗-HBs尚未出现；3.无症状HBsAg携带者。</item>
+        <item>您好！检验结果说明您可能是：1.既往感染过HBV； 2.急性HBV感染恢复期。</item>
+        <item>您好！检验结果说明您可能是：1.急性HBV感染；2.慢性HBsAg携带者，传染性弱</item>
+        <item>您好！检验结果说明您可能是：1.既往感染，仍有免疫力；2.HBV感染恢复阶段</item>
+        <item>您好！检验结果说明您可能是：1.急性HBV感染早期；2.慢性HBV携带者，传染性弱</item>
+        <item>您好！检验结果说明您可能是：1.慢性HBsAg携带者；2.急性HBV感染趋向恢复。</item>
+        <item>您好！检验结果说明您可能是：1.急性HBV感染趋向恢复；2.慢性携带者。</item>
+        <item>您好！检验结果说明您可能是：1.亚临床型HBV感染早期；2.不同亚型HBV二次感染。</item>
+        <item>您好！检验结果说明您可能是：1.非典型性HBV急性感染；2.抗-HBc出现之前的感染早期，HBsAg滴度低而呈阴性，或呈假阳性。</item>
+        <item>您好！检验结果说明您的状况目前处在：曾感染过HBV病毒目前已痊愈，或近期成功接种乙肝疫苗。</item>
+        <item>您好！检验结果说明您的状况目前处在：急性HBV感染恢复阶段。</item>
+        <item>您好！检验结果说明您目前是“小三阳”患者，可为：1.急性HBV感染趋向恢复；2.慢性HBsAg携带者。传染性弱。</item>
+        <item>好！检验结果说明您目前是“大三阳”患者！急性乙肝或是慢性乙型肝炎病毒复制期。传染性强。请及时就医！</item>
+        <item>您好！检验结果说明您的状况目前处在：急性HBV感染早期或慢性携带者。传染性强。</item>
+        <item>您好！检验结果说明您的状况目前处在：亚临床型或非典型性HBV感染。</item>
+        <item>您好！检验结果说明您的状况目前处在：亚临床型或非典型性HBV感染早期。</item>
+        <item>您好！检验结果说明您的状况目前处在：非典型性HBV急性感染。</item>
+        <item>您好！检验结果说明您的状况目前处在：急性HBV感染中期。</item>
+        <item>您好！检验结果说明您的状况目前处在：HBV感染后已恢复。</item>
+        <item>您好！检验结果说明您的状况目前处在：急性HBV感染趋向恢复。</item>
+    </string-array>
+</resources>

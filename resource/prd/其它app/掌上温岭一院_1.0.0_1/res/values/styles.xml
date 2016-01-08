@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="progress">0</item>
+        <item name="max">100</item>
+        <item name="progress_unreached_color">#ffcccccc</item>
+        <item name="progress_reached_color">#ff3498db</item>
+        <item name="progress_reached_bar_height">1.5dip</item>
+        <item name="progress_unreached_bar_height">0.75dip</item>
+        <item name="progress_text_size">10.0sp</item>
+        <item name="progress_text_color">#ff3498db</item>
+    </style>
+    <style name="NumberProgressBar_Passing_Green">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="progress">0</item>
+        <item name="max">100</item>
+        <item name="progress_unreached_color">#ffcccccc</item>
+        <item name="progress_reached_color">#ff70a800</item>
+        <item name="progress_reached_bar_height">1.5dip</item>
+        <item name="progress_unreached_bar_height">0.75dip</item>
+        <item name="progress_text_size">10.0sp</item>
+        <item name="progress_text_color">#ff70a800</item>
+    </style>
+    <style name="NumberProgressBar_Beauty_Red">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="progress">0</item>
+        <item name="max">100</item>
+        <item name="progress_unreached_color">#ffcccccc</item>
+        <item name="progress_reached_color">#ffff3d7f</item>
+        <item name="progress_reached_bar_height">1.5dip</item>
+        <item name="progress_unreached_bar_height">0.75dip</item>
+        <item name="progress_text_size">10.0sp</item>
+        <item name="progress_text_color">#ffff3d7f</item>
+    </style>
+    <style name="NumberProgressBar_Warning_Red">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="progress">0</item>
+        <item name="max">100</item>
+        <item name="progress_unreached_color">#ffcccccc</item>
+        <item name="progress_reached_color">#ffe74c3c</item>
+        <item name="progress_reached_bar_height">1.5dip</item>
+        <item name="progress_unreached_bar_height">0.75dip</item>
+        <item name="progress_text_size">10.0sp</item>
+        <item name="progress_text_color">#ffe74c3c</item>
+    </style>
+    <style name="NumberProgressBar_Relax_Blue">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="progress">0</item>
+        <item name="max">100</item>
+        <item name="progress_unreached_color">#ffcccccc</item>
+        <item name="progress_reached_color">#ff6dbcdb</item>
+        <item name="progress_reached_bar_height">1.5dip</item>
+        <item name="progress_unreached_bar_height">0.75dip</item>
+        <item name="progress_text_size">10.0sp</item>
+        <item name="progress_text_color">#ff6dbcdb</item>
+    </style>
+    <style name="NumberProgressBar_Grace_Yellow">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="progress">0</item>
+        <item name="max">100</item>
+        <item name="progress_unreached_color">#ffcccccc</item>
+        <item name="progress_reached_color">#ffffc73b</item>
+        <item name="progress_reached_bar_height">1.5dip</item>
+        <item name="progress_unreached_bar_height">0.75dip</item>
+        <item name="progress_text_size">10.0sp</item>
+        <item name="progress_text_color">#ffffc73b</item>
+    </style>
+    <style name="NumberProgressBar_Funny_Orange">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="progress">0</item>
+        <item name="max">100</item>
+        <item name="progress_unreached_color">#ffcccccc</item>
+        <item name="progress_reached_color">#ffff530d</item>
+        <item name="progress_reached_bar_height">1.5dip</item>
+        <item name="progress_unreached_bar_height">0.75dip</item>
+        <item name="progress_text_size">10.0sp</item>
+        <item name="progress_text_color">#ffff530d</item>
+    </style>
+    <style name="NumberProgressBar_Twinkle_Night">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="progress">0</item>
+        <item name="max">100</item>
+        <item name="progress_unreached_color">#ffcccccc</item>
+        <item name="progress_reached_color">#ffecf0f1</item>
+        <item name="progress_reached_bar_height">1.5dip</item>
+        <item name="progress_unreached_bar_height">0.75dip</item>
+        <item name="progress_text_size">10.0sp</item>
+        <item name="progress_text_color">#ffecf0f1</item>
+    </style>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar" />
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+    <style name="loading.dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/bg_loading</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@drawable/bg_trans</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="SubtitleText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/article_sub_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ListSubtitleText" parent="@style/SubtitleText" />
+    <style name="Spinner">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDuration">2000</item>
+    </style>
+    <style name="ListSpinner" parent="@style/Spinner">
+        <item name="android:layout_width">64.0dip</item>
+        <item name="android:layout_height">64.0dip</item>
+    </style>
+    <style name="LeftButton">
+        <item name="android:background">@drawable/color_type_button_left</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="RightButton">
+        <item name="android:background">@drawable/color_type_button_right</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="LoginButton">
+        <item name="android:background">@drawable/color_type_button_right</item>
+        <item name="android:minWidth">72.0dip</item>
+        <item name="android:minHeight">32.0dip</item>
+    </style>
+    <style name="LoginButton.Submit" parent="@style/LoginButton">
+        <item name="android:layout_marginLeft">@dimen/margins</item>
+        <item name="android:layout_marginRight">@dimen/margins</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="LogoutButton">
+        <item name="android:background">@drawable/color_type_button_logout</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="ListItem">
+        <item name="android:textSize">@dimen/xlarge_text_size</item>
+        <item name="android:textColor">@color/checkbox_uncheck</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">52.0dip</item>
+    </style>
+    <style name="ListItem.Arrow" parent="@style/ListItem">
+        <item name="android:paddingLeft">@dimen/margins</item>
+        <item name="android:paddingRight">@dimen/margins</item>
+        <item name="android:layout_marginLeft">@dimen/margins</item>
+        <item name="android:layout_marginRight">@dimen/margins</item>
+        <item name="android:drawableRight">@drawable/ico_list_item</item>
+    </style>
+    <style name="EditText">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/checkbox_uncheck</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">@dimen/margins</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">@dimen/margins</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">0.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="HomeTitleText">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="Ico">
+        <item name="android:textSize">32.0sp</item>
+        <item name="android:textColor">@color/color_type_home_header</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margins</item>
+        <item name="android:paddingTop">@dimen/margins</item>
+        <item name="android:paddingRight">@dimen/margins</item>
+        <item name="android:paddingBottom">@dimen/margins</item>
+        <item name="android:singleLine">true</item>
+        <item name="font">icomoon.ttf</item>
+    </style>
+    <style name="HomeSubText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">#ffacacac</item>
+    </style>
+    <style name="HomeImage_1" parent="@style/Ico">
+        <item name="android:text">@string/ico_home_register</item>
+    </style>
+    <style name="HomeTitleText_1" parent="@style/HomeTitleText">
+        <item name="android:text">@string/home_item_1_text</item>
+    </style>
+    <style name="HomeSubText_1" parent="@style/HomeSubText">
+        <item name="android:text">@string/home_item_sub_1_text</item>
+    </style>
+    <style name="HomeImage_2" parent="@style/Ico">
+        <item name="android:text">@string/ico_home_report</item>
+    </style>
+    <style name="HomeTitleText_2" parent="@style/HomeTitleText">
+        <item name="android:text">@string/home_item_2_text</item>
+    </style>
+    <style name="HomeSubText_2" parent="@style/HomeSubText">
+        <item name="android:text">@string/home_item_sub_2_text</item>
+    </style>
+    <style name="HomeImage_3" parent="@style/Ico">
+        <item name="android:text">@string/ico_home_symptom</item>
+    </style>
+    <style name="HomeTitleText_3" parent="@style/HomeTitleText">
+        <item name="android:text">@string/home_item_3_text</item>
+    </style>
+    <style name="HomeSubText_3" parent="@style/HomeSubText">
+        <item name="android:text">@string/home_item_sub_3_text</item>
+    </style>
+    <style name="HomeImage_4" parent="@style/Ico">
+        <item name="android:text">@string/ico_home_online</item>
+    </style>
+    <style name="HomeTitleText_4" parent="@style/HomeTitleText">
+        <item name="android:text">@string/home_item_4_text</item>
+    </style>
+    <style name="HomeSubText_4" parent="@style/HomeSubText">
+        <item name="android:text">@string/home_item_sub_4_text</item>
+    </style>
+    <style name="HomeImage_5" parent="@style/Ico">
+        <item name="android:text">@string/ico_home_doctor</item>
+    </style>
+    <style name="HomeTitleText_5" parent="@style/HomeTitleText">
+        <item name="android:text">@string/home_item_5_text</item>
+    </style>
+    <style name="HomeSubText_5" parent="@style/HomeSubText">
+        <item name="android:text">@string/home_item_sub_5_text</item>
+    </style>
+    <style name="HomeImage_6" parent="@style/Ico">
+        <item name="android:text">@string/ico_home_hospital</item>
+    </style>
+    <style name="HomeTitleText_6" parent="@style/HomeTitleText">
+        <item name="android:text">@string/home_item_6_text</item>
+    </style>
+    <style name="HomeSubText_6" parent="@style/HomeSubText">
+        <item name="android:text">@string/home_item_sub_6_text</item>
+    </style>
+    <style name="HomeImage_7" parent="@style/Ico">
+        <item name="android:text">@string/ico_home_artical</item>
+    </style>
+    <style name="HomeTitleText_7" parent="@style/HomeTitleText">
+        <item name="android:text">@string/home_item_7_text</item>
+    </style>
+    <style name="HomeSubText_7" parent="@style/HomeSubText">
+        <item name="android:text">@string/home_item_sub_7_text</item>
+    </style>
+    <style name="HomeImage_8" parent="@style/Ico">
+        <item name="android:text">@string/ico_home_bike</item>
+    </style>
+    <style name="HomeTitleText_8" parent="@style/HomeTitleText">
+        <item name="android:text">@string/home_item_8_text</item>
+    </style>
+    <style name="HomeSubText_8" parent="@style/HomeSubText">
+        <item name="android:text">@string/home_item_sub_8_text</item>
+    </style>
+    <style name="HomeImage_9" parent="@style/Ico">
+        <item name="android:text">@string/ico_home_more</item>
+    </style>
+    <style name="HomeTitleText_9" parent="@style/HomeTitleText">
+        <item name="android:text">@string/home_item_9_text</item>
+    </style>
+    <style name="HomeSubText_9" parent="@style/HomeSubText">
+        <item name="android:text">@string/home_item_sub_9_text</item>
+    </style>
+    <style name="layout_full">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+</resources>

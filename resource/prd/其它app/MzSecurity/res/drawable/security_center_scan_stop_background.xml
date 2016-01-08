@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:paddingLeft="@dimen/security_center_inner_oval_size" android:paddingTop="@dimen/security_center_inner_oval_size" android:paddingRight="@dimen/security_center_inner_oval_size" android:paddingBottom="@dimen/security_center_inner_oval_size">
+        <shape android:shape="oval">
+            <solid android:color="@color/security_center_scan_end_bg_color" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/security_appsec_item_spinner_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/listview_item_padding_left" android:paddingRight="@dimen/listview_item_padding_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/secapp_appinfo_image" android:layout_width="@dimen/applist_item_image_height" android:layout_height="@dimen/applist_item_image_height" android:src="@drawable/ic_launcher" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/applist_item_title_text_height" android:gravity="center_vertical" android:id="@id/secapp_appinfo_choose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/applist_item_title_margin_image" android:singleLine="true" android:layout_toRightOf="@id/secapp_appinfo_image" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/applist_item_title_margin_image" android:layout_toRightOf="@id/secapp_appinfo_image" android:layout_below="@id/secapp_appinfo_choose">
+            <ImageView android:id="@id/iv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinner_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_black" android:id="@id/secapp_appinfo_choose_spinner" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_bg" android:layout_centerVertical="true" android:alpha="0.5" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:paddingLeft="@dimen/listview_line_padding_left" android:paddingRight="@dimen/listview_line_padding_left" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/color_black" android:layout_alignParentTop="true" android:alpha="0.2" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/anchor" android:layout_width="200.0dip" android:layout_height="fill_parent" android:minHeight="@dimen/security_appsec_item_spinner_height" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

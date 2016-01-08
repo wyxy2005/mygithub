@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/setting_layout_feed_inner" style="@style/style_patterns_setting_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:src="@drawable/ic_setting_" style="@style/style_patterns_setting_item_icon" />
+    <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+        <LinearLayout style="@style/style_patterns_setting_item_right_info">
+            <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:text="个人动态" style="@style/Text_List_Title" />
+            <com.immomo.momo.android.view.HandyTextView android:ellipsize="end" android:gravity="right|center" android:layout_gravity="center_vertical" android:id="@id/tv_feeddes" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" style="@style/Text_List_Desc" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">"Disattivate questa funzione per impedire l'esecuzione automatica di questa applicazione e per forzarne l'arresto se non la utilizzate da tempo."</string>
+</resources>

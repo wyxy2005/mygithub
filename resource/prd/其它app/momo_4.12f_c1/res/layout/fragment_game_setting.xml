@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/profile_layout_bottom" android:layout_below="@id/layout_header" style="@style/Style_Patterns"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="该游戏可以使用你的基本资料及好友关系, 并代你发布留言" />
+        <View android:layout_height="2.0px" style="@style/Line_Vertical" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gamesetting_layout_icon" android:background="@drawable/bglistitem_selector_nomaltran" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_list_title" android:textColor="@color/text_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="资料页显示游戏图标" android:layout_weight="1.0" />
+            <CheckBox android:id="@id/gamesetting_cb_icon" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:id="@id/gamesetting_btn_disconn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="取消游戏关联" style="@style/Style_SubmitButton" />
+    </LinearLayout>
+</ScrollView>

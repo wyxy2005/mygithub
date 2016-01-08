@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background_normal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_group_creat_step22" android:adjustViewBounds="true" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:id="@id/location_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="其他用户可以通过分类找到你的群" />
+            <RelativeLayout android:id="@id/layout_choose_category" style="@style/Style_Patterns_Content_Clickable">
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_choose_location" android:text="群组分类" style="@style/Patterns_Text_Left" />
+                <ImageView android:id="@id/online_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" style="@style/Item_Right" />
+                <com.immomo.momo.android.view.HandyTextView android:textSize="18.0sp" android:textColor="@color/text_content" android:gravity="right|center" android:id="@id/creategroup_tv_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="3.0dip" android:hint="请选择分类" android:singleLine="true" android:layout_toLeftOf="@id/online_arrow" android:layout_toRightOf="@id/tv_choose_location" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:gravity="center" android:layout_gravity="center" android:background="@drawable/round_corner_payment" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="如果分类不恰当,管理员会进行调整" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

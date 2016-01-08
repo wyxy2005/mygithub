@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ctestore_appid">999327</string>
+    <string name="ctestore_apsecret">E9DE6E539A3B0513E040640A041E6EC4</string>
+    <string name="ctestore_apphonenum"></string>
+    <string name="ctestore_testflag">false</string>
+</resources>

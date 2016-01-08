@@ -1,0 +1,6 @@
+version: 1.4.3
+apkFileName: XGDemo_2100051045.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="294.0dip" android:minHeight="1.0dip" android:updatePeriodMillis="0" android:initialLayout="@layout/safe_widget_layout" android:previewImage="@drawable/traffic_screen_preview" android:widgetCategory="1"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

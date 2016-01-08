@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false" android:key="main"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@17041170" android:key="PERM_ID_CALLPHONE" />
+    <PreferenceScreen android:persistent="false" android:title="@17041174" android:key="PERM_ID_SENDSMS" />
+    <PreferenceScreen android:persistent="false" android:title="@17041176" android:key="PERM_ID_SENDMMS" />
+    <PreferenceScreen android:persistent="false" android:title="@17041178" android:key="PERM_ID_MOBILE_CONNECTIVITY" />
+    <PreferenceScreen android:persistent="false" android:title="@17041180" android:key="PERM_ID_WIFI_CONNECTIVITY" />
+    <PreferenceScreen android:persistent="false" android:title="@17041182" android:key="PERM_ID_BT_CONNECTIVITY" />
+</PreferenceScreen>

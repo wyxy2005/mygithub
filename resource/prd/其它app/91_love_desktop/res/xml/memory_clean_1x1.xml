@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pandaWidget panda:spanX="1" panda:spanY="1" panda:layoutRes="@layout/panda_memory_clean_widget_1x1"
+  xmlns:panda="http://schemas.android.com/apk/res/com.nd.android.ilauncher" />

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="message_status_new_textsize">8.0sp</dimen>
+    <dimen name="message_map_width">220.0dip</dimen>
+    <dimen name="message_map_height">120.0dip</dimen>
+    <dimen name="splash_ft_margintop">70.0dip</dimen>
+</resources>

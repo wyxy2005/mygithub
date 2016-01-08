@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/chat_layout_notice_add" android:background="@color/bg_profile_feed" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_list_title" android:textColor="@color/text_content" android:id="@id/chat_tv_notice_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" android:text="@string/chat_notice_addfriend_none" />
+    <TextView android:textSize="14.0sp" android:textColor="#88a19d94" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="8.0dip" android:text="互相关注后可订阅对方动态" android:layout_below="@id/chat_tv_notice_add" />
+    <Button android:id="@id/chat_btn_notice_add" android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:text="关注" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" style="@style/ButtonStyle" />
+    <View android:background="@color/chat_isfocus_bottom_line" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/chat_btn_notice_add" />
+</RelativeLayout>

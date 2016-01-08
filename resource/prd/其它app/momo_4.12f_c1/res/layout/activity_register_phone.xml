@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ViewFlipper android:id="@id/rg_viewflipper" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="1000">
+                <ViewStub android:id="@id/rg_vs_name" android:layout="@layout/include_register_name" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ViewStub android:id="@id/rg_vs_userinfo" android:layout="@layout/include_register_userinfo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ViewStub android:id="@id/rg_vs_account" android:layout="@layout/include_register_account" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ViewStub android:id="@id/rg_vs_verify" android:layout="@layout/include_register_verify" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ViewStub android:id="@id/rg_vs_sendmsgcode" android:layout="@layout/include_register_sendmsgcode" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </ViewFlipper>
+        </LinearLayout>
+        <LinearLayout style="@style/Style_BottomBar">
+            <Button android:id="@id/btn_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="返回" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+            <Button android:id="@id/btn_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="下一步" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

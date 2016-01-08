@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="workspace_cell_width">90.0dip</dimen>
+    <dimen name="workspace_cell_height">115.0dip</dimen>
+    <dimen name="workspace_start_height">25.0dip</dimen>
+    <dimen name="theme_detail_preview_width">230.0dip</dimen>
+    <dimen name="theme_detail_preview_height">383.0dip</dimen>
+    <dimen name="desktop_circle_index_margin_bottom">93.0dip</dimen>
+    <dimen name="workspace_end_height">105.0dip</dimen>
+    <dimen name="shortcutmenu_offset_screen">10.0dip</dimen>
+</resources>

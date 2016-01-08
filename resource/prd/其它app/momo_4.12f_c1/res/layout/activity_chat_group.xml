@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.immomo.momo.android.view.ResizeListenerLayout android:id="@id/layout_root" android:background="@drawable/bg_chat_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chat_iv_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <RelativeLayout android:id="@id/layout_content_sub" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/message_layout_emotes" android:background="@color/msg_editor_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <com.immomo.momo.android.view.ChatMenuView android:id="@id/message_chatmenu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.immomo.momo.android.view.EmoteInputView android:id="@id/message_emoteview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <com.immomo.momo.android.view.ScrollLayout android:id="@id/message_editor_gallery" android:background="@drawable/bg_chatbar_textmode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/message_layout_emotes">
+                <include layout="@layout/include_message_texteditor" />
+                <include layout="@layout/include_message_audioeditor" />
+            </com.immomo.momo.android.view.ScrollLayout>
+            <com.immomo.momo.android.view.ChatListView android:id="@id/chat_listview" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_transition" android:divider="#00000000" android:dividerHeight="0.0dip" android:layout_above="@id/message_editor_gallery" style="@style/Style_Scrollable" />
+            <ViewStub android:id="@id/chat_stub_emotionsearch" android:layout="@layout/include_emotionsearchbubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="31.0dip" android:layout_above="@id/message_editor_gallery" />
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/message_editor_hight" android:layout_alignParentBottom="true" layout="@layout/include_message_newmask" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_newgroupbullet" android:background="@drawable/bg_newgroupbullet" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/layout_header" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/iv_newgroupbullet_icon" android:background="@drawable/bg_newgroupbullet_normal" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/ic_gzone_home" android:scaleType="center" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_newgroupbullet_count" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="0.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_newgroupbullet_title" android:paddingRight="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="群空间" android:singleLine="true" android:layout_toRightOf="@id/iv_newgroupbullet_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/iv_newgroupbullet_cover" android:background="@drawable/bg_newgroupbullet_selection" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/layout_newgroupbullet" android:layout_alignTop="@id/layout_newgroupbullet" android:layout_alignRight="@id/layout_newgroupbullet" android:layout_alignBottom="@id/layout_newgroupbullet" />
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+    <RelativeLayout android:id="@id/coverLayout" android:background="#99000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_chat_cover_audio" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chat_cover_audio" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffdddddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="正使用听筒播放\n请贴近耳边收听" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/coverLayout_withoutheader" android:background="#cc000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/groupchat_memberlist_contener" android:background="@color/background_normal" android:visibility="gone" android:layout_width="220.0dip" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <com.immomo.momo.android.view.LoadingButton android:id="@id/groupchat_loadmore" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" />
+        <com.immomo.momo.android.view.MomoRefreshListView android:id="@id/groupchat_lv_memberlist" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/groupchat_loadmore" style="@style/SimpleListView" />
+    </RelativeLayout>
+</com.immomo.momo.android.view.ResizeListenerLayout>

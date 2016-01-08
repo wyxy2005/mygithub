@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/listview_item_padding_left" android:paddingRight="@dimen/listview_item_padding_left" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/security_item__height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/secapp_appinfo_image" android:layout_width="@dimen/security_item_image_height" android:layout_height="@dimen/security_item_image_height" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_check_1" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginRight="9.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+            <CheckBox android:id="@id/secapp_appinfo_check_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_check_2" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginRight="27.0dip" android:layout_toLeftOf="@id/ll_check_1" android:layout_centerInParent="true">
+            <CheckBox android:id="@id/secapp_appinfo_check_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/applist_item_title_text_height" android:gravity="center_vertical" android:id="@id/secapp_appinfo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/applist_item_title_margin_image" android:layout_marginRight="@dimen/text_margin" android:singleLine="true" android:layout_toLeftOf="@id/ll_check_2" android:layout_toRightOf="@id/secapp_appinfo_image" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

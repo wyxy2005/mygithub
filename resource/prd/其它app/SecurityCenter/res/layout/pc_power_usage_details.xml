@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/bottombar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:id="@id/force_stop" android:background="@268566535" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@id/uninstall" android:background="@268566533" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@id/app_details" android:background="@drawable/icon_app_details_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottombar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.miui.powercenter.view.PowerUsageDetailsTitle android:id="@id/usage_details_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/usage_details_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <TextView android:text="@string/details_subtitle" style="?android:attr/listSeparatorTextViewStyle" />
+                <LinearLayout android:id="@id/details" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/usage_packages_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <TextView android:text="@string/packages_subtitle" style="?android:attr/listSeparatorTextViewStyle" />
+                <LinearLayout android:id="@id/packages" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

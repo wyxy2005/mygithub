@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Style_Patterns">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/unberlineview_text" android:id="@id/rg_tv_title1" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="第一步：发送重置短信" />
+                <View android:background="@color/unberlineview_dividingline" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/rg_tv_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="包含验证码的短信已经发送到" style="@style/register_desccontent" />
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/rg_tv_phonenumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="* （+86）手机号" style="@style/register_desccontent" />
+                <Button android:id="@id/rg_bt_sendmsg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="发送短信" style="@style/Style_SubmitButton" />
+                <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/unberlineview_text" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="第二步：输入验证码" style="@style/register_note" />
+                <View android:background="@color/unberlineview_dividingline" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <EditText android:textSize="16.0sp" android:textColor="@color/unberlineview_text" android:id="@id/rg_et_verifycode" android:background="@drawable/edittext_multiline" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:hint="输入短信验证码" android:singleLine="true" android:imeOptions="actionNext" />
+                <com.immomo.momo.android.view.HandyTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="如长时间收不到验证码，请重新操作" android:singleLine="true" style="@style/register_note" />
+                <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/unberlineview_text" android:id="@id/rg_tv_title3" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="第三步：设置新密码" style="@style/register_note" />
+                <View android:background="@color/unberlineview_dividingline" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <EditText android:textSize="16.0sp" android:textColor="@color/unberlineview_text" android:id="@id/rg_et_pwd" android:background="@drawable/edittext_multiline" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:hint="输入新密码" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionNext" />
+                <EditText android:textSize="16.0sp" android:textColor="@color/unberlineview_text" android:id="@id/rg_et_pwd_confim" android:background="@drawable/edittext_multiline" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:hint="再次输入新密码" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionDone" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout style="@style/Style_BottomBar">
+            <Button android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="@string/back" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+            <Button android:gravity="center" android:id="@id/btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="提交" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.common.preference.SwitchPreference android:title="@string/memory_clear" android:key="memory_shortcut" android:summary="@string/memory_shortcut" />
+    <PreferenceScreen android:title="@string/rubbish_white_list" android:key="whiteList" />
+    <PreferenceCategory android:title="@string/timer_scan">
+        <com.meizu.common.preference.SwitchPreference android:title="@string/timer_scan" android:key="mOpenTask" />
+        <ListPreference android:entries="@array/junk_timer_cycle_time" android:title="@string/cycle_time" android:key="mIntervalDays" android:entryValues="@array/junk_timer_cycle_time_value" />
+        <Preference android:title="@string/scan_start_time" android:key="scan_start_time" />
+    </PreferenceCategory>
+</PreferenceScreen>

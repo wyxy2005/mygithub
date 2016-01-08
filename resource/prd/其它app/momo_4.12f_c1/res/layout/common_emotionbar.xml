@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:scrollbarStyle="outsideOverlay" android:gravity="center_horizontal" android:id="@id/emotionbar_gridview" android:background="@color/bg_publish_mulipic" android:paddingLeft="7.0dip" android:paddingTop="3.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="210.0dip" android:listSelector="@drawable/btn_emote_selector" android:horizontalSpacing="7.0dip" android:verticalSpacing="7.0dip" android:stretchMode="columnWidth" android:numColumns="auto_fit" style="@style/Style_Scrollable" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/emotionbar_layout_tabbar" android:background="#ffc7c7c7" android:layout_width="fill_parent" android:layout_height="53.0dip">
+        <HorizontalScrollView android:id="@id/emotionbar_scrollview_emotions" android:background="@drawable/bg_chat_emotetab_normal" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/emotionbar_layout_rightbtnlayout" style="@style/Style_Scrollable">
+            <LinearLayout android:orientation="horizontal" android:id="@id/emotionbar_layout_emotions" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/emotionbar_iv_default" android:background="@drawable/message_rbtn_bg" android:padding="5.0dip" android:clickable="true" android:layout_width="60.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_chat_emotetab_normal" android:scaleType="center" />
+                <ImageView android:id="@id/emotionbar_iv_used" android:background="@drawable/message_rbtn_bg" android:padding="5.0dip" android:clickable="true" android:layout_width="60.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_chat_emotetab_recent" android:scaleType="center" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout android:orientation="horizontal" android:id="@id/emotionbar_layout_rightbtnlayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/emotionbar_iv_delete" android:background="@drawable/bg_chat_emotetab_press" android:padding="5.0dip" android:clickable="true" android:layout_width="60.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_topbar_back_normal" android:scaleType="center" />
+            <RelativeLayout android:id="@id/emotionbar_layout_storebtn" android:background="@drawable/bg_chat_emotetab_press" android:clickable="true" android:layout_width="55.0dip" android:layout_height="fill_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chat_emote_shop" android:scaleType="center" android:layout_centerInParent="true" />
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/emotionbar_iv_newmark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:text="新" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/BottomTab_Notice_Bubble" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

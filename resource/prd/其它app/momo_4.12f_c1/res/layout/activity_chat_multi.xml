@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.immomo.momo.android.view.ResizeListenerLayout android:id="@id/layout_root" android:background="@drawable/bg_chat_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chat_iv_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+    <include layout="@layout/include_header" />
+    <LinearLayout android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/message_layout_emotes" android:background="@color/msg_editor_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <com.immomo.momo.android.view.ChatMenuView android:id="@id/message_chatmenu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.immomo.momo.android.view.EmoteInputView android:id="@id/message_emoteview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <com.immomo.momo.android.view.ScrollLayout android:id="@id/message_editor_gallery" android:background="@drawable/bg_chatbar_textmode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/message_layout_emotes">
+                <include layout="@layout/include_message_texteditor" />
+                <include layout="@layout/include_message_audioeditor" />
+            </com.immomo.momo.android.view.ScrollLayout>
+            <com.immomo.momo.android.view.ChatListView android:id="@id/chat_listview" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_transition" android:divider="#00000000" android:dividerHeight="0.0dip" android:layout_above="@id/message_editor_gallery" style="@style/Style_Scrollable" />
+            <ViewStub android:id="@id/chat_stub_emotionsearch" android:layout="@layout/include_emotionsearchbubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="31.0dip" android:layout_above="@id/message_editor_gallery" />
+            <include android:layout_width="fill_parent" android:layout_height="@dimen/message_editor_hight" android:layout_alignParentBottom="true" layout="@layout/include_message_newmask" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+    <RelativeLayout android:id="@id/coverLayout" android:background="#99000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_chat_cover_audio" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chat_cover_audio" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffdddddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="正使用听筒播放\n请贴近耳边收听" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.immomo.momo.android.view.ResizeListenerLayout>

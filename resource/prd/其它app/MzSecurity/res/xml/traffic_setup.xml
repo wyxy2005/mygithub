@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="traffic_setup_option" android:mzGroupMode="true"
+  xmlns:android="http://schemas.android.com/apk/prv/res/android">
+    <com.meizu.safe.networkmanager.widget.TrafficSwitchPreference android:layout="@layout/traffic_switch_preference_layout" android:key="traffic_monitor" />
+    <PreferenceCategory android:title="@string/traffic_correct" android:key="traffic_regular_setup_option">
+        <com.meizu.safe.networkmanager.widget.TrafficEditTextPreference android:persistent="true" android:title="@string/setupTrafficDialogTitle" android:key="mouthTraffic" android:summary="@string/haveNotSetup" android:dialogLayout="@layout/traffic_edittext_with_unit_preference" />
+        <ListPreference android:persistent="true" android:entries="@array/Clear_date_entry" android:title="@string/mouthAccount" android:key="mouthAccount" android:summary="@string/initMounthAccountDate" android:entryValues="@array/Clear_date_entry_values" android:mzListPreferenceMode="1" />
+        <com.meizu.safe.networkmanager.widget.TrafficEditTextPreference android:persistent="true" android:title="@string/usedTraffic" android:key="usedTraffic" android:dialogLayout="@layout/traffic_used_with_unit_edittext_preference" />
+        <com.meizu.safe.networkmanager.widget.TrafficToCorrectPreference android:key="checkByOperators" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/Senior" android:key="traffic_senior_setup_option">
+        <com.meizu.safe.networkmanager.widget.TrafficSwitchPreference android:layout="@layout/traffic_switch_preference_layout" android:key="regularcorrect" />
+        <com.meizu.safe.networkmanager.widget.TrafficSwitchPreference android:layout="@layout/traffic_switch_preference_layout" android:key="day_warning" />
+        <com.meizu.safe.networkmanager.widget.WarningSeekPreference android:persistent="true" android:selectable="false" android:key="warningSeekBar" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/traffic_other_setup_category" android:key="traffic_senior_setup_option">
+        <PreferenceScreen android:title="@string/trafic_idle_traffic_title" android:key="idleTraffic" android:summary="@string/haveNotSetup" />
+    </PreferenceCategory>
+</PreferenceScreen>

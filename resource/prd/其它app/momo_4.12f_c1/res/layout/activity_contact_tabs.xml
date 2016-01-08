@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" style="@style/Tab_Layout">
+            <LinearLayout android:gravity="center" android:id="@id/contact_tab_both" android:background="@drawable/bg_maintab_item_lightblue" style="@style/TabItem_Layout">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_title" android:gravity="center" android:id="@id/tab_item_tv_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="好友" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/contact_tab_todo" android:background="@drawable/bg_maintab_item_lightblue" style="@style/TabItem_Layout">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tab_item_tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐" />
+                <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:id="@id/tv_unreadcount" android:visibility="gone" android:layout_marginLeft="4.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" style="@style/Text_Notice_Bubble" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/contact_tab_group" android:background="@drawable/bg_maintab_item_lightblue" style="@style/TabItem_Layout">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_title" android:gravity="center" android:id="@id/tab_item_tv_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="群组" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/contact_tab_other" android:background="@drawable/bg_maintab_item_lightblue" style="@style/TabItem_Layout">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_title" android:gravity="center" android:id="@id/tab_item_tv_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="分组" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.immomo.momo.android.view.ScrollViewPager android:id="@id/pagertabcontent" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <com.yaming.widget.PagerSlidingTabStrip android:textSize="16.0sp" android:textColor="#ff4f4f4f" android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="48.0dip" pagerTab:pstsIndicatorColor="@color/color_type_home_header" pagerTab:pstsIndicatorHeight="4.0dip" xmlns:pagerTab="http://schemas.android.com/apk/res-auto" />
+    <com.yaming.widget.HackyViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/app_image" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_margin="8.0dip" android:src="@drawable/delete_recycle" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/app_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="dafdafs" android:layout_toRightOf="@id/app_image" android:layout_centerInParent="true" />
+    <CheckBox android:layout_gravity="center" android:id="@id/app_checkbox" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+</RelativeLayout>

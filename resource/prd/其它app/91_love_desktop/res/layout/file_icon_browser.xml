@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="402.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/fileBrowser" android:layout_width="fill_parent" android:layout_height="240.0dip" android:cacheColorHint="#ffffffff" android:divider="@drawable/divider_horizontal_bright" android:layout_alignParentTop="true" />
+    <com.nd.android.ilauncher.util.fileselector.LineView android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/uplevelLayout" android:background="#00000000" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip">
+        <TextView android:textColor="#ff000000" android:id="@id/currentPath" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="/" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/uplevel" android:background="@drawable/file_browser_btn_return" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

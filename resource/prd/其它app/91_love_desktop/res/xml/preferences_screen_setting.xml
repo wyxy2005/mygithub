@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/setting_display_search_screen" android:key="search_screen_enable" android:summary="@string/setting_display_search_screen_summary" android:defaultValue="true" />
+    <ListPreference android:entries="@array/screen_effect_entries" android:title="@string/setting_screen_effect_setting" android:key="setting_screen_effect" android:summary="@string/setting_screen_effect_default" android:defaultValue="0" android:dialogTitle="@string/setting_screen_effect_setting" android:entryValues="@array/screen_effect_values" />
+    <CheckBoxPreference android:title="@string/setting_display_rolling_cycle" android:key="rolling_cycle" android:summary="@string/setting_display_rolling_cycle_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/setting_display_wallpaper_transition" android:key="wallpaper_transfer" android:summary="@string/setting_display_wallpaper_transition_summary" android:defaultValue="true" />
+</PreferenceScreen>

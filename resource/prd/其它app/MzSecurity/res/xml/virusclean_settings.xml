@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.meizu.common.preference.SwitchPreference android:title="@string/virus_file_scan_title" android:key="virus_file_scan" />
+    <PreferenceScreen android:title="@string/trust_apps_title" android:key="trust_app" />
+    <com.meizu.common.preference.SwitchPreference android:title="@string/scan_cloud" android:key="scan_cloud" />
+    <com.meizu.common.preference.SwitchPreference android:title="@string/wifi_update" android:key="wifi_update" />
+    <com.meizu.safe.viruscleaner.widget.VirusUpdatePreference android:key="virus_update" />
+</PreferenceScreen>

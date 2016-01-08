@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/list_item_jy_layout" android:background="@drawable/bg_list_top_unselect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" style="@style/ListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/black" android:id="@id/report_jy_item_name" android:paddingLeft="@dimen/margins" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/black" android:gravity="center" android:id="@id/report_jy_item_result" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:gravity="center" android:id="@id/report_jy_item_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@null" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:id="@id/report_jy_item_reference" android:paddingLeft="@dimen/margins" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:id="@id/report_jy_item_units" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+    </LinearLayout>
+</LinearLayout>

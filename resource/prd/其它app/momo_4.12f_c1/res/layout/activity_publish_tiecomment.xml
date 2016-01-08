@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.immomo.momo.android.view.ResizeListenerLayout android:id="@id/rootlayout" android:background="@color/background_undercard" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <FrameLayout android:id="@id/layout_emotes" android:background="@color/msg_editor_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.immomo.momo.android.view.EmoteInputView android:id="@id/emoteview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/layout_emotes" android:layout_below="@id/layout_header">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:id="@id/layout_content" android:background="@drawable/bg_common_card_full" android:paddingBottom="90.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:minHeight="150.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_title" android:background="@drawable/bg_common_card_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.EmoteTextView android:textSize="16.0sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@id/tv_comment_name" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    <com.immomo.momo.android.view.MEmoteTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:id="@id/tv_comment_content" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                </LinearLayout>
+                <com.immomo.momo.android.view.MEmoteEditeText android:gravity="top" android:id="@id/signeditor_tv_text" android:background="@null" android:padding="10.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="46.0dip" android:hint="@string/tiecontent_hinttext_cotent" android:maxLength="1000" android:layout_below="@id/layout_title">
+                    <requestFocus />
+                </com.immomo.momo.android.view.MEmoteEditeText>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/layout_bottom" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/layout_content">
+                <RelativeLayout android:id="@id/layout_camera" android:clickable="false" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="6.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                    <View android:id="@id/iv_camera_cover" android:background="@drawable/bg_publish_icon" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageView android:id="@id/iv_camera" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_publish_camera" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/layout_emote" android:clickable="false" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/layout_camera" android:layout_centerVertical="true">
+                    <View android:id="@id/iv_emote_cover" android:background="@drawable/bg_publish_icon" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageView android:id="@id/iv_emote" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_publish_emote" />
+                </RelativeLayout>
+                <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:gravity="center" android:id="@id/tv_textcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:layout_above="@id/layout_bottom" />
+        </RelativeLayout>
+    </ScrollView>
+</com.immomo.momo.android.view.ResizeListenerLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="left" android:padding="@dimen/message_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:id="@id/message_iv_msgimage" android:layout_width="133.0dip" android:layout_height="67.0dip" style="@style/MessageContent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layer_download" android:visibility="visible" android:layout_width="133.0dip" android:layout_height="67.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/ic_chat_def_map" />
+        <ImageView android:id="@id/download_view" android:layout_width="29.0dip" android:layout_height="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

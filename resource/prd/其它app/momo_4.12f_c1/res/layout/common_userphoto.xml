@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/avatar_container" android:paddingTop="@dimen/pic_layout_margin" android:paddingBottom="@dimen/pic_layout_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_baned_tip" android:visibility="gone" android:text="@string/user_profile_baned_tip" style="@style/Style_Banded_Tip" />
+</LinearLayout>

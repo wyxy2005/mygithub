@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <RelativeLayout android:id="@id/layout_progresss" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.immomo.momo.android.view.HandyTextView android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="请选择反馈类型" />
+                <RadioGroup android:orientation="horizontal" android:id="@id/filter_rg_gender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <RadioButton android:id="@id/feedback_filter_radiobutton_advice" android:checked="true" android:text="咨询" style="@style/menu_selected_btn_left" />
+                    <RadioButton android:id="@id/feedback_filter_radiobutton_suggest" android:text="建议" style="@style/menu_selected_btn_center" />
+                    <RadioButton android:id="@id/feedback_filter_radiobutton_error" android:text="故障" style="@style/menu_selected_btn_center" />
+                    <RadioButton android:id="@id/feedback_filter_radiobutton_complaints" android:text="投诉" style="@style/menu_selected_btn_center" />
+                    <RadioButton android:id="@id/feedback_filter_radiobutton_game" android:text="游戏" style="@style/menu_selected_btn_right" />
+                </RadioGroup>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip">
+                    <EditText android:gravity="top|left|center" android:id="@id/feedback_edit" android:background="@drawable/edittext_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:minHeight="94.0dip" android:hint="@string/feedback_hint" android:maxLines="10" android:maxLength="1000" android:layout_weight="1.0" />
+                    <RelativeLayout android:layout_gravity="left|center" android:id="@id/layout_camera" android:clickable="false" android:layout_width="100.0dip" android:layout_height="100.0dip">
+                        <ImageView android:id="@id/iv_camera" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:src="@drawable/ic_feed_publish_photo_normal" />
+                        <View android:id="@id/iv_camera_cover" android:background="@drawable/bglistitem_selector_session_avatar" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" />
+                        <View android:background="@drawable/bg_feed_publish_photo_cover" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.immomo.momo.android.view.HandyTextView android:text="网络状态" style="@style/Style_Patterns_SectionBar" />
+                <include layout="@layout/include_patterns_sectionline" />
+                <RelativeLayout android:id="@id/feedback_layout_netcheck" style="@style/Style_Patterns_Content_Clickable_Setting">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                        <com.immomo.momo.android.view.HandyTextView android:textSize="18.0sp" android:gravity="left" android:text="报告当前手机网络状态" style="@style/Patterns_Text_Left" />
+                        <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:text="网络故障时，主动向陌陌反馈信息" style="@style/Location_Setting_Text_Tip" />
+                    </LinearLayout>
+                    <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" style="@style/Item_Right" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

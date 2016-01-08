@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/ic_launcher120" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="42.0dip" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/symptom_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/app_name" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/symptom_color" android:id="@id/more_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+            <Button android:textSize="21.0sp" android:textColor="@color/article_sub_text" android:id="@id/more_service_role" android:background="@drawable/bg_more_stroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/margins" android:minWidth="220.0dip" android:text="@string/more_s" />
+            <Button android:textSize="21.0sp" android:textColor="@color/article_sub_text" android:id="@id/more_update" android:background="@drawable/bg_more_stroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/margins" android:minWidth="220.0dip" android:text="@string/more_update" />
+            <Button android:textSize="21.0sp" android:textColor="@color/article_sub_text" android:id="@id/more_feedback" android:background="@drawable/bg_more_stroke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minWidth="220.0dip" android:text="@string/more_feedback" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/symptom_color" android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginBottom="10.0dip" android:text="@string/more_l" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

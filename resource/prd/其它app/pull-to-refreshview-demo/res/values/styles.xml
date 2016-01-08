@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HorizScrollViewItem">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">50.0dip</item>
+        <item name="android:paddingRight">50.0dip</item>
+        <item name="android:text">Sample Item</item>
+    </style>
+</resources>

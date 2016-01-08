@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.immomo.momo.android.view.ResizeListenerLayout android:orientation="vertical" android:id="@id/layout_root" android:background="@color/bg_feedlist" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/feeditem_portraitline" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_alignParentTop="true" />
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_publish" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/tiedetail_layout_publishcomment" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/tiedetail_layout_publishcomment_editertitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/devideline_warning" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <com.immomo.momo.android.view.MEmoteTextView android:ellipsize="end" android:id="@id/tiedetail_tv_publishcomment_editertitle" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/Style_Text_Warning" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/tiedetail_layout_publishcomment_editer" android:background="@drawable/bg_chatbar_textmode" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/message_editor_hight">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tiedetail_layout_publishcomment_takepic" android:background="@drawable/btn_chatbtn2" android:layout_width="44.0dip" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/tiedetail_iv_publishcomment_takepic" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_publish_selectpic" android:scaleType="center" />
+                </LinearLayout>
+                <ImageView android:id="@id/tiedetail_iv_publishcomment_openemotion" android:background="@drawable/btn_chatbtn2" android:layout_width="44.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_chat_emote_normal" android:scaleType="center" />
+                <com.immomo.momo.android.view.MEmoteEditeText android:textSize="@dimen/text_list_title" android:textColorHint="@color/feed_text_note_transparent" android:gravity="left|center" android:id="@id/tiedetail_tv_publishcomment_texteditor" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:hint="输入评论" android:maxLines="3" android:singleLine="false" android:layout_weight="1.0" style="@style/EditTextStyle" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/message_editor_hight" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/tiedetail_iv_publishcomment_page" android:background="@drawable/btn_chatbtn2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_tie_pageto" android:scaleType="center" />
+                    <Button android:textColor="@color/white" android:gravity="center" android:id="@id/tiedetail_button_publishcomment_send" android:background="@drawable/btn_chatbtn3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="发布" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_feed_emotes" android:background="@color/msg_editor_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.immomo.momo.android.view.EmoteInputView android:id="@id/emoteview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/layout_publish_tie_comment" android:background="#ffece9e0" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                <ImageButton android:gravity="center" android:id="@id/button_prev" android:background="@drawable/btn_bottom_left_gray" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/ic_common_arrow_left" android:layout_weight="1.0" style="@style/ButtonStyle" />
+                <ImageButton android:gravity="center" android:id="@id/button_next" android:background="@drawable/btn_bottom_right_gray" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/ic_common_arrow_right" android:layout_weight="1.0" style="@style/ButtonStyle" />
+            </LinearLayout>
+            <Button android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button_page" android:background="@drawable/btn_bottom_gray" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="1/1" android:layout_weight="1.0" style="@style/ButtonStyle" />
+            <Button android:textSize="16.0sp" android:textColor="@color/tieba_comment_reply" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button_publish_tie_comment" android:background="@drawable/btn_bottom_blue" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="评论" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.immomo.momo.android.view.HandyListView android:id="@id/listview" android:scrollbars="none" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_transition" android:divider="@null" android:dividerHeight="0.0dip" android:layout_above="@id/layout_publish" android:layout_below="@id/layout_header" style="@style/Style_Scrollable" />
+    <View android:id="@id/layout_cover" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/listview" android:layout_alignBottom="@id/listview" />
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</com.immomo.momo.android.view.ResizeListenerLayout>

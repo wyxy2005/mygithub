@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false" android:key="main"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@17041184" android:key="PERM_ID_CONTACT" />
+    <PreferenceScreen android:persistent="false" android:title="@17041190" android:key="PERM_ID_CALLLOG" />
+    <PreferenceScreen android:persistent="false" android:title="@17041196" android:key="PERM_ID_SMSDB" />
+    <PreferenceScreen android:persistent="false" android:title="@17041202" android:key="PERM_ID_MMSDB" />
+    <PreferenceScreen android:persistent="false" android:title="@17041208" android:key="PERM_ID_AUDIO_RECORDER" />
+    <PreferenceScreen android:persistent="false" android:title="@17041210" android:key="PERM_ID_LOCATION" />
+    <PreferenceScreen android:persistent="false" android:title="@17041212" android:key="PERM_ID_VIDEO_RECORDER" />
+    <PreferenceScreen android:persistent="false" android:title="@17041214" android:key="PERM_ID_PHONEINFO" />
+    <PreferenceScreen android:persistent="false" android:title="@17041216" android:key="PERM_ID_SETTINGS" />
+</PreferenceScreen>

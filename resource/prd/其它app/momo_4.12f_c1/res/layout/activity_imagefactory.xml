@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <FrameLayout android:id="@id/tabcontent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout style="@style/Style_BottomBar">
+            <Button android:id="@id/imagefactory_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="@string/crop_discard_text" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+            <Button android:id="@id/imagefactory_btn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/crop_save_text" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

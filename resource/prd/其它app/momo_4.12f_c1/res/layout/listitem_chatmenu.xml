@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chatmenu_layout_content" android:background="@drawable/btn_publish_selectbg" android:layout_width="fill_parent" android:layout_height="@dimen/listitem_chat_menu_hight">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/chatmenu_iv_icon" android:layout_width="26.0dip" android:layout_height="26.0dip" android:scaleType="centerCrop" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/font_publish_btntext" android:gravity="center" android:id="@id/chatmenu_tv_name" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="默认" />
+        </LinearLayout>
+        <ImageView android:id="@id/chatmenu_iv_new" android:background="@drawable/bg_round_notice_bubble" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

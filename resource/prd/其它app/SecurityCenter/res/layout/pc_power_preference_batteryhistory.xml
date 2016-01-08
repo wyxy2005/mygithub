@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.powercenter.view.BatteryHistoryChart android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:id="@id/battery_history_chart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="23.0dip" android:layout_marginBottom="20.0dip" android:shadowColor="?android:colorBackground" android:shadowRadius="4.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</RelativeLayout>

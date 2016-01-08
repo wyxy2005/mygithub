@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/douban_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_selector_transition" android:divider="#fff0f0f0" android:dividerHeight="1.0dip" android:fillViewport="true" style="@style/Style_Scrollable" />
+            <include android:layout_centerInParent="true" layout="@layout/common_flipping_loading_light" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_1" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_2" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_3" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:paddingTop="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_4" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_5" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_6" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_7" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:paddingTop="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_8" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_9" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_10" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_11" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_12" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_13" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_14" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_15" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_16" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_17" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:paddingTop="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_18" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_19" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_20" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_21" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_22" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_23" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_24" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_25" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_26" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_27" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_28" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_29" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:paddingTop="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_30" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_31" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_32" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:paddingTop="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_33" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_34" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_35" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_36" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:paddingTop="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_37" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

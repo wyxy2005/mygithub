@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/permissiongrouplistfragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/permissiongrouplistfragment2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <CheckBox android:id="@id/do_not_show_again" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" android:text="@string/do_not_show_again" android:layout_weight="0.0" />
+    <Button android:id="@id/confirm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dialog_about_button_ok" android:layout_weight="0.0" />
+</LinearLayout>

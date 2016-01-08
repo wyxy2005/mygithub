@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_cover" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.RefreshOnOverScrollListView android:id="@id/listview_search" android:background="@color/background_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_transition" android:groupIndicator="@null" android:divider="@null" android:dividerHeight="0.0dip" style="@style/Style_Scrollable" />
+</RelativeLayout>

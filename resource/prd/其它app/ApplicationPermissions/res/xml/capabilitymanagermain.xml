@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/app_name"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/header_category_management_permission">
+        <SwitchPreferenceScreen android:persistent="true" android:title="@string/preference_switch_capability_manager" android:key="switch_capability_manager" />
+        <ListPreference android:persistent="false" android:entries="@array/warning_mode_setting_entries" android:title="@string/preference_warning_message_mode" android:key="warning_message_mode" android:widgetLayout="@layout/round_more_icon" android:negativeButtonText="@string/preference_warningmode_button_cancel" android:entryValues="@array/warning_mode_setting_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/header_category_about">
+        <PreferenceScreen android:title="@string/preference_data_reset" android:key="data_reset" android:summary="@string/preference_data_reset_sub" />
+        <PreferenceScreen android:title="@string/preference_about" android:key="about" />
+    </PreferenceCategory>
+</PreferenceScreen>

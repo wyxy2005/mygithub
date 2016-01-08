@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/userprofile_layout_music" android:visibility="gone" style="@style/Profile_Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.immomo.momo.android.view.HandyTextView android:text="音乐" style="@style/Profile_Item_Text_Title" />
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/txt_join_music_count" android:visibility="gone" style="@style/Profile_Item_Text_LeftNumeral" />
+    </LinearLayout>
+    <LinearLayout style="@style/Profile_Item_Right_Parent">
+        <LinearLayout android:paddingTop="0.0dip" android:paddingBottom="0.0dip" style="@style/Profile_Item_Right_Info">
+            <com.immomo.momo.android.view.SimpleVerticalListview android:id="@id/userprofile_listview_music" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" />
+        </LinearLayout>
+        <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+    </LinearLayout>
+</LinearLayout>

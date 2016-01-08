@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.mapapi.map.MapView android:id="@id/mapview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/hospital_perihery_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageButton android:id="@id/hospital_perihery_medicine_store" android:background="@drawable/btn_bottom_selector" android:layout_width="0.0dip" android:layout_height="@dimen/bottom_button_height" android:src="@drawable/btn_hospital_perihery_medicine_store_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/hospital_perihery_hotel" android:background="@drawable/btn_bottom_selector" android:layout_width="0.0dip" android:layout_height="@dimen/bottom_button_height" android:src="@drawable/btn_hospital_perihery_hotel_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/hospital_perihery_bank" android:background="@drawable/btn_bottom_selector" android:layout_width="0.0dip" android:layout_height="@dimen/bottom_button_height" android:src="@drawable/btn_hospital_perihery_bank_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/hospital_perihery_station" android:background="@drawable/btn_bottom_selector" android:layout_width="0.0dip" android:layout_height="@dimen/bottom_button_height" android:src="@drawable/btn_hospital_perihery_station_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <com.yaming.widget.slidinglayer.SlidingLayer android:id="@id/sliding_layer" android:layout_width="300.0dip" android:layout_height="fill_parent" android:layout_above="@id/hospital_perihery_bottom" android:layout_alignParentRight="true" slidingLayer:stickTo="right" xmlns:slidingLayer="http://schemas.android.com/apk/res-auto">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <FrameLayout android:background="@drawable/bg_hospital_shadow" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </com.yaming.widget.slidinglayer.SlidingLayer>
+    </RelativeLayout>
+</LinearLayout>

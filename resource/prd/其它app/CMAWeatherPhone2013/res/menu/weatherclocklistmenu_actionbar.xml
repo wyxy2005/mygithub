@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/tw_ic_menu_moreoverflow_normal_holo_dark" android:id="@id/menu_OverflowMenu" android:showAsAction="always" android:actionLayout="@layout/actionbar_overflow_btn" />
+</menu>

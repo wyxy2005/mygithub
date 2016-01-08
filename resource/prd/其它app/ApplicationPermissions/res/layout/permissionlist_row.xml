@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="65.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="21.0sp" android:textColor="@color/app_list_textcolor" android:layout_gravity="left|center" android:id="@id/permission_label" android:paddingLeft="16.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:textIsSelectable="false" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/permission_description_textcolor" android:layout_gravity="left|center" android:id="@id/permission_description" android:paddingLeft="16.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textIsSelectable="false" />
+        </LinearLayout>
+        <CheckBox android:gravity="right|center" android:id="@id/check" android:paddingRight="10.0dip" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

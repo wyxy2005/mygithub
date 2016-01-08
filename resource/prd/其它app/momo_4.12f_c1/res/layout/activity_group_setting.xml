@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header" android:layout_alignParentBottom="true" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_pushstatus" style="@style/style_patterns_group_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="群消息提醒" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/tv_pushstatus" android:text="" style="@style/Text_List_Desc" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/style_patterns_sectionbar" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_editprofile" android:visibility="gone" style="@style/style_patterns_group_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="编辑群资料" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_hidegroup" android:visibility="gone" style="@style/style_patterns_group_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_marginBottom="2.0dip" android:text="群组隐身" style="@style/Text_List_Title" />
+                            <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:layout_marginTop="2.0dip" android:text="群组名称不会出现在附近和个人资料" style="@style/Text_List_Content" />
+                        </LinearLayout>
+                        <CheckBox android:layout_gravity="center_vertical" android:id="@id/cb_hidegroup" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_setmemberlevel" style="@style/style_patterns_group_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_marginBottom="2.0dip" android:text="群成员等级" style="@style/Text_List_Title" />
+                        </LinearLayout>
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_setmemberlevel_status" android:layout_marginRight="10.0dip" android:text="未开启" style="@style/Text_List_Desc" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_visit_memberlevel" style="@style/style_patterns_group_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="群成员等级" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_visitmemberlevel_status" android:visibility="gone" android:layout_marginRight="10.0dip" android:text="群主未开启" style="@style/Text_List_Desc" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_arrow_visitgrade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_memberlist" android:visibility="gone" style="@style/style_patterns_group_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="管理群成员" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_unbindgame" android:visibility="visible" style="@style/style_patterns_group_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="取消游戏关联" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_invite" style="@style/style_patterns_group_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="邀请新成员" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/style_patterns_sectionbar" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_report" android:visibility="gone" style="@style/style_patterns_group_setting_item">
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="举报群组" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+            <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_quit" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="15.0dip" android:text="退出群组" style="@style/RedButton" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

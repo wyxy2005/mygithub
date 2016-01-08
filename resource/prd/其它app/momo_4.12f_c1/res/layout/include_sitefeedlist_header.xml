@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_site" android:padding="10.0dip" android:clickable="true" style="@style/style_patterns_setting_item">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_title" android:id="@id/tv_sitename" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_desc" android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_desc" android:id="@id/tv_feedcount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/chat_isfocus_bottom_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="@color/feeditem_portraitline" android:layout_width="1.0dip" android:layout_height="10.0dip" android:layout_marginLeft="30.0dip" />
+</LinearLayout>

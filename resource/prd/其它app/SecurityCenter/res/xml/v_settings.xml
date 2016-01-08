@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/antivirus_choose_engine_settings">
+        <miui.preference.ValuePreference android:persistent="false" android:title="@string/antivirus_choose_engine_title" android:key="@string/preference_key_antivirus_choose_engine" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_title_virus_lib_auto_update" android:key="@string/preference_category_key_virus_lib_auto_update" />
+    <PreferenceCategory android:title="@string/pref_category_title_reference_settings" android:key="@string/preference_category_key_reference_settings">
+        <CheckBoxPreference android:title="@string/menu_item_virus_install_monitor_title" android:key="@string/preference_key_open_virus_install_monitor" android:summary="@string/menu_item_virus_install_monitor_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

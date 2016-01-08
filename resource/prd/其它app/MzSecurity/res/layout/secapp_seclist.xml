@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/secapp_seclist_img_main" android:background="@color/defaultgreen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.85">
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="70.0dip" android:layout_marginTop="85.0dip" android:layout_marginRight="70.0dip" android:layout_marginBottom="70.0dip" android:src="@drawable/round" android:scaleType="fitCenter" />
+        <RelativeLayout android:padding="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="50.0dip">
+            <LinearLayout android:orientation="vertical" android:paddingTop="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/rightsmanagement" android:layout_weight="2.6" />
+                <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_weight="2.0" android:alpha="0.4" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/secapp_seclist_autostart" android:background="@drawable/secapp_seclist_itempressed" android:paddingLeft="20.0dip" android:paddingTop="0.0dip" android:paddingRight="20.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height">
+                <ImageView android:id="@id/local_image_1" android:layout_width="@dimen/list_item_icon_size" android:layout_height="@dimen/list_item_icon_size" android:src="@drawable/rightsmanagement_since_the_start_of" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/secapp_seclist_type_size" android:layout_toRightOf="@id/local_image_1" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_arrow_next_right_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/listview_div" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:gravity="center" android:id="@id/secapp_seclist_message" android:background="@drawable/secapp_seclist_itempressed" android:paddingLeft="20.0dip" android:paddingTop="0.0dip" android:paddingRight="20.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height">
+                <ImageView android:id="@id/local_image_2" android:layout_width="@dimen/list_item_icon_size" android:layout_height="@dimen/list_item_icon_size" android:src="@drawable/rightsmanagement_message_notification" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/secapp_seclist_type_size" android:layout_toRightOf="@id/local_image_2" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_arrow_next_right_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/listview_div" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:gravity="center" android:id="@id/secapp_seclist_sec" android:background="@drawable/secapp_seclist_itempressed" android:paddingLeft="20.0dip" android:paddingTop="0.0dip" android:paddingRight="20.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height">
+                <ImageView android:id="@id/local_image_3" android:layout_width="@dimen/list_item_icon_size" android:layout_height="@dimen/list_item_icon_size" android:src="@drawable/rightsmanagement_security_permission" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/secapp_seclist_type_size" android:layout_toRightOf="@id/local_image_3" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_arrow_next_right_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/listview_div" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:gravity="center" android:id="@id/secapp_seclist_pri" android:background="@drawable/secapp_seclist_itempressed" android:paddingLeft="20.0dip" android:paddingTop="0.0dip" android:paddingRight="20.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height">
+                <ImageView android:id="@id/local_image_4" android:layout_width="@dimen/list_item_icon_size" android:layout_height="@dimen/list_item_icon_size" android:src="@drawable/rightsmanagement_privacy_rights" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/secapp_seclist_type_size" android:layout_toRightOf="@id/local_image_4" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_arrow_next_right_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/listview_div" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <View android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

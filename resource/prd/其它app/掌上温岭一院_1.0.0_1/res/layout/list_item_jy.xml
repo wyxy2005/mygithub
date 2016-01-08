@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/list_jy_ico" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margins" android:src="@drawable/ico_list_item" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/key" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins" android:layout_toLeftOf="@id/list_jy_ico" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/margins" android:paddingTop="4.0dip" android:paddingRight="@dimen/margins" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/list_jy_ico" android:layout_below="@id/key">
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/checkbox_uncheck" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/list_jy_specimen" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/checkbox_uncheck" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/list_jy_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

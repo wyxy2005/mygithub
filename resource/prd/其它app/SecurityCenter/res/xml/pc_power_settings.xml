@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <miui.preference.RadioButtonPreferenceCategory android:title="@string/power_settings_category_title" android:key="key_radio_group">
+        <miui.preference.RadioButtonPreference android:persistent="true" android:title="@string/power_settings_shape" android:key="key_shape" />
+        <miui.preference.RadioButtonPreference android:persistent="true" android:title="@string/power_settings_number" android:key="key_number" />
+        <miui.preference.RadioButtonPreference android:persistent="true" android:title="@string/power_settings_top" android:key="key_top" />
+    </miui.preference.RadioButtonPreferenceCategory>
+</PreferenceScreen>

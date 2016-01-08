@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/pic_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/avatar_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <com.immomo.momo.android.view.HandyTextView android:textSize="10.0sp" android:textColor="@color/white" android:ellipsize="middle" android:gravity="center" android:id="@id/userlist_item_pic_tv_distance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="1.5dip" android:maxWidth="@dimen/userhead_size" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/bglistitem_selector_user" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/layout_header" android:layout_width="@dimen/userhead_size" android:layout_height="@dimen/userhead_size" android:layout_marginRight="10.0dip">
+            <ImageView android:id="@id/userlist_item_iv_face" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <ImageView android:background="@drawable/bglistitem_selector_session_select" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/userlist_item_mute" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/layout_header" android:layout_alignTop="@id/layout_header" android:layout_alignRight="@id/layout_header" android:layout_alignBottom="@id/layout_header">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_mute" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/layout_header" android:layout_centerVertical="true">
+            <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/userlist_item_layout_badgeContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/userlist_item_tv_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_tiebainfo_new" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/userlist_item_tv_game" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_group_game" />
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="11.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/userlist_item_tv_status" android:background="@drawable/bg_grouplist_waiting" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_marginLeft="3.0dip" style="@style/WrapContent" />
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="11.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/userlist_item_tv_role" android:background="@drawable/bg_grouplist_ower" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_marginLeft="4.0dip" android:text="@string/grouplist_owner_role" style="@style/WrapContent" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_gravity="top" android:id="@id/grouplist_item_tv_recruit" android:background="@drawable/bg_group_recruit" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="群组招募" />
+                </LinearLayout>
+                <com.immomo.momo.android.view.EmoteTextView android:id="@id/userlist_item_tv_name" android:singleLine="true" android:layout_toLeftOf="@id/userlist_item_layout_badgeContainer" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Text_List_Title" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_weight="1.0">
+                <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:id="@id/userlist_item_tv_sitename" android:singleLine="true" style="@style/Text_List_Desc" />
+                <com.immomo.momo.android.view.HandyTextView android:layout_gravity="center_vertical" android:id="@id/userlist_item_tv_distance" android:layout_width="fill_parent" android:layout_marginLeft="5.0dip" android:minWidth="70.0dip" android:singleLine="true" style="@style/Text_List_Desc" />
+            </LinearLayout>
+            <com.immomo.momo.android.view.EmoteTextView android:ellipsize="end" android:id="@id/userlist_item_tv_sign" android:singleLine="true" android:layout_weight="1.0" style="@style/Text_List_Content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/grouplist_item_line" style="@style/Line_Vertical" />
+</LinearLayout>

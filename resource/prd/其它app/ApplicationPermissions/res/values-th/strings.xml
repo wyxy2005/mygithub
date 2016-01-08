@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">ปิดใช้งานฟังก์ชั่นนี้เพื่อไม่ให้แอพนี้ทำงานโดยอัตโนมัติ และเพื่อบังคับให้ปิดเมื่อไม่มีการใช้งานเป็นระยะเวลาหนึ่ง</string>
+</resources>

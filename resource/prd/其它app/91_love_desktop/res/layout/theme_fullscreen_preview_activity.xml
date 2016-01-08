@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nd.android.ilauncher.ui.view.ScrollLayout android:id="@id/theme_preview_scroll_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:default_screen="0" launcher:scrollLayout_orientation="horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.nd.android.ilauncher" />

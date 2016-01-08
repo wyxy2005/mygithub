@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/month_report_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/month_report_web" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/network_disconnected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/month_report_disconnect_tip" android:drawableTop="@drawable/month_report_network_disconnected" />
+        <Button android:id="@id/network_retry_btn" android:background="@drawable/month_report_reconnect_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="43.0dip" android:text="@string/month_report_click_reconnect_network" />
+    </LinearLayout>
+    <com.miui.monthreport.ui.ShareWaitCover android:id="@id/share_wait_cover" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@color/mr_share_wait_cover_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/share_wait_cover_animate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_wait_animation" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.6999817dip" android:text="@string/month_report_share_loading" />
+        </LinearLayout>
+    </com.miui.monthreport.ui.ShareWaitCover>
+</FrameLayout>

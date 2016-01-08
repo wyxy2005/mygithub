@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@268566543" android:id="@id/menu_add_favorite" android:title="@string/power_chooser_user_define_title" android:showAsAction="ifRoom|withText" />
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pandawidgets
+  xmlns:launcher="http://schemas.android.com/apk/res/com.nd.android.ilauncher">
+    <pandawidget launcher:className="" launcher:packageName="com.nd.android.widget.pandahome.clockweather" launcher:screen="1" launcher:spanX="4" launcher:spanY="2" launcher:title="@string/ihome_custom_widget_clock_weather" launcher:widgetid="-1001" launcher:preview="@drawable/widget_weather_preview_4x2" launcher:cellX="0" launcher:cellY="0" launcher:layout="clockweather_4x2" />
+    <pandawidget launcher:className="" launcher:packageName="com.nd.android.ilauncher" launcher:screen="1" launcher:spanX="1" launcher:spanY="1" launcher:title="@string/memory_cleaner" launcher:widgetid="-1002" launcher:preview="@drawable/icon_off_screen_preview" launcher:cellX="1" launcher:cellY="2" launcher:layout="memory_clean_1x1" />
+    <pandawidget launcher:className="" launcher:packageName="com.nd.android.widget.pandahome.ionekeyoffscreen" launcher:screen="1" launcher:spanX="1" launcher:spanY="1" launcher:title="@string/ihome_custom_widget_one_key_off_screen" launcher:widgetid="-1003" launcher:preview="@drawable/icon_off_screen_preview" launcher:cellX="2" launcher:cellY="2" launcher:layout="one_key_off_screen_1x1" />
+    <pandawidget launcher:className="" launcher:packageName="com.nd.android.ilauncher" launcher:screen="0" launcher:spanX="4" launcher:spanY="1" launcher:title="@string/system_switch" launcher:widgetid="-1004" launcher:preview="@drawable/system_switcher_preview_4x1" launcher:cellX="0" launcher:cellY="0" launcher:layout="system_switch_4x1" />
+</pandawidgets>

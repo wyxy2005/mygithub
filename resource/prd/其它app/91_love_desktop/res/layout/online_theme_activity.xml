@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/online_theme_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <GridView android:id="@id/online_theme_gridview" android:background="#ffe5e9eb" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:horizontalSpacing="5.0dip" android:verticalSpacing="12.599976dip" android:stretchMode="columnWidth" android:columnWidth="97.0dip" android:numColumns="3" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/wait_layout" android:background="#ff7d7d7d" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+                <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/hint_loading" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/wait_layout2" android:background="@android:drawable/toast_frame" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:id="@id/progress_small_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+                <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/hint_loading" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">Deaktiver denne funktion for at forhindre denne app i at køre automatisk, og gennemtving stop af den, hvis den ikke har været brugt i et stykke tid.</string>
+</resources>

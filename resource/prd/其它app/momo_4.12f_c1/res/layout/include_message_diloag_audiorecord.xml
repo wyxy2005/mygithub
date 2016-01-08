@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout_mask" android:background="@color/dialog_backgroud_full" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/audioreod_layout_av" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginBottom="10.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@id/audiorecod_layout_container" android:background="@drawable/bg_audio_record_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <com.immomo.momo.android.view.AudioView android:id="@id/audiorecod_audioview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/text_view_content" android:textColor="#ff7d8192" android:id="@id/audiorecod_tv_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/audiorecod_note_scroll" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/bg_audio_record_timebar" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/audioreod_layout_av" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/audiorecod_iv_round" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.immomo.momo.android.view.HandyTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/audiorecod_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="1.0dip" android:text="12s" />
+    </LinearLayout>
+</RelativeLayout>

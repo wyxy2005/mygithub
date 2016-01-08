@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/layout_industry" style="@style/Profile_Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_sign_title" android:text="职业" style="@style/Profile_Item_Text_Title" />
+    <LinearLayout style="@style/Profile_Item_Right_Parent">
+        <LinearLayout android:orientation="vertical" style="@style/Profile_Item_Right_Info">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="true">
+                <ImageView android:id="@id/icon_industry" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_industry" android:layout_marginLeft="2.0dip" style="@style/Profile_Item_Text_content" />
+            </LinearLayout>
+            <com.immomo.momo.android.view.EmoteTextView android:id="@id/tv_industry_job" style="@style/Profile_Item_Text_content" />
+        </LinearLayout>
+        <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+    </LinearLayout>
+</LinearLayout>

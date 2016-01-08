@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_feed" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/style_patterns_profilesectionbar" />
+    <LinearLayout android:background="@drawable/bglistitem_selector" style="@style/Profile_Item">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.immomo.momo.android.view.HandyTextView android:text="个人动态" style="@style/Profile_Item_Text_Title" />
+            <com.immomo.momo.android.view.HandyTextView android:id="@id/txt_join_feed_count" style="@style/Profile_Item_Text_LeftNumeral" />
+        </LinearLayout>
+        <LinearLayout style="@style/Profile_Item_Right_Parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Profile_Item_Right_Info">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_feedimg" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                    <com.immomo.momo.android.view.MEmoteTextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:ellipsize="end" android:id="@id/tv_feeddes" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" />
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_desc" android:id="@id/tv_placedistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_party_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_common_arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

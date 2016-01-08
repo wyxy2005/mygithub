@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ff1db0e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/userguiitem_iv_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/userguiitem_iv_below" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:gravity="center" android:id="@id/userguiitem_btn_enter" android:layout_width="135.0dip" android:layout_height="38.0dip" android:text="开始陌陌" android:layout_centerHorizontal="true" style="@style/Style_SubmitButton" />
+    </RelativeLayout>
+</RelativeLayout>

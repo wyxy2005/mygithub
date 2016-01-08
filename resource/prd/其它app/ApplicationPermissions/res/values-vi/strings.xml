@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">Tắt chức năng này để không cho ứng dụng này tự động chạy và buộc nó dừng chạy nếu không được sử dụng trong một khoảng thời gian.</string>
+</resources>

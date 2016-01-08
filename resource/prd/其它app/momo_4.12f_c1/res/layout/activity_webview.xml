@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <FrameLayout android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/web_layout_controllerbar" android:layout_below="@id/layout_header" />
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+    <LinearLayout android:id="@id/web_layout_controllerbar" android:background="@color/black_imagepicker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/web_iv_back" android:background="@drawable/bg_header_defaul" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="50.0dip" android:src="@drawable/ic_topbar_back" />
+        <View android:background="#ff2d2d2d" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="#ff2d2d2d" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+        <ImageView android:id="@id/web_iv_refresh" android:background="@drawable/bg_header_defaul" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="50.0dip" android:src="@drawable/ic_topbar_refresh" />
+    </LinearLayout>
+</RelativeLayout>

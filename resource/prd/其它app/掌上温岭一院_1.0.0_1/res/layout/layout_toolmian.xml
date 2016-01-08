@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_trans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:baselineAligned="false">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/tool_btn_septitesB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ico_tools1" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="@dimen/smallest_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_hepatitisb_selftest" android:layout_below="@id/tool_btn_septitesB" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/tool_btn_childbrith" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ico_tools2" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="@dimen/smallest_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_childbrith_selftest" android:layout_below="@id/tool_btn_childbrith" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/tool_btn_smoke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ico_tools3" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="@dimen/smallest_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_smoke_selftest" android:layout_below="@id/tool_btn_smoke" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/tool_btn_bmi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ico_tools4" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="@dimen/smallest_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_bmi_selftest" android:layout_below="@id/tool_btn_bmi" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

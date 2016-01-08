@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/list_item_selector" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/call_number_text" android:background="@drawable/bg_register_call_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="60.0dip" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/call_number_depart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/no" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

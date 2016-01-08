@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_header" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_list_one_unselect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margins" style="@style/ListItem">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_smoke_time" />
+        <EditText android:id="@id/tool_smoke_edt_time" android:background="@null" android:paddingLeft="@dimen/margins_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="number" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_smoke_unit_year" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_list_one_unselect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margins" style="@style/ListItem">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_smoke_acount" />
+        <EditText android:id="@id/tool_smoke_edt_acount" android:background="@null" android:paddingLeft="@dimen/margins_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="number" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_smoke_unit_num" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margins">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_smoke_tarcontent" />
+        <RadioGroup android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/tool_smoke_ra_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/tool_smoke_unit_high" />
+            <RadioButton android:id="@id/tool_smoke_ra_n" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_smoke_unit_normal" />
+            <RadioButton android:id="@id/tool_smoke_ra_l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_smoke_unit_low" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button android:textColor="@color/white" android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margins" android:text="@string/tool_btn_test" style="@style/LeftButton" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <RelativeLayout android:id="@id/vip_iv_avatar_bglayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header">
+        <ImageView android:id="@id/vip_iv_avatar_bg" android:background="@color/bg_vip_avatar_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/vip_iv_avatar_bg_cover" android:background="@drawable/bg_profile_vip_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.immomo.momo.android.view.ProfilePullScrollView android:id="@id/scrollview_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/layout_header" style="@style/Style_Scrollable"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/include_editvipprofile_photos" />
+            <include layout="@layout/include_edituserprofile_info" />
+        </LinearLayout>
+    </com.immomo.momo.android.view.ProfilePullScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

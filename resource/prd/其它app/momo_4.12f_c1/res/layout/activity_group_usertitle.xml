@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/groupusertitle_layout_openlevel" android:background="@drawable/bglistitem_selector_nomaltran" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="开启" android:layout_weight="1.0" />
+                <CheckBox android:id="@id/groupusertitle_cb_openlevel" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns">
+                <View style="@style/Line_Vertical" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_grade" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout style="@style/style_patterns_sectionbar_title_bg">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/groupusertitle_tv_editlabel" android:text="编辑称号" style="@style/style_patterns_sectionbar_title_text" />
+                </RelativeLayout>
+                <TableLayout android:id="@id/groupusertitle_tablayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+                    <TableRow android:gravity="center_vertical" android:id="@id/groupusertitle_tabrow_0" android:background="@drawable/bglistitem_selector_nomaltran" android:addStatesFromChildren="true">
+                        <TextView android:textSize="@dimen/text_view_content" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:text="群主专用" />
+                        <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:gravity="right|center" android:id="@id/groupusertitle_tv_title" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" />
+                    </TableRow>
+                    <View android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                    <TableRow android:gravity="center_vertical" android:id="@id/groupusertitle_tabrow_1" android:background="@drawable/bglistitem_selector_nomaltran" android:addStatesFromChildren="true">
+                        <TextView android:textSize="@dimen/text_view_content" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:text="管理员专用" />
+                        <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:gravity="right|center" android:id="@id/groupusertitle_tv_title" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" />
+                    </TableRow>
+                    <View android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                    <TableRow android:gravity="center_vertical" android:id="@id/groupusertitle_tabrow_2" android:background="@drawable/bglistitem_selector_nomaltran" android:addStatesFromChildren="true">
+                        <TextView android:textSize="@dimen/text_view_content" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:text="等级5" />
+                        <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:gravity="right|center" android:id="@id/groupusertitle_tv_title" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" />
+                    </TableRow>
+                    <View android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                    <TableRow android:gravity="center_vertical" android:id="@id/groupusertitle_tabrow_3" android:background="@drawable/bglistitem_selector_nomaltran" android:addStatesFromChildren="true">
+                        <TextView android:textSize="@dimen/text_view_content" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:text="等级4" />
+                        <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:gravity="right|center" android:id="@id/groupusertitle_tv_title" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" />
+                    </TableRow>
+                    <View android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                    <TableRow android:gravity="center_vertical" android:id="@id/groupusertitle_tabrow_4" android:background="@drawable/bglistitem_selector_nomaltran" android:addStatesFromChildren="true">
+                        <TextView android:textSize="@dimen/text_view_content" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:text="等级3" />
+                        <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:gravity="right|center" android:id="@id/groupusertitle_tv_title" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" />
+                    </TableRow>
+                    <View android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                    <TableRow android:gravity="center_vertical" android:id="@id/groupusertitle_tabrow_5" android:background="@drawable/bglistitem_selector_nomaltran" android:addStatesFromChildren="true">
+                        <TextView android:textSize="@dimen/text_view_content" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:text="等级2" />
+                        <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:gravity="right|center" android:id="@id/groupusertitle_tv_title" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" />
+                    </TableRow>
+                    <View android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                    <TableRow android:gravity="center_vertical" android:id="@id/groupusertitle_tabrow_6" android:background="@drawable/bglistitem_selector_nomaltran" android:addStatesFromChildren="true">
+                        <TextView android:textSize="@dimen/text_view_content" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:text="等级1" />
+                        <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:gravity="right|center" android:id="@id/groupusertitle_tv_title" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" />
+                    </TableRow>
+                    <View android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+                </TableLayout>
+                <Button android:id="@id/groupusertitle_btn_selecttempl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="称号模板" />
+                <TextView android:textSize="@dimen/text_view_desc" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/groupusertitle_tv_editdesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="等级依据在群里活跃度排名的百分比计算\n有人加群、退群后，重新计算等级" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

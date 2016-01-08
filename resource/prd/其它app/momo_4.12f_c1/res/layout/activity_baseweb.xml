@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:scrollbarStyle="insideOverlay" android:orientation="vertical" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/layout_header_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/include_header" />
+    </LinearLayout>
+    <WebView android:scrollbarStyle="insideOverlay" android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header_container" android:fadeScrollbars="true" />
+    <include layout="@layout/include_loading_indicator" />
+</RelativeLayout>

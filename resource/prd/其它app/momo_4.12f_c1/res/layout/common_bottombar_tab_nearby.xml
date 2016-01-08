@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/TabItem_Layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.HandyTextView android:gravity="center_horizontal" android:id="@id/tab_item_tv_label" android:text="附近" android:drawableTop="@drawable/ic_tab_nearby" android:layout_centerInParent="true" style="@style/Style.TabItem.Label" />
+</RelativeLayout>

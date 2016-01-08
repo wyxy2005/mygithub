@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@id/audio_playing" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/ic_chat_audio_playing0" />
+    <item android:duration="200" android:drawable="@drawable/ic_chat_audio_playing1" />
+    <item android:duration="200" android:drawable="@drawable/ic_chat_audio_playing2" />
+    <item android:duration="200" android:drawable="@drawable/ic_chat_audio_playing3" />
+</animation-list>

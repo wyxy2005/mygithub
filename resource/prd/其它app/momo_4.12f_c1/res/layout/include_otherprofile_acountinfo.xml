@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/profile_layout_acount_info" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.SettingInfoLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View style="@style/style_patterns_profilesectionbar" />
+        <LinearLayout android:id="@id/layout_vip" android:background="@drawable/bglistitem_selector" style="@style/Profile_Item">
+            <com.immomo.momo.android.view.HandyTextView android:id="@id/textviewmomotitle" android:text="会员" style="@style/Profile_Item_Text_Title" />
+            <LinearLayout style="@style/Profile_Item_Right_Parent">
+                <RelativeLayout android:layout_weight="1.0" style="@style/Profile_Item_Right_Info">
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="center_vertical" android:id="@id/icon_vip" android:drawableLeft="@drawable/ic_profile_vip" android:drawablePadding="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Profile_Item_Text_content" />
+                    <com.immomo.momo.android.view.HandyTextView android:drawableRight="@drawable/ic_common_arrow_right" android:layout_centerVertical="true" style="@style/Profile_Item_Right" />
+                </RelativeLayout>
+                <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/Profile_Item">
+            <com.immomo.momo.android.view.HandyTextView android:id="@id/textviewmomotitle" android:text="陌陌号" style="@style/Profile_Item_Text_Title" />
+            <LinearLayout style="@style/Profile_Item_Right_Parent">
+                <LinearLayout style="@style/Profile_Item_Right_Info">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_tv_momoid" android:layout_weight="1.0" style="@style/Profile_Item_Text_content" />
+                </LinearLayout>
+                <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/layout_editsign" style="@style/Profile_Item">
+            <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_habit" android:text="个人签名" style="@style/Profile_Item_Text_Title" />
+            <LinearLayout style="@style/Profile_Item_Right_Parent">
+                <LinearLayout style="@style/Profile_Item_Right_Info">
+                    <com.immomo.momo.android.view.EmoteTextView android:id="@id/profile_tv_sign" android:layout_weight="1.0" style="@style/Profile_Item_Text_content" />
+                </LinearLayout>
+                <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/layout_emotion" style="@style/Profile_Item">
+            <com.immomo.momo.android.view.HandyTextView android:text="情感状态" style="@style/Profile_Item_Text_Title" />
+            <LinearLayout style="@style/Profile_Item_Right_Parent">
+                <LinearLayout style="@style/Profile_Item_Right_Info">
+                    <com.immomo.momo.android.view.EmoteTextView android:id="@id/profile_tv_emotion" android:layout_weight="1.0" style="@style/Profile_Item_Text_content" />
+                </LinearLayout>
+                <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/include_industry" />
+        <LinearLayout android:id="@id/layout_company" style="@style/Profile_Item">
+            <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_company" android:text="公司" style="@style/Profile_Item_Text_Title" />
+            <LinearLayout style="@style/Profile_Item_Right_Parent">
+                <LinearLayout style="@style/Profile_Item_Right_Info">
+                    <com.immomo.momo.android.view.EmoteTextView android:id="@id/profile_tv_company" style="@style/Profile_Item_Text_content" />
+                </LinearLayout>
+                <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/layout_school" style="@style/Profile_Item">
+            <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_school" android:text="学校" style="@style/Profile_Item_Text_Title" />
+            <LinearLayout style="@style/Profile_Item_Right_Parent">
+                <LinearLayout style="@style/Profile_Item_Right_Info">
+                    <com.immomo.momo.android.view.EmoteTextView android:id="@id/profile_tv_school" style="@style/Profile_Item_Text_content" />
+                </LinearLayout>
+                <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/layout_hometown" style="@style/Profile_Item">
+            <com.immomo.momo.android.view.HandyTextView android:text="家乡" style="@style/Profile_Item_Text_Title" />
+            <LinearLayout style="@style/Profile_Item_Right_Parent">
+                <LinearLayout style="@style/Profile_Item_Right_Info">
+                    <com.immomo.momo.android.view.EmoteTextView android:id="@id/profile_tv_hometown" android:layout_weight="1.0" style="@style/Profile_Item_Text_content" />
+                </LinearLayout>
+                <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.immomo.momo.android.view.SettingInfoLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Style_Patterns">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/image_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/app_icon" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="50.0dip">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_content" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="当前已绑定账号：" />
+                    <com.immomo.momo.android.view.ScrollingTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@id/txt_weiboname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.immomo.momo.android.view.HandyTextView android:gravity="center_vertical" android:layout_marginLeft="10.0dip" android:text="操作" style="@style/linebar_title_text" />
+                <View android:layout_height="2.0px" style="@style/Line_Vertical" />
+                <RelativeLayout android:id="@id/layout_showweibo" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/txt_showweibo" android:minHeight="50.0dip" android:text="查看微博" style="@style/Text_List_Title" />
+                    <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </RelativeLayout>
+                <View style="@style/Line_Vertical" />
+                <RelativeLayout android:id="@id/layout_addweibo" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/txt_addweibo" android:minHeight="50.0dip" android:text="查找微博好友" style="@style/Text_List_Title" />
+                    <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </RelativeLayout>
+                <View style="@style/Line_Vertical" />
+                <RelativeLayout android:id="@id/layout_unbind" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/layout_unbind" android:minHeight="50.0dip" android:text="解除绑定" style="@style/Text_List_Title" />
+                    <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

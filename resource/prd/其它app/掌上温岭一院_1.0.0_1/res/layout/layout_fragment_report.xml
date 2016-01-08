@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_one_unselect" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/margins" style="@style/ListItem">
+        <EditText android:id="@id/report_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/user_name_tip_edit" style="@style/EditText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_one_unselect" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/margins" style="@style/ListItem">
+        <EditText android:id="@id/report_input" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/user_treate_card_tip" style="@style/EditText" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/margins" android:text="@string/submit" style="@style/LeftButton" />
+    <TextView android:id="@id/report_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/margins" android:text="@string/report_tips_jcd" />
+</LinearLayout>

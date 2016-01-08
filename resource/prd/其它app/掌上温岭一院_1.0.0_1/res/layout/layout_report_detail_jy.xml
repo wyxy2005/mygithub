@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:scrollbarStyle="outsideOverlay" android:id="@id/report_jy_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margins" android:layout_marginBottom="@dimen/margins">
+                <com.yaming.widget.LinearListView android:orientation="vertical" android:id="@id/report_report_jy_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins">
+                    <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note" />
+                    <TextView android:textSize="@dimen/smaller_text_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_heigh" android:drawableLeft="@drawable/ico_report_height" />
+                    <TextView android:textSize="@dimen/smaller_text_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_low" android:drawableLeft="@drawable/ico_report_lower" />
+                    <TextView android:textSize="@dimen/smaller_text_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_negative" android:drawableLeft="@drawable/ico_report_negative" />
+                    <TextView android:textSize="@dimen/smaller_text_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_positive" android:drawableLeft="@drawable/ico_report_positive" />
+                    <TextView android:textSize="@dimen/smaller_text_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_normal" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_report_detal_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="@dimen/margins" android:layout_marginRight="@dimen/margins" android:minHeight="48.0dip">
+                    <TextView android:textSize="@dimen/title_text_size" android:textColor="#ff575d61" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/project_name" android:layout_weight="2.0" />
+                    <View android:background="@color/color_type_gray_unselect" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textSize="@dimen/title_text_size" android:textColor="#ff575d61" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/project_result" android:layout_weight="1.0" />
+                    <View android:background="@color/color_type_gray_unselect" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <TextView android:textSize="@dimen/title_text_size" android:textColor="#ff575d61" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/project_status" android:layout_weight="1.0" />
+                </LinearLayout>
+                <com.yaming.widget.LinearListView android:orientation="vertical" android:id="@id/report_report_jy_list_item" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margins" />
+            </LinearLayout>
+        </ScrollView>
+        <ProgressBar android:id="@id/report_jy_loading" android:layout_centerInParent="true" style="@style/ListSpinner" />
+    </RelativeLayout>
+</LinearLayout>

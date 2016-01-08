@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/gray" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <View android:id="@id/msginfoLine1" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/title" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/gray" android:id="@id/update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@id/msginfoLine1" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/gray" android:id="@id/activityType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/update_time" android:layout_alignParentRight="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/gray" android:autoLink="all" android:id="@id/activityContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="90.0dip" android:layout_toRightOf="@id/activityType" android:layout_below="@id/update_time" android:layout_alignParentLeft="true" />
+    <View android:id="@id/msginfoLine2" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="40.0dip" android:layout_below="@id/activityContent" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/gray" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/msginfoLine2" android:layout_alignParentLeft="true" />
+</RelativeLayout>

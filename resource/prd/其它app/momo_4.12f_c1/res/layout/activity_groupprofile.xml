@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <include layout="@layout/include_groupprofile_bottom" />
+    <include layout="@layout/include_otherprofile_vipbg" />
+    <com.immomo.momo.android.view.ProfilePullScrollView android:id="@id/scrollview_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/profile_layout_bottom" android:layout_below="@id/layout_header" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/user_include_profile_photos" />
+            <LinearLayout android:id="@id/layout_gid" style="@style/Profile_Item">
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/textviewmomotitle" android:text="群号码" style="@style/Profile_Item_Text_Title" />
+                <LinearLayout style="@style/Profile_Item_Right_Parent">
+                    <LinearLayout style="@style/Profile_Item_Right_Info">
+                        <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_tv_gid" style="@style/Profile_Item_Text_content" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_parent_showmemberlist" style="@style/Profile_Item">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.HandyTextView android:layout_marginTop="5.0dip" android:text="群成员" style="@style/Profile_Item_Text_Title" />
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_member_count" style="@style/Profile_Item_Text_LeftNumeral" />
+                </LinearLayout>
+                <LinearLayout style="@style/Profile_Item_Right_Parent">
+                    <LinearLayout android:orientation="vertical" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" style="@style/Profile_Item_Right_Info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left" android:id="@id/profile_layout_hidemember" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginTop="10.0dip" android:minHeight="35.0dip" android:text="@string/group_profile_hidemember" style="@style/Profile_Item_Text_content" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/view_showmemberlist" android:background="@drawable/bglistitem_selector" android:paddingTop="7.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="45.0dip">
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_memberlist" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                                <include android:id="@id/member_avatar_block0" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+                                <include android:id="@id/member_avatar_block1" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+                                <include android:id="@id/member_avatar_block2" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+                                <include android:id="@id/member_avatar_block3" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+                                <include android:id="@id/member_avatar_block4" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+                                <include android:id="@id/member_avatar_block5" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+                            </LinearLayout>
+                            <ImageView android:layout_gravity="right|center" android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_common_arrow_right" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/view_invitermembers" android:background="@drawable/bglistitem_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <View style="@style/Line_Vertical" />
+                            <LinearLayout android:orientation="horizontal" android:paddingTop="2.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="邀请新成员" android:singleLine="true" android:layout_weight="1.0" />
+                                <ImageView android:layout_gravity="right|center" android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_common_arrow_right" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_parent_level" style="@style/Profile_Item">
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_titile" android:text="群等级" style="@style/Profile_Item_Text_Title" />
+                <LinearLayout style="@style/Profile_Item_Right_Parent">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/layout_level" android:background="@drawable/bglistitem_selector" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:minHeight="50.0dip" android:layout_weight="1.0" style="@style/Profile_Item_Right_Info">
+                        <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/tv_grouplevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="3.0dip" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/include_groupprofile_feed" />
+            <LinearLayout android:id="@id/profile_layout_bind_info" android:visibility="gone" style="@style/Profile_Item">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.HandyTextView android:text="关联游戏" style="@style/Profile_Item_Text_Title" />
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/txt_join_bind_count" style="@style/Profile_Item_Text_LeftNumeral" />
+                </LinearLayout>
+                <LinearLayout style="@style/Profile_Item_Right_Parent">
+                    <LinearLayout style="@style/Profile_Item_Right_Info">
+                        <com.immomo.momo.android.view.AppIconMomoGridView android:id="@id/gridview_app_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/Profile_Item">
+                <com.immomo.momo.android.view.HandyTextView android:text="距离" style="@style/Profile_Item_Text_Title" />
+                <LinearLayout style="@style/Profile_Item_Right_Parent">
+                    <LinearLayout style="@style/Profile_Item_Right_Info">
+                        <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_tv_distance" style="@style/Profile_Item_Text_content" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_site" android:background="@drawable/bglistitem_selector" style="@style/Profile_Item">
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_sitetitle" android:text="地点" style="@style/Profile_Item_Text_Title" />
+                <LinearLayout style="@style/Profile_Item_Right_Parent">
+                    <LinearLayout android:orientation="horizontal" style="@style/Profile_Item_Right_Info">
+                        <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_sitename" android:layout_weight="1.0" style="@style/Profile_Item_Text_content" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_site_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_ower" android:background="@drawable/bglistitem_selector" style="@style/Profile_Item">
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_attribute" android:text="群主" style="@style/Profile_Item_Text_Title" />
+                <LinearLayout style="@style/Profile_Item_Right_Parent">
+                    <LinearLayout android:orientation="horizontal" style="@style/Profile_Item_Right_Info">
+                        <RelativeLayout android:id="@id/layout_owneravatar" android:padding="@dimen/pic_item_margin" android:layout_width="36.0dip" android:layout_height="36.0dip">
+                            <ImageView android:id="@id/iv_oweravatar" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                        </RelativeLayout>
+                        <com.immomo.momo.android.view.EmoteTextView android:layout_gravity="center_vertical" android:id="@id/tv_ownername" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_weight="1.0" style="@style/Profile_Item_Text_content" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/online_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_createtime" style="@style/Profile_Item">
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/textviewtimetitle" android:text="创建时间" style="@style/Profile_Item_Text_Title" />
+                <LinearLayout style="@style/Profile_Item_Right_Parent">
+                    <LinearLayout style="@style/Profile_Item_Right_Info">
+                        <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_tv_createtime" style="@style/Profile_Item_Text_content" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/Profile_Item">
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_habit" android:text="群介绍" style="@style/Profile_Item_Text_Title" />
+                <LinearLayout style="@style/Profile_Item_Right_Parent">
+                    <LinearLayout style="@style/Profile_Item_Right_Info">
+                        <com.immomo.momo.android.view.EmoteTextView android:id="@id/profile_tv_sign" style="@style/Profile_Item_Text_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.immomo.momo.android.view.ProfilePullScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

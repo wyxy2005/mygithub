@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <include layout="@layout/include_otherprofile_vipbg" />
+    <com.immomo.momo.android.view.ProfilePullScrollView android:id="@id/scrollview_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/profile_layout_bottom" android:layout_below="@id/layout_header" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/layout_avatar_normal" android:layout_alignParentTop="true" layout="@layout/user_include_profile_photos" />
+                <include android:id="@id/layout_avatar_vip" android:layout_alignParentTop="true" layout="@layout/include_vipprofile_photos" />
+            </RelativeLayout>
+            <include layout="@layout/include_otherprofile_baseuserinfo" />
+            <include layout="@layout/include_otherprofile_feed" />
+            <include layout="@layout/include_otherprofile_acountinfo" />
+            <include layout="@layout/include_otherprofile_joins" />
+            <include layout="@layout/include_otherprofile_selfintroduction" />
+            <View android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.immomo.momo.android.view.ProfilePullScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+    <include layout="@layout/include_otherprofile_bottom" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/profile_layout_bottom" android:layout_below="@id/layout_header" style="@style/Style_Patterns">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.immomo.momo.android.view.HandyTextView android:text="系统定位设置" style="@style/Style_Patterns_SectionBar" />
+            <include layout="@layout/include_patterns_sectionline" />
+            <RelativeLayout android:id="@id/setting_layout_location_system_setting" style="@style/Style_Patterns_Content_Clickable_Setting">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="18.0sp" android:text="进入系统定位设置" style="@style/Patterns_Text_Left" />
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:text="打开GPS，能提升定位成功率和精准度" style="@style/Location_Setting_Text_Tip" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+            <com.immomo.momo.android.view.HandyTextView android:text="更多帮助" style="@style/Style_Patterns_SectionBar" />
+            <include layout="@layout/include_patterns_sectionline" />
+            <RelativeLayout android:id="@id/layout_always_locationfailed" style="@style/Style_Patterns_Content_Clickable_Setting">
+                <com.immomo.momo.android.view.HandyTextView android:text="网络检测" style="@style/Setting_item_Left_Text" />
+                <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

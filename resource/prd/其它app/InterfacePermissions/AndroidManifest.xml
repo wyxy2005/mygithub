@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0" package="com.qualcomm.interfacepermissions"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:label="@string/label" android:icon="@drawable/icon" android:name="com.qualcomm.permission.INTERFACE_DIAG" android:protectionLevel="signature" android:description="@string/desc1" />
+    <permission android:label="@string/label" android:icon="@drawable/icon" android:name="com.qualcomm.permission.INTERFACE_RADIO" android:protectionLevel="signature" android:description="@string/desc1" />
+    <permission android:label="@string/label" android:icon="@drawable/icon" android:name="com.qualcomm.permission.INTERFACE_NETRAW" android:protectionLevel="signature" android:description="@string/desc1" />
+</manifest>

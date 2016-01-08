@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_general_setting">
+        <PreferenceScreen android:title="@string/setting_screen_setting" android:key="setting_screen_setting" />
+        <PreferenceScreen android:title="@string/setting_widget_setting" android:key="setting_widget_setting" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_more_setting">
+        <PreferenceScreen android:title="@string/setting_backup" android:key="setting_backup" />
+        <PreferenceScreen android:title="@string/setting_about" android:key="setting_about" />
+        <PreferenceScreen android:title="@string/setting_restart" android:key="setting_restart" />
+    </PreferenceCategory>
+</PreferenceScreen>

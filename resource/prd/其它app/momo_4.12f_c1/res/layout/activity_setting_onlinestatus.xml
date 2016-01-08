@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/setting_layout_online" android:minHeight="60.0dip" style="@style/style_patterns_setting_item">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:background="@drawable/bg_round_distance_blue" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_chat_des_foot" android:scaleType="center" style="@style/style_patterns_setting_item_icon" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <com.immomo.momo.android.view.HandyTextView android:text="@string/setting_hide_online" style="@style/Text_List_Title" />
+                        <com.immomo.momo.android.view.HandyTextView android:layout_marginTop="3.0dip" android:text="对所有人显示距离" style="@style/Text_List_Desc" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RadioButton android:id="@id/setting_rb_online" style="@style/Item_Right" />
+            </RelativeLayout>
+            <View android:id="@id/discover_view_line" android:layout_marginLeft="60.0dip" style="@style/Line_Vertical" />
+            <RelativeLayout android:id="@id/setting_layout_yinshen_stranger" android:minHeight="60.0dip" style="@style/style_patterns_setting_item">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:background="@drawable/bg_round_distance_yellow" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_chat_des_foot" android:scaleType="center" style="@style/style_patterns_setting_item_icon" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <com.immomo.momo.android.view.HandyTextView android:text="@string/setting_hide_part" style="@style/Text_List_Title" />
+                        <com.immomo.momo.android.view.HandyTextView android:layout_marginTop="3.0dip" android:text="不出现在附近列表，减少陌生人消息" style="@style/Text_List_Desc" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RadioButton android:id="@id/setting_rb_yinshen_stranger" style="@style/Item_Right" />
+            </RelativeLayout>
+            <View android:layout_marginLeft="60.0dip" style="@style/Line_Vertical" />
+            <RelativeLayout android:id="@id/setting_layout_yinshen_all" android:minHeight="60.0dip" style="@style/style_patterns_setting_item">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <ImageView android:background="@drawable/bg_round_distance_gray" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_chat_des_foot" android:scaleType="center" style="@style/style_patterns_setting_item_icon" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <com.immomo.momo.android.view.HandyTextView android:text="@string/setting_hide_all" style="@style/Text_List_Title" />
+                        <com.immomo.momo.android.view.HandyTextView android:layout_marginTop="3.0dip" android:text="对所有人隐身" style="@style/Text_List_Desc" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RadioButton android:id="@id/setting_rb_yinshen_all" style="@style/Item_Right" />
+            </RelativeLayout>
+            <View android:layout_marginLeft="60.0dip" style="@style/Line_Vertical" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

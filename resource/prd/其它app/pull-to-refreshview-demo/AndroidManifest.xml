@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="2110" android:versionName="2.1.1" package="com.handmark.pulltorefresh.samples"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="15" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:debuggable="true" android:hardwareAccelerated="true">
+        <activity android:label="PullToRefresh Samples" android:name=".LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="PtR ListView" android:name=".PullToRefreshListActivity" />
+        <activity android:label="PtR ListView Fragment" android:name=".PullToRefreshListFragmentActivity" />
+        <activity android:label="PtR ListView in ViewPager" android:name=".PullToRefreshListInViewPagerActivity" />
+        <activity android:label="PtR GridView" android:name=".PullToRefreshGridActivity" />
+        <activity android:label="PtR ExpandableListView" android:name=".PullToRefreshExpandableListActivity" />
+        <activity android:label="PtR WebView" android:name=".PullToRefreshWebViewActivity" />
+        <activity android:label="PtR ScrollView" android:name=".PullToRefreshScrollViewActivity" />
+        <activity android:label="PtR HorizontalScrollView" android:name=".PullToRefreshHorizontalScrollViewActivity" />
+        <activity android:label="PtR ViewPager" android:name=".PullToRefreshViewPagerActivity" />
+        <activity android:label="PtR WebView Advanced" android:name=".PullToRefreshWebView2Activity" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <supports-screens android:anyDensity="true" />
+</manifest>

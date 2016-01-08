@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/color_type_home_header" android:layout_width="fill_parent" android:layout_height="48.0dip" android:baselineAligned="false">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:layout_gravity="left|center" android:id="@id/header_left_small" android:background="@drawable/btn_header_selector" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ico_header_back" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/header_left_large" android:background="@drawable/btn_header_selector" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@null" android:contentDescription="@string/app_name" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ProgressBar android:id="@id/header_progress" android:paddingRight="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Small" />
+            <com.yaming.widget.MarqueeTextView android:textSize="@dimen/xlarge_text_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/header_title" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/header_progress" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <Button android:textSize="@dimen/basic_text_size" android:textColor="#ffe9e464" android:gravity="center" android:layout_gravity="right|center" android:id="@id/header_right_small" android:background="@null" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margins" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_top_unselect" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="@dimen/margins" android:layout_marginRight="@dimen/margins" style="@style/ListItem">
+                <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:text="@string/user_name_tip" style="@style/EditText" />
+                <EditText android:id="@id/user_name" android:hint="@string/user_name_tip_msg" android:singleLine="true" android:inputType="phone" style="@style/EditText" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_center_unselect" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins" style="@style/ListItem">
+                <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:text="@string/user_padd_tip" style="@style/EditText" />
+                <EditText android:layout_gravity="center_vertical" android:id="@id/user_pass" android:hint="@string/user_padd_tip_msg" android:singleLine="true" android:inputType="textPassword" style="@style/EditText" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/margins" android:baselineAligned="false">
+                <CheckBox android:textSize="@dimen/large_text_size" android:textColor="@color/checkbox_selector" android:id="@id/user_rember_psw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/chx_selector" android:text="@string/user_rember_pass" android:layout_weight="1.0" />
+                <CheckBox android:textSize="@dimen/large_text_size" android:textColor="@color/checkbox_selector" android:id="@id/user_auto_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/chx_selector" android:text="@string/user_auto_login" android:layout_weight="1.0" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/submit" android:background="@drawable/color_type_button_left_corners" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/user_login" style="@style/LoginButton.Submit" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/color_type_home_header" android:gravity="right" android:id="@id/user_password_find" android:paddingLeft="@dimen/margins" android:paddingTop="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/user_forget_pass" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chatbackground_layout_content" android:layout_width="120.0dip" android:layout_height="120.0dip">
+        <ImageView android:id="@id/chatbackground_iv_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/chatbackground_iv_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/chatbackground_tv_desc" android:background="#7b000000" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="默认" android:layout_alignBottom="@id/chatbackground_iv_pic" />
+        <ImageView android:gravity="center" android:id="@id/chatbackground_iv_download" android:background="#7b000000" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:src="@drawable/ic_topbar_save" android:layout_alignBottom="@id/chatbackground_iv_pic" />
+        <com.immomo.momo.android.view.MomoProgressbar android:id="@id/chatbackground_mp_progress" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignBottom="@id/chatbackground_iv_pic" />
+        <ImageView android:background="@drawable/bg_cover_chatbackbround" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/chatbackground_iv_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/bg_eshop_listitem_have" />
+    </RelativeLayout>
+</RelativeLayout>

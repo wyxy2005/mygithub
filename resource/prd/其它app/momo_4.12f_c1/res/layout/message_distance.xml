@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/message_layout_distancecontainer" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.EmoteTextView android:textSize="11.0sp" android:textColor="@color/text_messageitem_name" android:ellipsize="end" android:id="@id/message_tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:singleLine="true" />
+    <ImageView android:layout_gravity="bottom" android:layout_marginLeft="10.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/ic_user_location" style="@style/WrapContent" />
+    <com.immomo.momo.android.view.HandyTextView android:textSize="11.0sp" android:textColor="@color/text_messageitem_name" android:layout_gravity="bottom" android:id="@id/message_tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

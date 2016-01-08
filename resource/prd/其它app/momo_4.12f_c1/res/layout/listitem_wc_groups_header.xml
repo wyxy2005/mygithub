@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.FillWidthImageView android:layout_gravity="center_horizontal" android:id="@id/wcheader_iv_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/wcheader_layout_body" android:background="@drawable/bglistitem_selector_nomaltran" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="35.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/ic_wc_logo" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.immomo.momo.android.view.EmoteTextView android:textSize="15.0sp" android:textColor="#ff4fad29" android:ellipsize="end" android:id="@id/wcheader_txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <com.immomo.momo.android.view.EmoteTextView android:textSize="13.0sp" android:textColor="#ff606b5c" android:ellipsize="end" android:id="@id/wcheader_txt_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_green_arrow_right" />
+    </LinearLayout>
+    <com.immomo.momo.android.view.EmoteTextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:background="#ff2f662c" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="选择喜欢的球队，加入陌陌群组，一起呐喊助威！" />
+</LinearLayout>

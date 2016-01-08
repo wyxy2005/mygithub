@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/actionbar_height" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:meizu="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_body" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/head" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:paddingStart="@dimen/detail_padding_left_and_right" android:paddingEnd="@dimen/detail_padding_left_and_right">
+            <TextView android:textSize="@dimen/three_text_small_text_size" android:gravity="center" android:id="@id/file_total_num" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/large_file_title_margin_left" />
+            <ImageView android:id="@id/classify_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/mz_ic_list_more_borderless" android:layout_alignParentBottom="true" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/file_total_num" />
+            <com.meizu.common.widget.LoadingView android:id="@id/progress" android:layout_width="@dimen/rubbish_file_progress_width_height" android:layout_height="@dimen/rubbish_file_progress_width_height" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/large_file_title_margin_left" android:layout_alignParentEnd="true" meizu:mcLoadingRadius="9.0dip" meizu:mcRingWidth="2.0dip" />
+            <TextView android:textSize="@dimen/three_text_small_text_size" android:gravity="center" android:id="@id/file_total_size" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/large_file_title_margin_left" android:layout_alignParentEnd="true" />
+            <View android:background="#ffc8c8c8" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ListView android:id="@id/select_listview" android:paddingBottom="@dimen/smartbar_height" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/head" style="@style/Widget.DeviceDefault.Light.ListView.Meizu.Partition" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/security_nodata_size" android:textColor="@color/color_black" android:id="@id/tv_noLargeFile" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:alpha="0.3" />
+</RelativeLayout>

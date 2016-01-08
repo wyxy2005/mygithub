@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/tw_action_bar_icon_new_add_holo_dark" android:id="@id/menu_Add" android:title="@string/menu_add_title" android:showAsAction="always" android:actionLayout="@layout/actionbar_add_btn" />
+    <item android:icon="@drawable/tw_ic_menu_moreoverflow_pressed_dark" android:id="@id/menu_OverflowMenu" android:showAsAction="always" android:actionLayout="@layout/actionbar_overflow_btn" />
+</menu>

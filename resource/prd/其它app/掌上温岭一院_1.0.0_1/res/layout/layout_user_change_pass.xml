@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_top_unselect" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="@dimen/margins" android:layout_marginRight="@dimen/margins" style="@style/ListItem">
+        <EditText android:id="@id/user_old_pass" android:hint="@string/user_old_pass" android:singleLine="true" android:inputType="textPassword" style="@style/EditText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_center_unselect" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins" style="@style/ListItem">
+        <EditText android:id="@id/user_new_pass" android:hint="@string/user_new_pass" android:singleLine="true" android:inputType="textPassword" style="@style/EditText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_list_center_unselect" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins" style="@style/ListItem">
+        <EditText android:id="@id/user_config_pass" android:hint="@string/user_config_pass" android:singleLine="true" android:inputType="textPassword" style="@style/EditText" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/submit" android:background="@drawable/color_type_button_left_corners" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/margins" android:text="@string/submit" style="@style/ListItem" />
+</LinearLayout>

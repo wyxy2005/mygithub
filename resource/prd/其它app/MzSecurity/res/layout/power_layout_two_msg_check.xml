@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/settings_double_line_height" android:minHeight="@dimen/settings_double_line_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/settings_double_line_height" android:layout_marginLeft="@dimen/listview_item_padding_left" android:layout_marginRight="@dimen/listview_item_padding_left">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerInParent="true">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/applist_item_title_text_height" android:gravity="center_vertical" android:id="@id/mzs_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_black" android:id="@id/mzs_sub_title" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.5" />
+        </LinearLayout>
+        <CheckBox android:layout_gravity="right" android:id="@id/mzs_checkbox" android:background="@drawable/checkbox_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/h_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/listview_line_padding_left" android:layout_marginRight="@dimen/listview_line_padding_left" android:src="@color/color_black" android:layout_alignParentBottom="true" android:alpha="0.2" />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="0.0dip" android:paddingRight="10.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RelativeLayout android:background="@android:color/background_dark" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.immomo.momo.android.view.HandyTextView android:textColor="@color/white" android:minHeight="50.0dip" android:text="静音时段设置" style="@style/Setting_item_Left_Text" />
+        </RelativeLayout>
+        <include layout="@layout/include_patterns_divideline" />
+        <RelativeLayout android:id="@id/timepicker_layout_mutetime" android:background="@drawable/bglistitem_selector_nomaltran" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.immomo.momo.android.view.HandyTextView android:textColor="@android:color/primary_text_light" android:id="@id/timepicker_tv_label" android:minHeight="50.0dip" android:text="启动静音时段" style="@style/Setting_item_Left_Text" />
+            <CheckBox android:id="@id/timepicker_cb_mutetime" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+        </RelativeLayout>
+        <include layout="@layout/include_patterns_divideline" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.immomo.momo.android.view.HandyTextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始时间" />
+                <com.immomo.momo.android.view.NumberPicker android:id="@id/timepicker_np_start" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.immomo.momo.android.view.HandyTextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时" />
+                <com.immomo.momo.android.view.HandyTextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="结束时间" />
+                <com.immomo.momo.android.view.NumberPicker android:id="@id/timepicker_np_end" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.immomo.momo.android.view.HandyTextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include layout="@layout/include_patterns_divideline" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/light_gray" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="#ff000000" android:id="@id/btn_ok" android:background="@drawable/btn_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="确定" android:layout_weight="1.0" />
+        <Button android:textColor="#ff000000" android:id="@id/btn_cancle" android:background="@drawable/btn_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="取消" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.amap.api.maps.MapView android:id="@id/mapview" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+    <View android:background="@drawable/bg_mapview_cover" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/mapview" android:layout_alignTop="@id/mapview" android:layout_alignRight="@id/mapview" android:layout_alignBottom="@id/mapview" />
+    <View android:id="@id/mapcover" android:background="@color/background_normal" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignBottom="@id/mapview" />
+</RelativeLayout>

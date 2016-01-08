@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="applistfragment">false</item>
+    <item type="id" name="permissiongrouplistfragment">false</item>
+    <item type="id" name="permissiongrouplistfragment2">false</item>
+    <item type="id" name="do_not_show_again">false</item>
+    <item type="id" name="confirm">false</item>
+    <item type="id" name="permissionmanagmentfragment">false</item>
+    <item type="id" name="appinfo_layout">false</item>
+    <item type="id" name="noapplicationicon">false</item>
+    <item type="id" name="noapplicationtext">false</item>
+    <item type="id" name="appicon">false</item>
+    <item type="id" name="packagenamelayout2">false</item>
+    <item type="id" name="appname">false</item>
+    <item type="id" name="permission">false</item>
+    <item type="id" name="permissionlist">false</item>
+    <item type="id" name="permission_name">false</item>
+    <item type="id" name="icon_allowed">false</item>
+    <item type="id" name="icon_blocked">false</item>
+    <item type="id" name="permission_label">false</item>
+    <item type="id" name="permission_description">false</item>
+    <item type="id" name="check">false</item>
+    <item type="id" name="checkbox">false</item>
+    <item type="id" name="action_view_setting">false</item>
+</resources>

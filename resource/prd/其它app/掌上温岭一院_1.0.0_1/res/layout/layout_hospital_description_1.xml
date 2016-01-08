@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <WebView android:id="@id/webview" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:id="@id/hospital_detail_loading" android:layout_centerInParent="true" style="@style/ListSpinner" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_bottom" android:layout_width="fill_parent" android:layout_height="47.0dip">
+        <ImageButton android:id="@id/hospital_detail_navigation" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_hospital_navigation_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+        <View android:background="@drawable/bg_botton_driver" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/hospital_detail_floor_navigation" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_hospital_floor_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+        <View android:background="@drawable/bg_botton_driver" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/hospital_detail_navigation_perihery" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_hospital_perihery_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+</LinearLayout>

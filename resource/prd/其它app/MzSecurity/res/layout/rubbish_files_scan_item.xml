@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/rubbish_item_background" android:paddingLeft="@dimen/rubbish_file_padding" android:paddingRight="@dimen/rubbish_file_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/app_icon" android:layout_width="@dimen/rubbish_file_item_image_width_height" android:layout_height="@dimen/rubbish_file_item_image_width_height" android:layout_centerVertical="true" android:layout_marginStart="@dimen/rubbish_file_item_image_margin_left" android:layout_marginEnd="@dimen/rubbish_file_item_image_margin_right" />
+    <RelativeLayout android:id="@id/detail" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="0.0dip" android:paddingEnd="@dimen/rubbish_file_item_image_margin_left" android:layout_alignParentEnd="true">
+        <TextView android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/double_dot" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:id="@id/checked_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/next_icon" android:layout_width="@dimen/rubbish_file_progress_width_height" android:layout_height="@dimen/rubbish_file_progress_width_height" android:src="@drawable/mz_arrow_next_right_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/item_title_font_size" android:textColor="#cc000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="true" android:layout_alignWithParentIfMissing="true" android:layout_toStartOf="@id/detail" android:layout_toEndOf="@id/app_icon" />
+</RelativeLayout>

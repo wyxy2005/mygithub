@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/layout_join_event" android:background="@drawable/bglistitem_selector" android:visibility="gone" style="@style/Profile_Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.immomo.momo.android.view.HandyTextView android:text="报名活动" style="@style/Profile_Item_Text_Title" />
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/txt_join_event_count" style="@style/Profile_Item_Text_LeftNumeral" />
+    </LinearLayout>
+    <LinearLayout android:minHeight="75.0dip" style="@style/Profile_Item_Right_Parent">
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="5.0dip" style="@style/Profile_Item_Right_Info">
+            <ImageView android:layout_gravity="center" android:id="@id/userprofile_image_event" android:layout_width="46.0dip" android:layout_height="67.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="top|left|center" android:layout_gravity="top|left|center" android:id="@id/userprofile_txt_ventname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_desc" android:ellipsize="end" android:gravity="top|left|center" android:layout_gravity="top|left|center" android:id="@id/userprofile_txt_eventdesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_common_arrow_right" />
+        </LinearLayout>
+        <View android:id="@id/userprofile_view_line" style="@style/Line_Vertical" />
+    </LinearLayout>
+</LinearLayout>

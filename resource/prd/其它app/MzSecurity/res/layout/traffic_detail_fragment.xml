@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/traffic_detail_fragment" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:meizu="http://schemas.android.com/apk/res-auto">
+    <ListView android:id="@android:id/list" android:paddingTop="0.0dip" android:paddingBottom="@dimen/traffic_user_app_listview_padding_bottom" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.DeviceDefault.Light.ListView.Meizu.Partition" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/loading_app_progress" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.meizu.common.widget.LoadingView android:layout_width="wrap_content" android:layout_height="wrap_content" meizu:mcLoadingRadius="6.0dip" meizu:mcRingWidth="2.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_black" android:id="@id/user_have_no_app_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/text_loading" android:alpha="0.3" />
+    </LinearLayout>
+</FrameLayout>

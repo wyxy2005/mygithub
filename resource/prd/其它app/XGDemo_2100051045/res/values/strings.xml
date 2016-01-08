@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">信鸽Demo</string>
+    <string name="action_search">搜索</string>
+    <string name="action_device_token">设备Token</string>
+    <string name="action_setting">功能设置</string>
+    <string name="action_help_center">帮助中心</string>
+    <string name="action_about_us">关于信鸽</string>
+    <string name="device_title">您的设备Token为：</string>
+    <string name="device_hint">已成功上传至网页端测试设备页面</string>
+    <string name="action_clear">清除已收到通知</string>
+    <string name="action_copy">复制Token</string>
+    <string name="version">信鸽Demo 2.3.0</string>
+</resources>

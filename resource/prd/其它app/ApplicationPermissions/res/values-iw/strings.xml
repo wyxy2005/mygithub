@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">השבת פונקציה זו כדי למנוע הפעלה אוטומטית של היישום ולכפות עליו עצירה לאחר פרק זמן מסוים של אי-שימוש.</string>
+</resources>

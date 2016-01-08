@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.immomo.momo.android.view.ChatEmoteTextView android:textSize="16.0sp" android:textColorLink="@color/text_link" android:gravity="left|center" android:autoLink="all" android:id="@id/message_tv_msgtext" android:padding="@dimen/message_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextContent"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

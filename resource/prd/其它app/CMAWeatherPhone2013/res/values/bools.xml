@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="cts_use_fahrenheit">false</bool>
+    <bool name="cts_use_three_hours_auto_refresh">false</bool>
+    <bool name="cts_use_six_hours_auto_refresh">false</bool>
+    <bool name="cts_use_twenty_four_hours_auto_refresh">false</bool>
+    <bool name="cts_enable_japan_protocol">false</bool>
+    <bool name="cts_except_accounting_dialog">false</bool>
+    <bool name="cts_americas_motion_dialog">false</bool>
+    <bool name="cts_americas_motion_dialog_2">false</bool>
+    <bool name="cts_search_new_location_while_refreshing">true</bool>
+    <bool name="verizon">false</bool>
+    <bool name="Motion_shake_possible">true</bool>
+    <bool name="dst_icon_shown">true</bool>
+    <bool name="search_result_israel_visiable">true</bool>
+    <bool name="cts_check_wifi_state">false</bool>
+    <bool name="hero_widget_animation">true</bool>
+    <bool name="widget_render_mode_is_dirty">true</bool>
+    <bool name="widget_add_defaut_cities">false</bool>
+    <bool name="widget_fps_test">false</bool>
+    <bool name="widget_sensor_dirty_mode">true</bool>
+    <bool name="widget_is_set_google">false</bool>
+    <bool name="widget_speed_up_when_resizing">true</bool>
+    <bool name="cma_new_api">true</bool>
+</resources>

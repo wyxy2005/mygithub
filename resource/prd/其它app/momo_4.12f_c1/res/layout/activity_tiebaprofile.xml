@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/bg_vip_avatar_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:id="@id/layout_btn" android:baselineAligned="false" android:layout_alignParentBottom="true" style="@style/Style_BottomBar">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tieba_layout_extgoto" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="1.0" style="@style/Style_Bottom_Btn">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/profile_bottom_text_color" android:gravity="center" android:id="@id/tieba_tv_extgoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tieba_publish" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/Style_Bottom_Btn">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/profile_bottom_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="发布话题" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.immomo.momo.android.view.MomoRefreshListView android:id="@id/listitem_tieba" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_transition" android:divider="@null" android:dividerHeight="0.0dip" android:layout_above="@id/layout_btn" android:layout_below="@id/layout_header" style="@style/SimpleListView" />
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

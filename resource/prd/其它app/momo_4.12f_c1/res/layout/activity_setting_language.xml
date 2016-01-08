@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/language_layout_en" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Setting_Item">
+                <com.immomo.momo.android.view.HandyTextView android:text="English" style="@style/Setting_item_Left_Text" />
+                <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+            <include layout="@layout/include_patterns_divideline" />
+            <RelativeLayout android:id="@id/language_layout_zh" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Setting_Item">
+                <com.immomo.momo.android.view.HandyTextView android:text="简体中文" style="@style/Setting_item_Left_Text" />
+                <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+            <include layout="@layout/include_patterns_divideline" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

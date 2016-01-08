@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/settings_single_line_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/listview_item_padding_left" android:layout_marginRight="@dimen/listview_item_padding_left" android:layout_weight="3.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/applist_item_title_text_height" android:id="@id/mzs_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:id="@id/mzs_tv_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:alpha="0.5" />
+    </RelativeLayout>
+    <SeekBar android:id="@id/mzs_seek_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:layout_weight="3.0" />
+</LinearLayout>

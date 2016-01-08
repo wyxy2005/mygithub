@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="screen_effect_entries">
+        <item>默认</item>
+        <item>盒子</item>
+        <item>翻滚</item>
+        <item>波浪</item>
+        <item>翻转</item>
+        <item>跳跃</item>
+        <item>纸张</item>
+        <item>双子星</item>
+        <item>滚咕噜咕噜滚</item>
+        <item>随机</item>
+    </string-array>
+</resources>

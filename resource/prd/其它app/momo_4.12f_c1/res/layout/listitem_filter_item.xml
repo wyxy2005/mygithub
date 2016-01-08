@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_filterImg" android:background="@drawable/round_corner_filter_gray" android:padding="1.0px" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="3.0px" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/iv_filter_cover" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/btn_filter_cover" />
+    <com.immomo.momo.android.view.HandyTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_filterName" android:paddingBottom="2.0dip" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="1.0" android:layout_alignBottom="@id/iv_filterImg" android:layout_centerHorizontal="true" />
+</RelativeLayout>

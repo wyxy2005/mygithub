@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/edittext_multiline" android:paddingLeft="@dimen/underlineview_inner_padding" android:paddingTop="@dimen/underlineview_inner_padding" android:paddingRight="@dimen/underlineview_inner_padding" android:paddingBottom="8.0dip" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/underline_iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_reg_name" />
+    <View android:id="@id/underline_view_dividingline" android:background="@color/unberlineview_dividingline" android:layout_width="1.0dip" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/underlineview_inner_padding" android:layout_marginRight="@dimen/underlineview_inner_padding" />
+    <EditText android:textSize="16.0sp" android:textColor="@color/unberlineview_text" android:id="@id/underline_et_text" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:imeOptions="actionNext" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/dialog_backgroud_full" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/listview" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/bglistitem_selector_user" android:divider="@color/devideline" android:dividerHeight="1.0px" style="@style/Style_Scrollable" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bglistitem_selector_nomalfull" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.immomo.momo.android.view.EmoteTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_musicname" android:minHeight="50.0dip" android:singleLine="true" style="@style/Profile_Item_Text_content" />
+        <com.immomo.momo.android.view.EmoteTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_starname" android:layout_marginLeft="3.0dip" android:minHeight="45.0dip" android:singleLine="true" style="@style/Profile_Item_Text_desc" />
+    </LinearLayout>
+    <View android:id="@id/view_line" style="@style/Line_Vertical" />
+</LinearLayout>

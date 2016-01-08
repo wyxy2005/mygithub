@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sliding_button_container" style="@style/StylePowerCenterPreferenceItem">
+        <TextView android:textAppearance="@269287511" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/power_save_on_time_auto_save_title" android:layout_weight="1.0" />
+        <miui.widget.SlidingButton android:id="@id/sliding_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/time_start" style="@style/StylePowerCenterPreferenceItem">
+        <TextView android:textAppearance="@269287511" android:id="@id/option_title_start_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/power_save_on_time_start_time_summary" android:layout_weight="1.0" />
+        <TextView android:textAppearance="@269287538" android:id="@id/option_label_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/power_save_choose_mode" android:drawableRight="@268566632" android:drawablePadding="6.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/time_end" style="@style/StylePowerCenterPreferenceItem">
+        <TextView android:textAppearance="@269287511" android:id="@id/option_title_end_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/power_save_on_time_end_time_summary" android:layout_weight="1.0" />
+        <TextView android:textAppearance="@269287538" android:id="@id/option_label_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/power_save_choose_mode" android:drawableRight="@268566632" android:drawablePadding="6.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/option_view" style="@style/StylePowerCenterPreferenceItem">
+        <TextView android:textAppearance="@269287511" android:id="@id/option_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/power_save_on_time_option_title" android:layout_weight="1.0" />
+        <TextView android:textAppearance="@269287538" android:id="@id/option_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/power_save_choose_mode" android:drawableRight="@268566632" android:drawablePadding="6.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/goout_option" style="@style/StylePowerCenterPreferenceItem">
+        <TextView android:textAppearance="@269287511" android:id="@id/option_title_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/power_save_on_time_goout_title" android:layout_weight="1.0" />
+        <TextView android:textAppearance="@269287538" android:id="@id/option_label_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/power_save_choose_mode" android:drawableRight="@268566632" android:drawablePadding="6.0dip" />
+    </LinearLayout>
+</LinearLayout>

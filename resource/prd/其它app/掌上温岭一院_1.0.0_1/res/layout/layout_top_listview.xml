@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@layout/list_view" />
+        <ViewStub android:id="@id/list_empty_view" android:layout="@layout/layout_empty_textview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:id="@id/listview_loading" android:visibility="gone" android:layout_centerInParent="true" style="@style/ListSpinner" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/list_bottom_view" android:layout="@layout/layout_bottom_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margins" />
+</LinearLayout>

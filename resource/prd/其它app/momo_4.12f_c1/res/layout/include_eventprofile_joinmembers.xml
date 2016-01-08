@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/view_showmemberlist" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <include android:id="@id/member_avatar_block0" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+        <include android:id="@id/member_avatar_block1" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+        <include android:id="@id/member_avatar_block2" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+        <include android:id="@id/member_avatar_block3" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+        <include android:id="@id/member_avatar_block4" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+        <include android:id="@id/member_avatar_block5" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+        <include android:id="@id/member_avatar_block6" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+        <include android:id="@id/member_avatar_block7" android:visibility="invisible" android:layout_weight="1.0" layout="@layout/listitem_groupmember" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center" android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/member_arrow_margin_left" android:src="@drawable/ic_common_arrow_right" />
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">停用此功能來避免應用程式自動執行，並於不使用時強制停止執行。</string>
+</resources>

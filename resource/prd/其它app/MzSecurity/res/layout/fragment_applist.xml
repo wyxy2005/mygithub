@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/color_actionbar_bg" android:paddingTop="@dimen/titlebar_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.95">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height">
+            <ImageButton android:layout_gravity="center_vertical" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:src="@drawable/ic_sb_search" android:layout_centerVertical="true" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="67.0dip" android:layout_marginRight="67.0dip" android:layout_centerVertical="true">
+                <EditText android:id="@id/et_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search_app" android:singleLine="true" android:drawableRight="@drawable/title_search_delete" android:drawablePadding="12.0dip" />
+                <ImageButton android:id="@id/ib_delete" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/title_search_delete" android:layout_alignRight="@id/et_search" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@color/tab_text_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_body" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/listview_item_padding_left" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/listview_item_padding_left">
+            <TextView android:gravity="center_vertical" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/listview_padding_left" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+            <TextView android:gravity="center_vertical" android:id="@id/tv_lbe" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/listview_padding_left" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" android:alpha="0.5" />
+        </RelativeLayout>
+        <ImageView android:id="@id/underline" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="3.0px" android:src="@color/color_black" android:alpha="0.2" android:layout_marginStart="@dimen/detail_padding_left_and_right" android:layout_marginEnd="@dimen/detail_padding_left_and_right" />
+        <ListView android:id="@id/app_list" android:paddingLeft="@dimen/listview_padding_left" android:paddingRight="@dimen/listview_padding_left" android:paddingBottom="@dimen/smartbar_height" android:layout_width="fill_parent" android:layout_height="fill_parent" android:headerDividersEnabled="false" android:footerDividersEnabled="false" style="@style/Widget.DeviceDefault.Light.ListView.Meizu.Partition" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_no_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/security_nodata_size" android:textColor="@color/color_black" android:gravity="top|center" android:id="@id/tv_no_result" android:layout_width="fill_parent" android:layout_height="@dimen/security_nodata_height" android:text="@string/text_loading" android:alpha="0.3" />
+    </LinearLayout>
+</LinearLayout>

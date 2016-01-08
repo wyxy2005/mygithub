@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/list_item_selector" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/article_list_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <uk.co.senab.bitmapcache.widget.NetworkedCacheableImageView android:layout_gravity="center_vertical" android:id="@id/list_item_article_image" android:layout_width="90.0dip" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/margins" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="@dimen/margins" android:layout_toRightOf="@id/article_list_layout">
+        <TextView android:textSize="@dimen/larger_text_size" android:textColor="@color/black" android:id="@id/list_item_article_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/checkbox_uncheck" android:id="@id/list_item_article_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="2" android:lines="2" />
+    </LinearLayout>
+</RelativeLayout>

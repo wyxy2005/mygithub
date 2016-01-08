@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rg_rootLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_phone" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/rg_et_areacode" android:background="@drawable/edittext_default" android:clickable="true" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="+86" android:singleLine="true" />
+                <EditText android:id="@id/rg_et_phone" android:background="@drawable/edittext_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="输入手机号码" android:singleLine="true" android:maxLength="16" android:inputType="phone" android:imeOptions="actionNext" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="35.0sp" android:textColor="@color/text_highlight" android:ellipsize="start" android:gravity="center" android:id="@id/rg_tv_phone_notice" android:background="@color/notice_background" android:padding="3.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="8.0dip" android:singleLine="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

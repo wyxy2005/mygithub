@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <com.yaming.widget.WebScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.yaming.widget.SquareImageView android:id="@id/hospital_detail_description" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bg_hospital_description" android:scaleType="fitXY" squareImageView:width_weight="2" xmlns:squareImageView="http://schemas.android.com/apk/res-auto" />
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_hospital_description_button" android:layout_width="fill_parent" android:layout_height="47.0dip">
+                <ImageButton android:id="@id/hospital_detail_navigation" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_hospital_navigation_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+                <ImageView android:layout_gravity="center" android:background="@null" android:layout_width="1.0dip" android:layout_height="wrap_content" android:src="@drawable/bg_dividing_line" android:contentDescription="@string/app_name" />
+                <ImageButton android:id="@id/hospital_detail_floor_navigation" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_hospital_floor_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+                <ImageView android:layout_gravity="center" android:background="@null" android:layout_width="1.0dip" android:layout_height="wrap_content" android:src="@drawable/bg_dividing_line" android:contentDescription="@string/app_name" />
+                <ImageButton android:id="@id/hospital_detail_navigation_perihery" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_hospital_perihery_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="200.0dip">
+                <WebView android:id="@id/webview" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ProgressBar android:id="@id/hospital_detail_loading" android:layout_centerInParent="true" style="@style/ListSpinner" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.yaming.widget.WebScrollView>
+</LinearLayout>

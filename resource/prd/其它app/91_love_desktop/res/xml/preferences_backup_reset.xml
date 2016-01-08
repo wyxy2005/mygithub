@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.nd.android.ilauncher.setting.IHomeDialogPreference android:title="@string/setting_backup_tobackup" android:key="tobackup" android:dialogTitle="@string/setting_backup_tobackup" android:dialogMessage="@string/setting_backup_tobackup_message" android:dialogIcon="@android:drawable/ic_dialog_alert" android:positiveButtonText="@string/common_button_confirm" android:negativeButtonText="@string/common_button_cancel" />
+    <com.nd.android.ilauncher.setting.IHomeDialogPreference android:enabled="false" android:title="@string/setting_backup_torestore" android:key="torestore" android:summary="@string/setting_backup_torestore_hint" android:dialogTitle="@string/setting_backup_torestore" android:dialogMessage="@string/setting_backup_torestore_message" android:dialogIcon="@android:drawable/ic_dialog_alert" android:positiveButtonText="@string/common_button_confirm" android:negativeButtonText="@string/common_button_cancel" />
+    <com.nd.android.ilauncher.setting.IHomeDialogPreference android:title="@string/setting_reset" android:key="reset" android:summary="@string/setting_reset_hint" android:dialogTitle="@string/setting_reset_title" android:dialogMessage="@string/setting_reset_message" android:dialogIcon="@android:drawable/ic_dialog_alert" android:positiveButtonText="@string/common_button_confirm" android:negativeButtonText="@string/common_button_cancel" />
+</PreferenceScreen>

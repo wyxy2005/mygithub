@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="56.0dip" android:layout_height="fill_parent" android:contentDescription="@string/menu_overflow_title_tts"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/actionbar_btn_selector" android:duplicateParentState="true" android:layout_width="56.0dip" android:layout_height="fill_parent" style="@android:style/Widget.ActionButton">
+        <ImageView android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/tw_ic_menu_moreoverflow_normal_holo_dark" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

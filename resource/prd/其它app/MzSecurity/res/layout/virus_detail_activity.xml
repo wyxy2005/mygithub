@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="@dimen/virus_clean_fragment_padding_top" android:paddingBottom="@dimen/virus_clean_fragment_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/top_padding" android:layout_width="fill_parent" android:layout_height="@dimen/overview_top_padding" android:layout_marginTop="@dimen/overview_top_padding" />
+    <include android:id="@id/app_snippet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_padding" layout="@layout/virus_details_start" />
+    <ImageView android:background="@drawable/mz_card_list_divider_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/app_snippet" />
+    <include android:id="@id/virus_level_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/app_snippet" layout="@layout/virus_details_item" />
+    <ImageView android:background="@drawable/mz_card_list_divider_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/virus_level_panel" />
+    <include android:id="@id/virus_summary_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/virus_level_panel" layout="@layout/virus_details_item" />
+    <ImageView android:background="@drawable/mz_card_list_divider_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/virus_summary_panel" />
+    <Button android:textSize="@dimen/virus_ditail_text_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/uninstall_virus" android:background="@drawable/button_style" android:layout_width="fill_parent" android:layout_height="@dimen/virus_ditail_buttom_height" android:layout_marginLeft="28.0dip" android:layout_marginRight="28.0dip" android:layout_marginBottom="@dimen/virus_ditail_buttom_margin_bottom" android:text="@string/uninstall" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

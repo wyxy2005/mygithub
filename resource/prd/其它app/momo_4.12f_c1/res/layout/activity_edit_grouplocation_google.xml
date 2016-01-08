@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:id="@id/tv_label1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="@string/edit_grouplocation_string1" android:layout_below="@id/layout_header" />
+    <com.google.android.maps.MapView android:id="@id/mapview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_above="@id/layout_bottom" android:layout_below="@id/tv_label1" android:apiKey="@string/googlemapkey" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_bottom" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:id="@id/tv_label2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/edit_grouplocation_string2" />
+        <Button android:textSize="14.0sp" android:textColor="#ff465579" android:id="@id/btn_current_location" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="8.0dip" android:text="@string/edit_grouplocation_string3" />
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

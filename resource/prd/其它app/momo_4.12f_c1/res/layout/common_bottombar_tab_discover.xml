@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/TabItem_Layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.HandyTextView android:gravity="center_horizontal" android:id="@id/tab_item_tv_label" android:text="发现" android:drawableTop="@drawable/ic_tab_site" android:layout_centerInParent="true" style="@style/Style.TabItem.Label" />
+    <ImageView android:gravity="center" android:id="@id/tabitem_prifile_iv_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="-20.0dip" android:src="@drawable/bg_msgtip_point" android:minWidth="20.0dip" android:layout_alignRight="@id/tab_item_tv_label" android:layout_alignParentTop="true" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_root" android:background="@color/dialog_backgroud_full" android:paddingLeft="10.0dip" android:paddingTop="70.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/neabyfilter_layout_options" android:background="@drawable/bg_dialog_window" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Scrollable">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_content" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="您想看到的用户" />
+                <RadioGroup android:orientation="horizontal" android:id="@id/filter_rg_gender" android:background="@drawable/round_corner_filter_all" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioButton android:gravity="center" android:id="@id/filter_radiobutton_genderAll" android:layout_marginRight="1.0px" android:checked="true" android:minHeight="36.0dip" android:text="全部" style="@style/menu_selected_filter_left" />
+                    <RadioButton android:gravity="center" android:id="@id/filter_radiobutton_genderMale" android:layout_marginRight="1.0px" android:minHeight="36.0dip" android:text="男" style="@style/menu_selected_filter_center" />
+                    <RadioButton android:gravity="center" android:id="@id/filter_radiobutton_genderFemale" android:minHeight="36.0dip" android:text="女" style="@style/menu_selected_filter_right" />
+                </RadioGroup>
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_content" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="出现的时间" />
+                <RadioGroup android:orientation="horizontal" android:id="@id/filter_rg_time" android:background="@drawable/round_corner_filter_all" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioButton android:gravity="center" android:id="@id/filter_radiobutton_time15" android:layout_marginRight="1.0px" android:minHeight="36.0dip" android:text="15分钟" style="@style/menu_selected_filter_left" />
+                    <RadioButton android:gravity="center" android:id="@id/filter_radiobutton_time60" android:layout_marginRight="1.0px" android:minHeight="36.0dip" android:text="60分钟" style="@style/menu_selected_filter_center" />
+                    <RadioButton android:gravity="center" android:id="@id/filter_radiobutton_time1440" android:layout_marginRight="1.0px" android:minHeight="36.0dip" android:text="1天" style="@style/menu_selected_filter_center" />
+                    <RadioButton android:gravity="center" android:id="@id/filter_radiobutton_time4320" android:checked="true" android:minHeight="36.0dip" android:text="3天" style="@style/menu_selected_filter_right" />
+                </RadioGroup>
+                <com.immomo.momo.android.view.HandyTextView android:textColor="@color/text_content" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="会员筛选选项" style="@style/menu_text" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/round_corner_filter_all" android:padding="1.0px" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:gravity="center_vertical" android:id="@id/filter_layout_industry" android:background="@drawable/bg_eventfiler_topleft" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="43.0dip" android:layout_marginRight="1.0px" android:layout_weight="1.0">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职业:" style="@style/menu_text" />
+                            <TextView android:textColor="@color/text_content" android:gravity="right" android:id="@id/filter_tv_industry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="不限" style="@style/menu_text" />
+                            <ImageView android:id="@id/filter_iv_industry" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_setting_weibo" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center_vertical" android:id="@id/filter_layout_bind" android:background="@drawable/bg_eventfiler_topright" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="43.0dip" android:layout_weight="1.0">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="绑定:" style="@style/menu_text" />
+                            <TextView android:textColor="@color/text_content" android:gravity="right" android:id="@id/filter_tv_bind" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="不限" style="@style/menu_text" />
+                            <ImageView android:id="@id/filter_iv_bind" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_setting_weibo" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px">
+                        <RelativeLayout android:gravity="center_vertical" android:id="@id/filter_layout_age" android:background="@drawable/bg_eventfiler_bottomleft" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="43.0dip" android:layout_marginRight="1.0px" android:layout_weight="1.0">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="年龄:" style="@style/menu_text" />
+                            <TextView android:textColor="@color/text_content" android:gravity="right" android:id="@id/filter_tv_age" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="不限" style="@style/menu_text" />
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center_vertical" android:id="@id/filter_layout_constellation" android:background="@drawable/bg_eventfiler_bottomright" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="43.0dip" android:layout_weight="1.0">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="星座:" style="@style/menu_text" />
+                            <TextView android:textColor="@color/text_content" android:gravity="right" android:id="@id/filter_tv_constellation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="狮子座" style="@style/menu_text" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/dialog_layout_button" android:background="@drawable/bg_dialog_btnbar" android:paddingTop="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_cancle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/dialog_btn_cancel" android:layout_weight="1.0" style="@style/DialogButton.Left" />
+            <Button android:textColor="@color/blue" android:id="@id/btn_ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="1.0px" android:text="@string/dialog_btn_confim" android:layout_weight="1.0" style="@style/DialogButton.Right" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/neabyfileter_layout_listview" android:background="@drawable/bg_dialog_window" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="60.0dip">
+        <ListView android:id="@id/listview" android:background="@drawable/bg_dialog_simplelist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:listSelector="@drawable/list_selector_transition" android:divider="@color/dialog_divider" android:dividerHeight="1.0dip" style="@style/Style_Scrollable" />
+    </FrameLayout>
+</RelativeLayout>

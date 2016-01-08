@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/login_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_header" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_list_top_unselect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margins" style="@style/ListItem">
+            <EditText android:id="@id/treate_card" android:hint="@string/user_treate_card_tip" android:singleLine="true" style="@style/EditText" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/submit" android:background="@drawable/color_type_button_left_corners" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/tip_ok" style="@style/LoginButton.Submit" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="workspace_cell_width">180.0px</dimen>
+    <dimen name="workspace_cell_height">228.0px</dimen>
+    <dimen name="workspace_start_height">15.0dip</dimen>
+    <dimen name="desktop_circle_index_margin_bottom">92.0dip</dimen>
+    <dimen name="quick_start_bar_height">79.0dip</dimen>
+    <dimen name="workspace_end_height">110.0dip</dimen>
+</resources>

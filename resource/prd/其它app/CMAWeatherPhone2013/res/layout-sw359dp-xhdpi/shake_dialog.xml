@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="21.0dip" android:textColor="@color/col_1E1E1E" android:id="@id/do_not_ask_again_message" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/message_shake_guide" />
+        <ViewFlipper android:id="@id/motion_image" android:layout_width="wrap_content" android:layout_height="208.0dip" android:layout_marginTop="8.0dip" android:flipInterval="500">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/motion_shake_01" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/motion_shake_02" />
+        </ViewFlipper>
+        <TextView android:textSize="21.0dip" android:textColor="@color/col_1E1E1E" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/motion_disabled" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/dialog_motion_disabled" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/do_not_ask_again_area" android:paddingLeft="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="18.0dip">
+            <com.sec.android.touchwiz.widget.TwCheckBox android:textAppearance="?android:textAppearanceMedium" android:id="@id/dontshow" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/message_donot_show" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

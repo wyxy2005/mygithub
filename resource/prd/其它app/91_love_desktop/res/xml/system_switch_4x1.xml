@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pandaWidget panda:spanX="4" panda:spanY="1" panda:layoutRes="@layout/system_switch_4x1"
+  xmlns:panda="http://schemas.android.com/apk/res/com.nd.android.ilauncher" />

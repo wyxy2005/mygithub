@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/setting_about_version" android:key="version" android:summary="1.0" />
+    <PreferenceScreen android:title="@string/setting_about_feedback" android:key="feedback" android:summary="@string/setting_about_feedback_hint" />
+    <PreferenceScreen android:title="@string/setting_about_copyright" android:summary="@string/setting_about_copyright_hint" />
+</PreferenceScreen>

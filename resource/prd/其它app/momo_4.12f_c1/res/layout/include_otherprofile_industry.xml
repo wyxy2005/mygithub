@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.immomo.momo.android.view.PushDownLayout android:id="@id/layout_industry" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:clickable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/include_patterns_divideline" />
+        <include layout="@layout/include_industry" />
+    </LinearLayout>
+</com.immomo.momo.android.view.PushDownLayout>

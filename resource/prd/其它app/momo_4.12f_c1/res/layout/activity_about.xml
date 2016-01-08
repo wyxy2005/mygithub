@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <com.immomo.momo.android.view.FillWidthImageView android:layout_gravity="center_horizontal" android:id="@id/about_icon" android:background="@drawable/pic_about_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_below="@id/layout_header" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/about_icon">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Style_Patterns">
+                <LinearLayout android:id="@id/about_layout_help" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:minHeight="50.0dip" android:text="帮助与反馈" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+                <LinearLayout android:id="@id/about_layout_update" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:minHeight="50.0dip" android:text="检查新版本" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:id="@id/about_text_version" android:minHeight="50.0dip" style="@style/Text_List_Content" />
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+                <LinearLayout android:id="@id/about_layout_introduction" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:minHeight="50.0dip" android:text="版本介绍" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+                <LinearLayout android:id="@id/about_layout_agreement" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:minHeight="50.0dip" android:text="用户协议" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+                <LinearLayout android:id="@id/about_layout_mark" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:minHeight="50.0dip" android:text="给陌陌打分" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </LinearLayout>
+                <View style="@style/Line_Vertical" />
+                <LinearLayout android:id="@id/about_layout_netchecker" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:minHeight="50.0dip" android:text="网络检测" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </LinearLayout>
+                <View android:id="@id/about_v_trafficline" style="@style/Line_Vertical" />
+                <LinearLayout android:id="@id/about_layout_traffic" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:minHeight="50.0dip" android:text="流量统计" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pic_about_logo" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="10.0dip" android:textColor="@color/text_desc" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Copyright © 2014 MOMO All Rights Reserved" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

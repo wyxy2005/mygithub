@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="warning_mode_setting_entries">
+        <item>항상 알림</item>
+        <item>한 번만 알림</item>
+        <item>알리지 않음</item>
+    </string-array>
+    <string-array name="warning_mode_setting_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/vip_iv_avatar_bglayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/bg_vip_avatar_default" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/vip_iv_avatar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/vip_iv_avatar_bg_cover" android:background="@drawable/bg_profile_vip_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

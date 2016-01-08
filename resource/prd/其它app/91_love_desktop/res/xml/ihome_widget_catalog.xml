@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pandawidgets
+  xmlns:launcher="http://schemas.android.com/apk/res/com.nd.android.ilauncher">
+    <pandawidget launcher:className="com.nd.android.widget.pandahome.clockweather.ClockWeatherChoose" launcher:packageName="com.nd.android.widget.pandahome.clockweather" launcher:icon="@drawable/ic_launcher_pandahome_customwidget_clockweather" launcher:title="@string/ihome_custom_widget_clock_weather" launcher:type="1" />
+    <pandawidget launcher:className="com.nd.android.ilauncher.widget.memoryclean.MemoryCleanWidgetActivity" launcher:packageName="com.nd.android.ilauncher" launcher:icon="@drawable/ic_launcher_pandahome_customwidget_memory_clean_1x1" launcher:title="@string/memory_cleaner" launcher:type="1" launcher:isRecommend="true" />
+    <pandawidget launcher:className="com.nd.android.ilauncher.widget.systemswitch.SystemSwitchWidgetActivity" launcher:packageName="com.nd.android.ilauncher" launcher:icon="@drawable/ic_launcher_pandahome_customwidget_switcher" launcher:title="@string/system_switch" launcher:type="1" launcher:isRecommend="true" />
+    <pandawidget launcher:className="com.nd.android.widget.pandahome.ionekeyoffscreen.OffScreenChoose" launcher:packageName="com.nd.android.widget.pandahome.ionekeyoffscreen" launcher:icon="@drawable/icon_off_screen" launcher:title="@string/ihome_custom_widget_one_key_off_screen" launcher:localPkgName="OneKeyOffScreen" launcher:type="4" />
+</pandawidgets>

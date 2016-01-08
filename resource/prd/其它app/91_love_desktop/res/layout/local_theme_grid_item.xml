@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/theme_item" android:layout_width="97.29999dip" android:layout_height="175.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="97.29999dip" android:layout_height="147.9dip">
+        <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/theme_thumb_bg" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="center" android:id="@id/theme_thumb" android:layout_width="80.0dip" android:layout_height="130.6dip" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/theme_using" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/theme_using" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/theme_upgradeable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/theme_upgradeable_mask" />
+    </FrameLayout>
+    <com.nd.android.ilauncher.commonview.AlwaysMarqueeTextView android:textSize="12.0sp" android:textColor="#ff646e7b" android:ellipsize="marquee" android:gravity="bottom|center" android:id="@id/theme_name" android:layout_width="97.29999dip" android:layout_height="18.299988dip" android:layout_marginTop="2.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/message_layout_emotes" android:background="@color/msg_editor_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.ChatMenuView android:id="@id/message_chatmenu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.immomo.momo.android.view.EmoteInputView android:id="@id/message_emoteview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

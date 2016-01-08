@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@miui:style/Widget.ListView.Item.SingleLine">
+        <TextView android:textAppearance="@269287512" android:layout_gravity="bottom" android:id="@id/power_consume_total" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
+    </LinearLayout>
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" style="@miui:style/Widget.ListView" />
+</LinearLayout>

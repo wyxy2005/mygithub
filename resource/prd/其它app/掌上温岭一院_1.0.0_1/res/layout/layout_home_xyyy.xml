@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffe4e5e5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/layout_frontpage_title" />
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.yaming.widget.loop.viewpager.AutoLoopViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" loop:loopviewpager_width_weight="540" loop:loopviewpager_height_weight="270" xmlns:loop="http://schemas.android.com/apk/res-auto" />
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_marginBottom="4.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/home_header_text" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/home_header_dot_1" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/bg_dot_focused" android:contentDescription="@string/app_name" />
+                        <ImageView android:id="@id/home_header_dot_2" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/bg_dot_normal" android:contentDescription="@string/app_name" />
+                        <ImageView android:id="@id/home_header_dot_3" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="@dimen/margins" android:src="@drawable/bg_dot_normal" android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/LinearLayout_home_item_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="@dimen/margins" android:layout_marginRight="@dimen/margins" android:baselineAligned="false">
+                    <com.yaming.widget.SquareLinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/home_item_1" android:background="@drawable/bg_home_ico_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_item1_cz" android:contentDescription="@string/app_name" />
+                    </com.yaming.widget.SquareLinearLayout>
+                    <com.yaming.widget.SquareLinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/home_item_2" android:background="@drawable/bg_home_ico_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_item2_cz" android:contentDescription="@string/app_name" />
+                    </com.yaming.widget.SquareLinearLayout>
+                    <com.yaming.widget.SquareLinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/home_item_3" android:background="@drawable/bg_home_ico_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_item3_cz" android:contentDescription="@string/app_name" />
+                    </com.yaming.widget.SquareLinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/LinearLayout_home_item_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="@dimen/margins" android:layout_marginRight="@dimen/margins" android:baselineAligned="false">
+                    <com.yaming.widget.SquareLinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/home_item_4" android:background="@drawable/bg_home_ico_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_item4_cz" android:contentDescription="@string/app_name" />
+                    </com.yaming.widget.SquareLinearLayout>
+                    <com.yaming.widget.SquareLinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/home_item_5" android:background="@drawable/bg_home_ico_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_item5_cz" android:contentDescription="@string/app_name" />
+                    </com.yaming.widget.SquareLinearLayout>
+                    <com.yaming.widget.SquareLinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/home_item_6" android:background="@drawable/bg_home_ico_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_item6_cz" android:contentDescription="@string/app_name" />
+                    </com.yaming.widget.SquareLinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/LinearLayout_home_item_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/margins" android:baselineAligned="false">
+                    <com.yaming.widget.SquareLinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/home_item_7" android:background="@drawable/bg_home_ico_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_item7_cz" android:contentDescription="@string/app_name" />
+                    </com.yaming.widget.SquareLinearLayout>
+                    <com.yaming.widget.SquareLinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/home_item_8" android:background="@drawable/bg_home_ico_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_item8_cz" android:contentDescription="@string/app_name" />
+                    </com.yaming.widget.SquareLinearLayout>
+                    <com.yaming.widget.SquareLinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/home_item_9" android:background="@drawable/bg_home_ico_bg" android:visibility="invisible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_item7_cz" android:contentDescription="@string/app_name" />
+                    </com.yaming.widget.SquareLinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include layout="@layout/layout_frontpage_user" />
+    <include layout="@layout/layout_frontpage_more" />
+</android.support.v4.widget.DrawerLayout>

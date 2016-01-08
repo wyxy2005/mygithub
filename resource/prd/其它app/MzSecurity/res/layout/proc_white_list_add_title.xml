@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_height" android:paddingStart="@dimen/actionbar_padding_left" style="?android:actionBarStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/proc_white_list_add_title" android:paddingRight="60.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/proc_services_whitelist_add" android:singleLine="true" android:layout_alignParentLeft="true" />
+    <com.meizu.common.widget.SelectionButton android:id="@id/proc_add_selectAll" android:paddingRight="@dimen/virus_clean_list_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

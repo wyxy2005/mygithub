@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="twSoftkeyItemStyle" format="reference" />
+    <attr name="twSoftkeyItemType">
+        <enum name="text" value="0" />
+        <enum name="image" value="1" />
+        <enum name="text_and_image" value="2" />
+        <enum name="space" value="3" />
+    </attr>
+    <attr name="twSoftkeyItemText" format="reference" />
+    <attr name="twSoftkeyItemImage" format="reference" />
+    <attr name="textStroke" format="boolean" />
+    <attr name="textStrokeWidth" format="float" />
+    <attr name="textStrokeColor" format="color" />
+    <attr name="textRadius" format="float" />
+    <attr name="textStrokeDX" format="float" />
+    <attr name="textStrokeDY" format="float" />
+</resources>

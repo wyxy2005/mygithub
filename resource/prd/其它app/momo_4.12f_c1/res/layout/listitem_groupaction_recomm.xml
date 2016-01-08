@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CardListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_layout" android:background="@drawable/bg_card_full" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_card_inner_top" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/message_titlephoto_size" android:layout_height="@dimen/message_titlephoto_size" android:layout_marginRight="6.0dip" android:src="@drawable/ic_discover_group" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/listitem_content_mid" android:textColor="@color/text_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="你附近的群推荐" android:layout_weight="1.0" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="13.0sp" android:textColor="@color/text_content" android:gravity="center_vertical" android:id="@id/groupaction_tv_recommend_time" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/groupaction_layout_recommend_group1" android:background="@drawable/bglistitem_selector_user" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/groupaction_iv_recommend_avatar" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginRight="8.0dip" android:scaleType="fitXY" />
+            <com.immomo.momo.android.view.EmoteTextView android:textSize="@dimen/listitem_content_mid" android:textColor="@color/text_title" android:ellipsize="end" android:id="@id/groupaction_tv_recommend_title" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_content" android:id="@id/groupaction_tv_recommend_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+        </LinearLayout>
+        <View android:id="@id/groupaction_view_recommend_divide1" android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/groupaction_layout_recommend_group2" android:background="@drawable/bglistitem_selector_user" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/groupaction_iv_recommend_avatar" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginRight="8.0dip" android:scaleType="fitXY" />
+            <com.immomo.momo.android.view.EmoteTextView android:textSize="@dimen/listitem_content_mid" android:textColor="@color/text_title" android:ellipsize="end" android:id="@id/groupaction_tv_recommend_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_content" android:id="@id/groupaction_tv_recommend_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+        </LinearLayout>
+        <View android:id="@id/groupaction_view_recommend_divide2" android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/groupaction_layout_recommend_group3" android:background="@drawable/bglistitem_selector_user" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/groupaction_iv_recommend_avatar" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginRight="8.0dip" android:scaleType="fitXY" />
+            <com.immomo.momo.android.view.EmoteTextView android:textSize="@dimen/listitem_content_mid" android:textColor="@color/text_title" android:ellipsize="end" android:id="@id/groupaction_tv_recommend_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_content" android:id="@id/groupaction_tv_recommend_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+        </LinearLayout>
+        <View android:id="@id/groupaction_view_recommend_divide3" android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/groupaction_layout_recommend_group4" android:background="@drawable/bglistitem_selector_user" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/groupaction_iv_recommend_avatar" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginRight="8.0dip" android:scaleType="fitXY" />
+            <com.immomo.momo.android.view.EmoteTextView android:textSize="@dimen/listitem_content_mid" android:textColor="@color/text_title" android:ellipsize="end" android:id="@id/groupaction_tv_recommend_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_content" android:id="@id/groupaction_tv_recommend_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+        </LinearLayout>
+        <View android:id="@id/groupaction_view_recommend_divide4" android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/groupaction_layout_recommend_group5" android:background="@drawable/bglistitem_selector_user" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/groupaction_iv_recommend_avatar" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginRight="8.0dip" android:scaleType="fitXY" />
+            <com.immomo.momo.android.view.EmoteTextView android:textSize="@dimen/listitem_content_mid" android:textColor="@color/text_title" android:ellipsize="end" android:id="@id/groupaction_tv_recommend_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_content" android:id="@id/groupaction_tv_recommend_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

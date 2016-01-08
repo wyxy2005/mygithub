@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/mz_data_icon_container_width">
+        <ImageView android:id="@android:id/icon" android:layout_width="@dimen/mz_data_icon_width" android:layout_height="@dimen/mz_data_icon_width" android:layout_marginLeft="28.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginRight="@dimen/mz_data_progressbar_margin_right">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerInParent="true">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/list_sim1" android:background="@drawable/traffic_list_sim1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="fill_horizontal" android:id="@android:id/summary" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:singleLine="true" />
+                <ImageView android:id="@id/list_sim2" android:background="@drawable/traffic_list_sim2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="fill_horizontal" android:id="@id/summary2" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:layout_alignParentRight="true">
+            <com.meizu.common.widget.Switch android:id="@id/app_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

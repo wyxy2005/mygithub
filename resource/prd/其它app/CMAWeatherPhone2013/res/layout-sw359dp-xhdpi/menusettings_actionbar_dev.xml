@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/menu_settings_subtitle_general">
+        <ListPreference android:persistent="false" android:title="@string/menu_settings_unit" android:key="unit" android:widgetLayout="@layout/layout_more_icon" />
+        <ListPreference android:persistent="false" android:title="@string/menu_settings_auto_scroll" android:key="autoscroll" android:widgetLayout="@layout/layout_more_icon" />
+        <ListPreference android:persistent="false" android:title="@string/menu_settings_update" android:key="autorefresh" android:widgetLayout="@layout/layout_more_icon" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/enable_refresh_when_entering_message" android:key="refreshentering" android:widgetLayout="@33751061" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/dialog_check_animation_effect" android:key="animationeffect" android:widgetLayout="@33751061" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/dialog_title_gps_info">
+        <CheckBoxPreference android:persistent="false" android:title="@string/menu_current_city_show" android:key="setcurrentcity" android:widgetLayout="@33751061" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/menu_settings_notifications" android:key="setnotifications" android:summary="@string/menu_settings_notification_message" android:widgetLayout="@33751061" />
+        <Preference android:persistent="false" android:enabled="false" android:title="@string/menu_settings_notification_set_time" android:key="setnotificationtime" android:widgetLayout="@layout/layout_more_icon" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/menu_settings_subtitle_effect">
+        <ListPreference android:persistent="false" android:title="@string/menu_settings_effect_fps" android:key="fps" android:widgetLayout="@layout/layout_more_icon" />
+        <ListPreference android:persistent="false" android:title="@string/menu_settings_effect_fps_sunny" android:key="fps_sunny" android:widgetLayout="@layout/layout_more_icon" />
+        <ListPreference android:persistent="false" android:title="@string/menu_settings_effect_fps_snow" android:key="fps_snow" android:widgetLayout="@layout/layout_more_icon" />
+        <ListPreference android:persistent="false" android:title="@string/menu_settings_effect_fps_rain" android:key="fps_rain" android:widgetLayout="@layout/layout_more_icon" />
+        <ListPreference android:persistent="false" android:title="@string/menu_settings_effect_fps_thunder" android:key="fps_thunder" android:widgetLayout="@layout/layout_more_icon" />
+        <ListPreference android:persistent="false" android:title="@string/menu_settings_effect_fps_cloudy" android:key="fps_cloudy" android:widgetLayout="@layout/layout_more_icon" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/menu_settings_effect_rain" android:key="rain" android:widgetLayout="@33751061" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/menu_settings_effect_sunny" android:key="sunny" android:widgetLayout="@33751061" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/menu_settings_effect_cloudy" android:key="cloudy" android:widgetLayout="@33751061" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/menu_settings_effect_thunder" android:key="thunder" android:widgetLayout="@33751061" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/menu_settings_effect_snow" android:key="snow" android:widgetLayout="@33751061" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/menu_settings_effect_blur" android:key="blur" android:widgetLayout="@33751061" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/menu_settings_effect_scaledown" android:key="scaledown" android:widgetLayout="@33751061" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/menu_settings_effect_sensor" android:key="sensor" android:widgetLayout="@33751061" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/menu_settings_effect_change_city" android:key="changecity" android:widgetLayout="@33751061" />
+    </PreferenceCategory>
+</PreferenceScreen>

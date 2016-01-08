@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">Nonaktifkan fungsi ini untuk mencegah aplikasi berjalan otomatis dan memaksanya berhenti berjalan jika tidak digunakan selama beberapa saat.</string>
+</resources>

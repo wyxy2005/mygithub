@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/Button_register" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="启动&amp;注册" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/Button_registerAccount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="启动&amp;注册（绑定账号）" android:layout_below="@id/Button_register" android:layout_alignLeft="@id/Button_register" />
+    <Button android:id="@id/Button_unregister" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="反注册" android:layout_below="@id/Button_registerAccount" android:layout_alignLeft="@id/Button_register" />
+    <Button android:id="@id/Button_setTag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="设置标签" android:layout_below="@id/Button_unregister" android:layout_alignLeft="@id/Button_register" />
+    <Button android:id="@id/Button_delTag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="删除标签" android:layout_below="@id/Button_setTag" android:layout_alignLeft="@id/Button_register" />
+    <Button android:id="@id/Button_clearCache" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="清除本地缓存" android:layout_below="@id/Button_delTag" android:layout_alignLeft="@id/Button_register" />
+    <Button android:id="@id/Button_copyToken" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="复制Token" android:layout_below="@id/Button_clearCache" android:layout_alignLeft="@id/Button_clearCache" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/tw_action_bar_icon_new_add_holo_dark" android:id="@id/menu_CityList" android:title="@string/menu_add_title" android:showAsAction="always" android:actionLayout="@layout/actionbar_list_btn" />
+    <item android:icon="@drawable/tw_action_bar_icon_setting_holo_light" android:id="@id/menu_Settings" android:title="@string/menu_settings_title" />
+</menu>

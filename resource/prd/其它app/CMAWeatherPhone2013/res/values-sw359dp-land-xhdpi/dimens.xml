@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width4_1">351.0dip</dimen>
+    <dimen name="height4_1">105.0dip</dimen>
+    <dimen name="width">355.0dip</dimen>
+    <dimen name="height">222.0dip</dimen>
+    <dimen name="launcher_height">127.0dip</dimen>
+    <dimen name="cell_width">89.0dip</dimen>
+    <dimen name="cell_height">111.0dip</dimen>
+    <dimen name="width4_3">351.0dip</dimen>
+    <dimen name="height4_3">327.0dip</dimen>
+    <dimen name="minwidth">355.0dip</dimen>
+    <dimen name="minheight">105.0dip</dimen>
+    <dimen name="maxwidth">355.0dip</dimen>
+    <dimen name="maxheight">150.0dip</dimen>
+    <dimen name="width_helf">177.5dip</dimen>
+    <dimen name="height_helf">111.0dip</dimen>
+    <dimen name="width_80">780.0dip</dimen>
+    <dimen name="height_80">222.0dip</dimen>
+    <dimen name="easy_widget_height">126.0dip</dimen>
+    <dimen name="easy_widget_width">150.0dip</dimen>
+</resources>

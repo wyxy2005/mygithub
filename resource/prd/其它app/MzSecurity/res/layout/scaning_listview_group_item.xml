@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="56.0dip" android:paddingStart="28.0dip" android:paddingEnd="28.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/type_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.0sp" android:textColor="#cc000000" android:id="@id/type_name" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="14.0dip" android:layout_toStartOf="@id/virus_hint" android:layout_toEndOf="@id/type_icon" />
+    <RelativeLayout android:id="@id/virus_hint" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <TextView android:textColor="#ffea5246" android:id="@id/virus_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_ic_list_up" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/virus_num" />
+    </RelativeLayout>
+    <ImageView android:id="@id/icon_status" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/mz_btn_check_buttonless_on_normal_45b509" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

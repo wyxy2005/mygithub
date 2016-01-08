@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/power_center_ontime_boot">
+        <CheckBoxPreference android:title="@string/power_center_ontime_boot" android:key="button_boot" />
+        <com.miui.powercenter.LabelPreference android:layout="@layout/pc_power_label_preference" android:title="@string/power_center_time_to_boot" android:key="time_boot" />
+        <com.miui.powercenter.RepeatPreference android:layout="@layout/pc_power_label_preference" android:title="@string/power_center_repeat" android:key="repeat_boot" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/power_center_ontime_shutdown">
+        <CheckBoxPreference android:title="@string/power_center_ontime_shutdown" android:key="button_shutdown" />
+        <com.miui.powercenter.LabelPreference android:layout="@layout/pc_power_label_preference" android:title="@string/power_center_time_to_shutdown" android:key="time_shutdown" />
+        <com.miui.powercenter.RepeatPreference android:layout="@layout/pc_power_label_preference" android:title="@string/power_center_repeat" android:key="repeat_shutdown" />
+    </PreferenceCategory>
+</PreferenceScreen>

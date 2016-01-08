@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/action_device_token" android:orderInCategory="102" android:title="@string/action_device_token" android:showAsAction="collapseActionView" />
+    <item android:id="@id/action_setting" android:orderInCategory="103" android:title="@string/action_setting" android:showAsAction="collapseActionView" />
+    <item android:id="@id/action_help_center" android:orderInCategory="104" android:title="@string/action_help_center" android:showAsAction="collapseActionView" />
+    <item android:id="@id/action_about_us" android:orderInCategory="105" android:title="@string/action_about_us" android:showAsAction="collapseActionView" />
+</menu>

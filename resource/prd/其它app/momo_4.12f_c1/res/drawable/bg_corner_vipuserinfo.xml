@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="16.5dip" android:topRightRadius="16.5dip" android:bottomLeftRadius="16.5dip" android:bottomRightRadius="16.5dip" />
+    <solid android:color="@color/vip_sex_info_bg" />
+    <padding android:left="1.0px" android:top="2.0dip" android:bottom="2.0dip" />
+</shape>

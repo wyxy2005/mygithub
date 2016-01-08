@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="350.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/ic_empty_feedback" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="18.0sp" android:textColor="@color/text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你还没有提交反馈" />
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击右上角查看帮助" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

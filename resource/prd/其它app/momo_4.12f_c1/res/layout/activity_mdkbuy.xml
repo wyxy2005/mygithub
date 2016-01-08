@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:id="@id/scrollview_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/profile_layout_bottom" android:layout_below="@id/layout_header" style="@style/Style_Patterns">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_pay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.HandyTextView android:text="充值" style="@style/Style_Patterns_SectionBar" />
+                    <include layout="@layout/include_patterns_sectionline" />
+                    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/text_title" android:layout_marginBottom="10.0dip" android:text="选择支付方式" style="@style/Patterns_Text_Left" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/layout_payment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <TextView android:textColor="@color/text_title" android:layout_marginBottom="10.0dip" android:text="选择商品种类" style="@style/Patterns_Text_Left" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/layout_payprice_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/text_content" android:gravity="center" android:id="@id/tv_paybody" android:background="@drawable/round_corner_payment" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+                        <Button android:textSize="16.0sp" android:id="@id/btn_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="购买" style="@style/GreenButton" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

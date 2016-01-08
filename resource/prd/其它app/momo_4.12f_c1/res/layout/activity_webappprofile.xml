@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/webappprof_layout_header" android:background="@color/profile_photo_bg" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header">
+        <ImageView android:id="@id/webappprof_iv_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="15.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/webappprof_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="谁是卧底" android:singleLine="true" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/webappprof_tv_belongs" android:background="@drawable/round_corner_blacktips" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="4.0dip" android:text="单人聊天" />
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/webappprof_tv_belongs_chat" android:background="@drawable/bg_message_status_failed" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="单人聊天" />
+                <com.immomo.momo.android.view.HandyTextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/webappprof_tv_belongs_group" android:background="@drawable/bg_message_status_readed" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="群组聊天" />
+                <com.immomo.momo.android.view.HandyTextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/webappprof_tv_belongs_multi" android:background="@drawable/bg_message_status_sended" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="多人对话" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@id/webappprof_btn_action" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="添加此应用" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/GreenButton" />
+    <TextView android:textSize="15.0sp" android:gravity="top|left|center" android:id="@id/webappprof_tv_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:layout_above="@id/webappprof_btn_action" android:layout_below="@id/webappprof_layout_header" />
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

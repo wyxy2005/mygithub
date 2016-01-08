@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins" android:layout_marginBottom="@dimen/margins">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:background="@xml/bg_register_left" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/margins" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/color_type_home_header" android:padding="@dimen/margins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register_note_title1" />
+                        <ImageButton android:id="@id/register_note_open" android:background="@null" android:padding="@dimen/margins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_register_note_open_selector" android:layout_alignParentRight="true" android:contentDescription="@null" />
+                    </RelativeLayout>
+                    <View android:background="@xml/bg_divider" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                    <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:paddingLeft="@dimen/margins" android:paddingTop="4.0dip" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register_note_1" />
+                    <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register_note_2" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/register_note_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register_note_3" />
+                        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register_note_4" />
+                        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register_note_5" />
+                        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register_note_6" />
+                        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register_note_7" />
+                        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register_note_8" />
+                        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/checkbox_uncheck" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register_note_9" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:background="@xml/bg_register_right" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:background="@drawable/bg_registe_buttom_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:background="@xml/repeat_register_buttom_line" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:background="@drawable/bg_registe_buttom_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/register_note_submit_1" android:background="@drawable/color_type_button_left_corners" android:layout_marginTop="16.0dip" android:text="@string/register_note_submit_1" style="@style/ListItem" />
+            <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/register_note_submit_2" android:background="@drawable/color_type_button_left_corners" android:layout_marginTop="16.0dip" android:text="@string/register_note_submit_2" style="@style/ListItem" />
+            <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/register_note_submit_3" android:background="@drawable/color_type_button_right_corners" android:visibility="gone" android:layout_marginTop="16.0dip" android:text="@string/register_note_submit_3" style="@style/ListItem" />
+            <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/register_note_submit_4" android:background="@drawable/color_type_button_right_corners" android:visibility="gone" android:layout_marginTop="16.0dip" android:text="@string/register_note_submit_4" style="@style/ListItem" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

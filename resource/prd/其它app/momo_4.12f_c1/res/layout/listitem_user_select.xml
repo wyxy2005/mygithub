@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/bglistitem_selector_user" android:padding="6.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <FrameLayout android:id="@id/layout_header" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip">
+            <ImageView android:id="@id/userlist_item_iv_face" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <ImageView android:background="@drawable/bglistitem_selector_session_select" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        </FrameLayout>
+        <com.immomo.momo.android.view.EmoteTextView android:textSize="@dimen/text_list_title" android:textColor="@color/text_title" android:id="@id/userlist_item_tv_name" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/layout_header" android:layout_centerVertical="true" style="@style/Text_List_Content" />
+        <CheckBox android:id="@android:id/checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

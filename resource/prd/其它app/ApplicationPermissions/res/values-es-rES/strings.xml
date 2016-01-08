@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">Desactive esta función para impedir que esta aplicación se ejecute automáticamente y para forzar su detención cuando no se haya usado durante un tiempo.</string>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.immomo.momo.android.view.dragsort.DragSortListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_transition" android:divider="@null" android:dividerHeight="0.0dip" app:drag_scroll_start="0.33" app:float_alpha="0.7" app:drag_handle_id="@id/mineemotion_iv_drop" style="@style/SimpleListView"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.immomo.momo" />

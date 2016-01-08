@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <RelativeLayout android:id="@id/emotestore_tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header">
+        <com.immomo.momo.android.view.ScrollViewPager android:id="@id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_alignParentBottom="true" style="@style/Tab_Bottom">
+            <RelativeLayout android:id="@id/emotionmain_layout_tab1" style="@style/TabItem_Bottom">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/bottomtab" android:id="@id/emotionmain_tab_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热门" android:layout_centerInParent="true" />
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/emotionmain_tab_count" android:visibility="gone" android:layout_alignRight="@id/emotionmain_tab_label" style="@style/BottomTab_Notice_Bubble" />
+            </RelativeLayout>
+            <View android:layout_gravity="center_vertical" android:background="@color/black" android:layout_width="1.0dip" android:layout_height="18.0dip" />
+            <RelativeLayout android:id="@id/emotionmain_layout_tab2" style="@style/TabItem_Bottom">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/bottomtab" android:id="@id/emotionmain_tab_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最新" android:layout_centerInParent="true" />
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/emotionmain_tab_count" android:visibility="gone" android:layout_alignRight="@id/emotionmain_tab_label" style="@style/BottomTab_Notice_Bubble" />
+            </RelativeLayout>
+            <View android:layout_gravity="center_vertical" android:background="@color/black" android:layout_width="1.0dip" android:layout_height="18.0dip" />
+            <RelativeLayout android:id="@id/emotionmain_layout_tab3" style="@style/TabItem_Bottom">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/bottomtab" android:id="@id/emotionmain_tab_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免费" android:layout_centerInParent="true" />
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/emotionmain_tab_count" android:visibility="gone" android:layout_alignRight="@id/emotionmain_tab_label" style="@style/BottomTab_Notice_Bubble" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

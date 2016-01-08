@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/actionbar_layout_group" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/actionbar_layout_holder" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/actionbar_layout_leftview" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.immomo.momo.android.view.ScrollingTextView android:textSize="18.0sp" android:gravity="center_vertical" android:id="@id/actionbar_tv_title" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Title" android:scrollHorizontally="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="1" android:isScrollContainer="true" style="@style/ShadowedText.Light" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="12.0sp" android:textColor="@color/gray" android:gravity="center_vertical" android:id="@id/actionbar_tv_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" style="@style/ShadowedText.Light" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/actionbar_layout_buttoncontainer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

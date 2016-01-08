@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff262626" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <RelativeLayout android:id="@id/snapbrowser_layout_info" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/snapbrowser_btn_press" android:padding="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="按住查看" android:layout_alignParentBottom="true" style="@style/Style_Bottom_Btn" />
+            <LinearLayout android:orientation="vertical" android:id="@id/snapbrowser_layout_viewer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff5f5f5f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已查看的人" />
+                    <View android:background="#ff5f5f5f" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <TextView android:textColor="#aa5f5f5f" android:ellipsize="end" android:gravity="top" android:id="@id/snapbrowser_tv_viewer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:lines="4" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/snapbrowser_layout_viewer">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/snapbrowser_iv_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_snap_nomal" />
+                    <ImageView android:id="@id/snapbrowser_iv_loading" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/ic_loading" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff5f5f5f" android:id="@id/snapbrowser_tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="正在获取图片信息" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+    <RelativeLayout android:id="@id/snapbrowser_layout_preview" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/snapbrowser_iv_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/snapbrowser_tv_time" android:background="@drawable/bg_snap_timediscount" android:padding="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="5" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/snapbrowser_layout_cover" android:background="#ff262626" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

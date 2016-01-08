@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_usersetting_userinfoheader" />
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView android:id="@id/scrollview_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/userlayout_header" android:layout_alignParentBottom="true" style="@style/Style_Scrollable">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_content" android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/include_usersetting_feed" />
+            <include layout="@layout/include_usersetting_account" />
+            <include layout="@layout/include_usersetting_vip" />
+            <include layout="@layout/include_usersetting_other" />
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    <RelativeLayout android:orientation="vertical" android:id="@id/profile_layout_incomplete" android:background="@color/bg_warning" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/userlayout_header">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/toptip_icon_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/ic_common_notice" />
+            <com.immomo.momo.android.view.ScrollingTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_warning" android:id="@id/toptip_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_warning" android:id="@id/usersetting_iv_toptip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="17.0dip" android:text="＞" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/userlayout_header" />
+</RelativeLayout>

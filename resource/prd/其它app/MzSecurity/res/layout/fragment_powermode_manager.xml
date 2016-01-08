@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_top" android:background="@color/defaultgreen" android:layout_width="fill_parent" android:layout_height="320.0dip">
+        <ImageView android:layout_gravity="right" android:id="@id/iv_setup" android:background="@drawable/ic_sb_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.25dip" android:layout_marginRight="28.0dip" android:contentDescription="@string/jumpToSetup" />
+        <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" android:text="@string/title_power_mode" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="145.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="45.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom" android:id="@id/tv_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom" android:id="@id/tv_msg_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:text="@string/text_hour" />
+                <TextView android:textSize="45.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom" android:id="@id/tv_minute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:text="@string/text_minute" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_sub_hour" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.6" />
+        </LinearLayout>
+        <com.meizu.safe.powerui.PowerUsageView android:id="@id/iv_circle" android:layout_width="fill_parent" android:layout_height="230.0dip" android:layout_marginTop="75.0dip" />
+    </FrameLayout>
+    <include android:id="@id/mzs_standard_pm" layout="@layout/power_layout_one_msg_button" />
+    <include android:id="@id/mzs_supper_pm" layout="@layout/power_layout_one_msg_button" />
+    <include android:id="@id/mzs_user_pm" layout="@layout/power_layout_one_msg_button" />
+</LinearLayout>

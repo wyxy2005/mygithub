@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/profile_layout_jointieba" android:visibility="gone" style="@style/Style_Patterns"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_patterns_divideline" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/tieba_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_moretieba_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <RelativeLayout android:id="@id/layout_more_tieba" style="@style/Style_Patterns_Content_Clickable">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:gravity="center_vertical" android:text="查看全部陌陌吧" android:drawablePadding="10.0dip" android:layout_centerVertical="true" style="@style/Patterns_Text_Left" />
+            <ImageView android:id="@id/online_arrow" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            <com.immomo.momo.android.view.HandyTextView android:gravity="center" android:id="@id/setting_tv_online_status" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/Setting_Item_Right_Blue" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/offset" android:layout_width="fill_parent" android:layout_height="@dimen/profile_bottom_offset" />
+</LinearLayout>

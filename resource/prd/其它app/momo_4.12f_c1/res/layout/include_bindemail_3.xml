@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/bindemail_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_bind_intro_email" />
+            <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_content" android:layout_gravity="center_horizontal" android:id="@id/bindemail_tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="验证邮件已发送到：" />
+            <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/blue" android:layout_gravity="center_horizontal" android:id="@id/bindemail_tv_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="example@host.com" />
+            <TextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_desc" android:layout_gravity="center_horizontal" android:id="@id/bindemail_tv_info2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="验证完成后，可使用邮箱登录陌陌和找回密码。请尽快登录邮箱验证，验证链接48小时有效。如未收到验证邮件，请检查“垃圾邮件”或者点击“再发一封”重新发送" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/bindemail_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="再发一封" style="@style/Style_SubmitButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

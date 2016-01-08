@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/layout_content" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/edittext_multiline" android:paddingBottom="8.0dip" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/underlineview_inner_padding" android:src="@drawable/ic_reg_message" />
+                <View android:background="@color/unberlineview_dividingline" android:layout_width="1.0dip" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/underlineview_inner_padding" android:layout_marginRight="@dimen/underlineview_inner_padding" />
+                <EditText android:textSize="16.0sp" android:textColor="@color/unberlineview_text" android:id="@id/forgetpwd_email" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="输入邮箱地址" android:singleLine="true" android:inputType="textEmailAddress" android:imeOptions="actionNext" />
+            </LinearLayout>
+            <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:id="@id/text_notice" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <com.immomo.momo.android.view.HandyTextView android:textSize="18.0sp" android:gravity="top|center" android:id="@id/disable_cover" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:text="未绑定电子邮箱，无法找回密码" android:layout_weight="1.0" />
+    <LinearLayout style="@style/Style_BottomBar">
+        <Button android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="@string/back" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+        <Button android:gravity="center" android:id="@id/btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/post" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+    </LinearLayout>
+</LinearLayout>

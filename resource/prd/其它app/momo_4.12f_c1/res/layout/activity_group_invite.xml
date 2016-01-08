@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:background="@drawable/bglistitem_selector_user" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/layout_avatar" android:layout_width="@dimen/userhead_size" android:layout_height="@dimen/userhead_size" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip">
+                    <ImageView android:id="@id/iv_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                    <ImageView android:background="@drawable/bglistitem_selector_session_select" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                </FrameLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/layout_avatar" android:layout_centerVertical="true">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_list_title" android:textColor="@color/text_title" android:id="@id/tv_name" android:singleLine="true" android:layout_weight="1.0" style="@style/Text_List_Content" />
+                    <com.immomo.momo.android.view.HandyTextView android:textColor="@color/text_content" android:ellipsize="end" android:id="@id/tv_gid" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:singleLine="true" android:layout_weight="1.0" style="@style/Text_List_Content" />
+                    <com.immomo.momo.android.view.EmoteTextView android:textColor="@color/text_content" android:ellipsize="end" android:gravity="center" android:id="@id/tv_address" android:singleLine="true" android:drawableLeft="@drawable/ic_user_location" android:drawablePadding="4.0dip" android:layout_weight="1.0" style="@style/Text_List_Content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout style="@style/style_patterns_sectionbar_title_bg">
+                <com.immomo.momo.android.view.HandyTextView android:text="邀请好友" style="@style/style_patterns_sectionbar_title_text" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_momofriend" style="@style/style_patterns_setting_item">
+                <ImageView android:src="@drawable/ic_setting_momofriend" style="@style/style_patterns_setting_item_icon" />
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left" android:layout_gravity="center_vertical" android:text="陌陌好友" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_weixinfriend" style="@style/style_patterns_setting_item">
+                <ImageView android:src="@drawable/ic_publish_weixin_selected" style="@style/style_patterns_setting_item_icon" />
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left" android:layout_gravity="center_vertical" android:text="微信好友" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_qqfriend" style="@style/style_patterns_setting_item">
+                <ImageView android:src="@drawable/ic_addfriend_qq" style="@style/style_patterns_setting_item_icon" />
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left" android:layout_gravity="center_vertical" android:text="QQ好友" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout style="@style/style_patterns_sectionbar_title_bg">
+                <com.immomo.momo.android.view.HandyTextView android:text="分享群卡片" style="@style/style_patterns_sectionbar_title_text" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_weixinquan" style="@style/style_patterns_setting_item">
+                <ImageView android:src="@drawable/ic_shareboard_weixin_quan" style="@style/style_patterns_setting_item_icon" />
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left" android:layout_gravity="center_vertical" android:text="微信朋友圈" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_weibo" style="@style/style_patterns_setting_item">
+                <ImageView android:id="@id/iv_weibo" android:src="@drawable/ic_setting_weibo" style="@style/style_patterns_setting_item_icon" />
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left" android:layout_gravity="center_vertical" android:text="微博" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <View style="@style/Line_Vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_txweibo" style="@style/style_patterns_setting_item">
+                <ImageView android:id="@id/iv_txweibo" android:src="@drawable/ic_setting_tweibo" style="@style/style_patterns_setting_item_icon" />
+                <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                        <com.immomo.momo.android.view.HandyTextView android:gravity="left" android:layout_gravity="center_vertical" android:text="腾讯微博" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

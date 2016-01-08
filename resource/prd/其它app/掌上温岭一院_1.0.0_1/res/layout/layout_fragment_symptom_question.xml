@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@xml/bg_symptom_question" android:paddingLeft="@dimen/margins" android:paddingRight="@dimen/margins" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_symptom_question_logo" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/color_type_home_header" android:id="@id/symptom_question_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/list_view" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_button_height">
+        <Button android:textSize="@dimen/basic_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/last" android:background="@drawable/color_type_button_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/black" android:gravity="center" android:id="@id/symptom_question_current" android:layout_width="@dimen/bottom_button_height" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/basic_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/next" android:background="@drawable/color_type_button_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.HandyTextView android:id="@id/toptip_text" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_alignParentTop="true" style="@style/Text_TopTip_Pay" />
+    <ScrollView android:id="@id/scrollview_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toptip_text">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout style="@style/style_patterns_sectionbar_title_bg">
+                    <com.immomo.momo.android.view.HandyTextView android:text="选择会员种类" style="@style/style_patterns_sectionbar_title_text" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@id/buymenmber_tv_protocol" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="8.0dip" android:text="成为会员即表示同意 陌陌会员协议" style="@style/register_note" />
+            <View android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

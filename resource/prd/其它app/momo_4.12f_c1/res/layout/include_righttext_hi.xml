@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:scrollHorizontally="true" android:marqueeRepeatLimit="1" android:isScrollContainer="true" style="@style/ShadowedText.Light"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

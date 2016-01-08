@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">قم بإلغاء تفعيل هذه الوظيفة لمنع هذا التطبيق من التشغيل تلقائياً وفرض إيقاف تشغيله في حال لم يتم استخدامه لفترة معينة.</string>
+</resources>

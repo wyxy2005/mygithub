@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshHorizontalScrollView android:id="@id/pull_refresh_horizontalscrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" ptr:ptrMode="both" ptr:ptrAnimationStyle="flip" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:background="#ff99cc00" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/HorizScrollViewItem" />
+            <TextView android:background="#ffff4444" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/HorizScrollViewItem" />
+            <TextView android:background="#ff33b5e5" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/HorizScrollViewItem" />
+            <TextView android:background="#ffcc0000" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/HorizScrollViewItem" />
+            <TextView android:background="#ffffbb33" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/HorizScrollViewItem" />
+            <TextView android:background="#ff00ddff" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/HorizScrollViewItem" />
+            <TextView android:background="#ff669900" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/HorizScrollViewItem" />
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshHorizontalScrollView>
+</LinearLayout>

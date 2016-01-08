@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <Button android:id="@id/guidebox_btn_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="顶部" />
+        <Button android:layout_gravity="left" android:id="@id/guidebox_btn_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="左边" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/guidebox_btn_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="中间" />
+        <Button android:id="@id/guidebox_btn_center2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginTop="20.0dip" android:text="中间2" />
+        <Button android:id="@id/guidebox_btn_center3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="200.0dip" android:layout_marginTop="20.0dip" android:text="中间3" />
+        <Button android:layout_gravity="right" android:id="@id/guidebox_btn_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="右边" />
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+    <Button android:id="@id/guidebox_btn_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="底部" android:layout_alignParentBottom="true" />
+</RelativeLayout>

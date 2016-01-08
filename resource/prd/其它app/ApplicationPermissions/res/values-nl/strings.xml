@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">Schakel deze functie uit om te voorkomen dat deze app automatisch wordt gestart en om deze app geforceerd te stoppen als deze enige tijd niet is gebruikt.</string>
+</resources>

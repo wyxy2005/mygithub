@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header">
+        <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="18.0sp" android:gravity="center" android:id="@id/input_areacode" android:background="@drawable/edittext_default" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="+86" android:hint="选择区号" android:singleLine="true" android:inputType="phone" />
+                    <EditText android:id="@id/input_phonenumber" android:background="@drawable/edittext_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="输入绑定的手机" android:singleLine="true" android:inputType="phone" />
+                </LinearLayout>
+                <EditText android:id="@id/input_password" android:background="@drawable/edittext_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:hint="请输入陌陌密码" android:singleLine="true" android:inputType="textPassword" />
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/disable_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="手机号可作为登录陌陌和找回密码的凭证，绑定后可更好地保护你的账号" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout style="@style/Style_BottomBar">
+            <Button android:id="@id/btn_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="返回" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+            <Button android:id="@id/btn_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="下一步" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

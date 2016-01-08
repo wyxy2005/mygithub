@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/message_layout_timecontainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/layout_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_centerInParent="true">
+        <com.immomo.momo.android.view.HandyTextView android:textSize="12.0sp" android:textColor="#55000000" android:id="@id/message_tv_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息时间" />
+        <com.immomo.momo.android.view.HandyTextView android:textSize="12.0sp" android:textColor="#55000000" android:id="@id/timebar_tv_distance" android:visibility="gone" android:layout_marginLeft="10.0dip" android:layout_marginRight="2.0dip" style="@style/WrapContent" />
+    </LinearLayout>
+    <ImageView android:background="@color/timestampline" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="55.0dip" android:layout_toLeftOf="@id/layout_timestamp" android:layout_centerVertical="true" />
+    <ImageView android:background="@color/timestampline" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginRight="55.0dip" android:layout_toRightOf="@id/layout_timestamp" android:layout_centerVertical="true" />
+</RelativeLayout>

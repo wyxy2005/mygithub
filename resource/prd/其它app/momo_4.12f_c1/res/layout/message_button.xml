@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/message_layout_mapbuttoncntainer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/message_layout_messagecontainer" android:layout_alignLeft="@id/message_layout_messagecontainer" android:layout_alignRight="@id/message_layout_messagecontainer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="11.0sp" android:textColor="@color/text_title" android:id="@id/message_mb_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="显示位置" android:layout_weight="1.0" />
+    <Button android:textSize="11.0sp" android:textColor="@color/text_title" android:id="@id/message_mb_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="路径导航" android:layout_weight="1.0" />
+</LinearLayout>

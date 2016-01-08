@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.permcenter.root.RootManagementView android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.common.PinnedHeaderListView android:id="@id/root_list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@miui:style/Widget.ListView" />
+    <TextView android:textAppearance="@269287581" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_title_root_apps" android:drawableTop="@drawable/icon_list_empty" android:layout_centerInParent="true" />
+</com.miui.permcenter.root.RootManagementView>

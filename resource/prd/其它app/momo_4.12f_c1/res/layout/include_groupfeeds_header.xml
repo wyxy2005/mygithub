@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:focusable="true" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="170.0dip">
+        <ImageView android:id="@id/groupfeedlist_iv_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <GridView android:gravity="center" android:id="@id/groupfeedlist_gridview_background" android:background="#ff000000" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:stretchMode="columnWidth" android:numColumns="5" />
+        <ImageView android:id="@id/vip_iv_avatar_bg_cover" android:background="@drawable/bg_profile_vip_cover" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/groupfeedlist_tv_membercount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip" android:drawableLeft="@drawable/ic_user_person_white" android:drawablePadding="2.0dip" android:layout_alignParentRight="true" />
+            <com.immomo.momo.android.view.EmoteTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/groupfeedlist_tv_groupname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/groupfeedlist_tv_membercount" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/bglistitem_selector_user" android:paddingLeft="20.0dip" android:paddingTop="6.0dip" android:paddingRight="20.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="18.0sp" android:id="@id/tiebaverify_item_tx_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/tiebaverify_item_tx_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/ic_common_arrow_right" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

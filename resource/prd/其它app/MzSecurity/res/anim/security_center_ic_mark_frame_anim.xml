@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list apk:oneshot="true"
+  xmlns:apk="http://schemas.android.com/apk/res/android">
+    <item apk:duration="30" apk:drawable="@drawable/rd01" />
+    <item apk:duration="30" apk:drawable="@drawable/rd02" />
+    <item apk:duration="30" apk:drawable="@drawable/rd03" />
+    <item apk:duration="30" apk:drawable="@drawable/rd04" />
+    <item apk:duration="30" apk:drawable="@drawable/rd05" />
+    <item apk:duration="30" apk:drawable="@drawable/rd06" />
+    <item apk:duration="30" apk:drawable="@drawable/rd07" />
+    <item apk:duration="30" apk:drawable="@drawable/rd08" />
+    <item apk:duration="30" apk:drawable="@drawable/rd09" />
+    <item apk:duration="30" apk:drawable="@drawable/rd10" />
+    <item apk:duration="30" apk:drawable="@drawable/rd11" />
+    <item apk:duration="30" apk:drawable="@drawable/rd12" />
+    <item apk:duration="30" apk:drawable="@drawable/rd13" />
+    <item apk:duration="30" apk:drawable="@drawable/rd14" />
+    <item apk:duration="30" apk:drawable="@drawable/rd15" />
+    <item apk:duration="30" apk:drawable="@drawable/rd16" />
+    <item apk:duration="30" apk:drawable="@drawable/rd17" />
+    <item apk:duration="30" apk:drawable="@drawable/rd18" />
+    <item apk:duration="30" apk:drawable="@drawable/rd19" />
+    <item apk:duration="30" apk:drawable="@drawable/rd20" />
+    <item apk:duration="30" apk:drawable="@drawable/rd21" />
+    <item apk:duration="30" apk:drawable="@drawable/rd22" />
+    <item apk:duration="30" apk:drawable="@drawable/rd23" />
+    <item apk:duration="30" apk:drawable="@drawable/rd24" />
+    <item apk:duration="30" apk:drawable="@drawable/rd18" />
+    <item apk:duration="30" apk:drawable="@drawable/rd19" />
+    <item apk:duration="30" apk:drawable="@drawable/rd20" />
+    <item apk:duration="30" apk:drawable="@drawable/rd21" />
+    <item apk:duration="30" apk:drawable="@drawable/rd22" />
+    <item apk:duration="30" apk:drawable="@drawable/rd23" />
+    <item apk:duration="30" apk:drawable="@drawable/rd24" />
+    <item apk:duration="30" apk:drawable="@drawable/rd25" />
+    <item apk:duration="30" apk:drawable="@drawable/rd26" />
+    <item apk:duration="30" apk:drawable="@drawable/rd27" />
+    <item apk:duration="30" apk:drawable="@drawable/rd28" />
+    <item apk:duration="30" apk:drawable="@drawable/rd29" />
+    <item apk:duration="30" apk:drawable="@drawable/rd30" />
+    <item apk:duration="30" apk:drawable="@drawable/rd31" />
+    <item apk:duration="30" apk:drawable="@drawable/rd32" />
+</animation-list>

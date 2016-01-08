@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_info_des_autorun">この機能を無効にすると、アプリの自動実行が制限され、一定時間使用していない場合、アプリは終了されます。</string>
+</resources>

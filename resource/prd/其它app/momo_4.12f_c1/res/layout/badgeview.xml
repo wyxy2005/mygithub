@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pic_iv_vip" android:visibility="gone" android:src="@drawable/ic_userinfo_vip" style="@style/WrapContent" />
+    <ImageView android:id="@id/pic_iv_group_role" android:visibility="gone" android:src="@drawable/ic_userinfo_group" style="@style/WrapContent" />
+    <ImageView android:id="@id/pic_iv_industry" android:visibility="gone" android:src="@drawable/ic_userinfo_weibo" style="@style/WrapContent" />
+    <ImageView android:id="@id/pic_iv_weibo" android:visibility="gone" android:src="@drawable/ic_userinfo_weibo" style="@style/WrapContent" />
+    <ImageView android:id="@id/pic_iv_txweibo" android:visibility="gone" android:src="@drawable/ic_userinfo_tweibo" style="@style/WrapContent" />
+    <ImageView android:id="@id/pic_iv_renren" android:visibility="gone" android:src="@drawable/ic_userinfo_renren" style="@style/WrapContent" />
+    <ImageView android:id="@id/pic_iv_relation" android:visibility="gone" android:src="@drawable/ic_userinfo_bothfollow" style="@style/WrapContent" />
+    <ImageView android:id="@id/pic_iv_multipic" android:visibility="gone" android:src="@drawable/ic_userinfo_multipic" style="@style/WrapContent" />
+    <ImageView android:id="@id/pic_iv_wcteam" android:visibility="gone" style="@style/WrapContent" />
+</LinearLayout>

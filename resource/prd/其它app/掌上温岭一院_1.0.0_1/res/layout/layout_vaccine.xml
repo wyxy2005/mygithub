@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <include layout="@layout/layout_search" />
+    <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/detail_title_text" android:gravity="center" android:id="@id/vaccine_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margins" android:text="@string/vaccine_date_tip" />
+    <com.yaming.widget.date.WheelDatePicker android:id="@id/vaccine_wheel_date_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margins">
+        <include layout="@layout/widget_date_picker" />
+    </com.yaming.widget.date.WheelDatePicker>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins" android:weightSum="2.0">
+        <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/vaccine_all" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/vaccine_all" android:layout_weight="1.0" style="@style/LeftButton" />
+        <Button android:textSize="@dimen/title_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/vaccine_now" android:background="@drawable/color_type_button_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/vaccine_now" android:layout_weight="1.0" style="@style/RightButton" />
+    </LinearLayout>
+</LinearLayout>

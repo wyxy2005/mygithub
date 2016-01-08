@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bglistitem_selector_user" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.EmoteTextView android:textSize="18.0sp" android:textColor="@color/text_title" android:gravity="left" android:id="@id/tiebacreating_item_tv_name" android:layout_width="0.0dip" android:singleLine="true" android:layout_weight="1.0" style="@style/Text_List_Content" />
+    <com.immomo.momo.android.view.EmoteTextView android:textColor="@color/text_content" android:id="@id/tiebacreating_item_tv_des" android:singleLine="true" android:drawableRight="@drawable/ic_common_arrow_right" android:drawablePadding="6.0dip" style="@style/Text_List_Content" />
+</LinearLayout>

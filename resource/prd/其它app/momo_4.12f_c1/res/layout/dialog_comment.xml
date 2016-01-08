@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/text_title" android:id="@id/tv_commentdialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="评论给 1602018 ： 什么什么" android:singleLine="true" />
+    <com.immomo.momo.android.view.EmoteEditeText android:gravity="top|left|center" android:id="@id/tv_commentdialog_editer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="输入评论内容" android:minLines="3" style="@style/EditTextStyle" />
+</LinearLayout>

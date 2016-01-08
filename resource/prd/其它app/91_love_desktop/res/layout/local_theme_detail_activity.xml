@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe3e3e3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/theme_title_background" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/theme_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/pre_theme" android:focusable="true" android:layout_width="54.0dip" android:layout_height="36.0dip" android:src="@drawable/theme_pre_selector" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/next_theme" android:focusable="true" android:layout_width="54.0dip" android:layout_height="36.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/theme_next_selector" android:scaleType="fitXY" />
+    </LinearLayout>
+    <Gallery android:id="@id/theme_gallery" android:paddingTop="10.0dip" android:fadingEdgeLength="0.0dip" android:alwaysDrawnWithCache="true" android:addStatesFromChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spacing="4.0dip" android:layout_weight="1.0" android:unselectedAlpha="255.0" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/theme_navigation" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.nd.android.ilauncher.commonview.CircleIndexView android:id="@id/index_view" android:layout_width="wrap_content" android:layout_height="17.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/theme_detail_bottom_bg" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/theme_apply" android:background="@drawable/btn_background" android:layout_width="95.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/common_button_apply" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/theme_delete" android:focusable="true" android:nextFocusDown="@id/theme_gallery" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/theme_delete_background" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    </LinearLayout>
+</LinearLayout>

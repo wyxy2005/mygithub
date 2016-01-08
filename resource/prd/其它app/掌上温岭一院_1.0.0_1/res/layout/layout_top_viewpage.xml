@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/viewpager" />
+        <ProgressBar android:id="@id/viewpage_loading" android:layout_centerInParent="true" style="@style/ListSpinner" />
+    </RelativeLayout>
+</LinearLayout>

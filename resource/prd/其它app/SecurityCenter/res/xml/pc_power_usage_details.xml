@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.powercenter.view.PowerUsageDetailsTitlePreference android:key="@string/preference_key_power_usage_details_title" />
+    <PreferenceCategory android:title="@string/details_subtitle" android:key="@string/category_key_power_usage_details" />
+    <PreferenceCategory android:title="@string/packages_subtitle" android:key="@string/category_key_power_usage_packages" />
+</PreferenceScreen>

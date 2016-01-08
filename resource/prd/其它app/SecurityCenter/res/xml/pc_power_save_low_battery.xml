@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:miui="http://schemas.android.com/apk/res/com.miui.securitycenter">
+    <CheckBoxPreference android:title="@string/power_save_low_battery_auto_save_title" android:key="power_save_low_battery_auto_save" android:defaultValue="true" />
+    <PreferenceCategory>
+        <com.miui.powercenter.SeekBarPreference android:layout="@layout/pc_seekbar_preference" android:selectable="false" android:key="power_save_low_battery_seekbar" android:dependency="power_save_low_battery_auto_save" miui:title="@string/power_save_low_battery_seekbar_title" />
+    </PreferenceCategory>
+    <PreferenceCategory>
+        <com.miui.powercenter.OptionPreference android:layout="@layout/pc_option_preference" android:title="@string/power_save_low_battery_option_title" android:key="power_save_low_battery_option" android:dependency="power_save_low_battery_auto_save" miui:label="@string/power_save_choose_mode" miui:clickable="true" />
+        <com.miui.powercenter.OptionPreference android:layout="@layout/pc_option_preference" android:title="@string/power_save_low_battery_option_recovery_title" android:key="power_save_low_battery_option_recovery" android:dependency="power_save_low_battery_auto_save" miui:label="@string/power_save_choose_recovery_mode" miui:clickable="true" />
+    </PreferenceCategory>
+    <PreferenceCategory>
+        <CheckBoxPreference android:title="@string/power_exitlowbattery_whencharge" android:key="power_exit_lowbattery_whencharge" android:dependency="power_save_low_battery_auto_save" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

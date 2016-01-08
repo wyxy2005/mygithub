@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/security_appsec_item_spinner_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@color/color_black" android:layout_width="fill_parent" android:layout_height="@dimen/listview_line_height" android:layout_marginLeft="@dimen/listview_line_padding_left" android:layout_marginRight="@dimen/listview_line_padding_left" android:layout_alignParentTop="true" android:alpha="0.2" />
+    <RelativeLayout android:paddingLeft="@dimen/listview_item_padding_left" android:paddingRight="@dimen/listview_item_padding_left" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/rl_spinner" android:layout_width="wrap_content" android:layout_height="38.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+            <ImageView android:id="@id/iv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spinner_selector" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_black" android:id="@id/appsec_seclist_item_choose_spinner" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/iv_bg" android:layout_centerVertical="true" android:alpha="0.5" />
+        </RelativeLayout>
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:id="@id/appsec_seclist_item_choose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/appsec_seclist_item_choose" android:layout_alignParentLeft="true" />
+        <TextView android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/appsec_seclist_item_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:maxWidth="250.0dip" android:maxLines="2" android:layout_below="@id/appsec_seclist_item_choose" android:layout_alignLeft="@id/appsec_seclist_item_choose" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/anchor" android:layout_width="200.0dip" android:layout_height="fill_parent" android:minHeight="@dimen/security_appsec_item_spinner_height" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

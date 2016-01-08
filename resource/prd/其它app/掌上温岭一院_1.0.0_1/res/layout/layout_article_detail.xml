@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="@dimen/margins" android:layout_marginRight="@dimen/margins">
+        <TextView android:textSize="@dimen/largest_text_size" android:textColor="@android:color/black" android:id="@id/article_detail_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
+        <TextView android:id="@id/article_detail_lable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/article_from_text" android:layout_below="@id/article_detail_title" />
+        <TextView android:id="@id/article_detail_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/article_detail_lable" android:layout_alignParentRight="true" />
+        <TextView android:textColor="#ff63b8ff" android:id="@id/article_detail_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/article_detail_date" android:layout_toRightOf="@id/article_detail_lable" android:layout_alignTop="@id/article_detail_lable" />
+    </RelativeLayout>
+    <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/article_detail_scroll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <FrameLayout android:id="@id/article_photo_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginRight="@dimen/margins">
+                    <com.yaming.widget.SquareNetworkedCacheableImageView android:id="@id/article_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_article_default_big" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+                </FrameLayout>
+                <TextView android:textSize="@dimen/larger_text_size" android:textColor="#cc000000" android:id="@id/article_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margins" android:layout_marginTop="@dimen/margins" android:layout_marginRight="@dimen/margins" android:lineSpacingMultiplier="1.25" android:textIsSelectable="true" style="?android:attr/textAppearanceMedium" />
+                <LinearLayout android:orientation="vertical" android:id="@id/article_detial_sub_article" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" />
+                    <com.yaming.widget.LinearListView android:orientation="vertical" android:id="@id/article_detial_sub_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margins" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ProgressBar android:id="@id/article_loading" android:layout_centerInParent="true" style="@style/ListSpinner" />
+    </RelativeLayout>
+</LinearLayout>

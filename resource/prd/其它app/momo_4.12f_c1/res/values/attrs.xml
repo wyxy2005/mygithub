@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="divider" format="reference|color" />
+    <attr name="dividerHeight" format="dimension" />
+    <attr name="ptrAdapterViewBackground" format="reference|color" />
+    <attr name="ptrHeaderBackground" format="reference|color" />
+    <attr name="ptrHeaderTextColor" format="reference|color" />
+    <attr name="ptrHeaderSubTextColor" format="reference|color" />
+    <attr name="ptrMode">
+        <flag name="disabled" value="0x00000000" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+        <flag name="both" value="0x00000003" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean" />
+    <attr name="ptrDrawable" format="reference" />
+    <attr name="ptrDrawableTop" format="reference" />
+    <attr name="ptrDrawableBottom" format="reference" />
+    <attr name="ptrOverScroll" format="reference|boolean" />
+    <attr name="ptrHeaderTextAppearance" format="reference" />
+    <attr name="ptrSubHeaderTextAppearance" format="reference" />
+    <attr name="ptrAnimationStyle">
+        <flag name="rotate" value="0x00000000" />
+        <flag name="flip" value="0x00000001" />
+    </attr>
+    <attr name="pageWidth" format="dimension" />
+    <attr name="snapVelocity" format="integer" />
+    <attr name="dividerWidth" format="dimension" />
+    <attr name="maxChildInLine" format="integer" />
+    <attr name="numColumns" format="integer" />
+    <attr name="columnWidth" format="dimension" />
+    <attr name="horizontalSpacing" format="dimension" />
+    <attr name="icon" format="reference" />
+    <attr name="hint" format="reference|string" />
+    <attr name="text" format="reference|string" />
+    <attr name="collapsed_height" format="dimension" />
+    <attr name="drag_scroll_start" format="float" />
+    <attr name="max_drag_scroll_speed" format="float" />
+    <attr name="float_background_color" format="color" />
+    <attr name="remove_mode">
+        <enum name="clickRemove" value="0" />
+        <enum name="flingRemove" value="1" />
+    </attr>
+    <attr name="track_drag_sort" format="boolean" />
+    <attr name="float_alpha" format="float" />
+    <attr name="slide_shuffle_speed" format="float" />
+    <attr name="remove_animation_duration" format="integer" />
+    <attr name="drop_animation_duration" format="integer" />
+    <attr name="drag_enabled" format="boolean" />
+    <attr name="sort_enabled" format="boolean" />
+    <attr name="remove_enabled" format="boolean" />
+    <attr name="drag_start_mode">
+        <enum name="onDown" value="0" />
+        <enum name="onMove" value="1" />
+        <enum name="onLongPress" value="2" />
+    </attr>
+    <attr name="drag_handle_id" format="integer" />
+    <attr name="fling_handle_id" format="integer" />
+    <attr name="click_remove_id" format="integer" />
+    <attr name="use_default_controller" format="boolean" />
+    <attr name="visibleItems" format="integer" />
+    <attr name="isAllVisible" format="boolean" />
+    <attr name="itemOffsetPercent" format="integer" />
+    <attr name="itemsPadding" format="dimension" />
+    <attr name="selectionDividerDimmedAlpha" format="integer" />
+    <attr name="selectionDividerActiveAlpha" format="integer" />
+    <attr name="selectionDivider" format="reference" />
+    <attr name="itemsDimmedAlpha" format="integer" />
+    <attr name="isCyclic" format="boolean" />
+    <attr name="selectionDividerHeight" format="dimension" />
+    <attr name="selectionDividerWidth" format="dimension" />
+    <attr name="abstractWheelViewStyle" format="reference" />
+</resources>

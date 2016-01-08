@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nd.android.ilauncher.multitouch.view.PreviewDragLayer android:orientation="vertical" android:id="@id/drag_layer" android:background="@drawable/transparent_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <com.nd.android.ilauncher.multitouch.view.PreviewWorkspace android:id="@id/workspace" android:layout_width="fill_parent" android:layout_height="fill_parent" androidprv:content="@id/content" />
+</com.nd.android.ilauncher.multitouch.view.PreviewDragLayer>

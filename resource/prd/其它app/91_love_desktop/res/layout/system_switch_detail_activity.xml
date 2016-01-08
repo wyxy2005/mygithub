@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/switcher_layout" android:background="@drawable/pop_component_background" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="22.0dip" android:layout_width="fill_parent" android:layout_height="428.0dip" android:layout_marginTop="29.0dip">
+        <RelativeLayout android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/switch_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/system_switch" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <LinearLayout android:layout_width="48.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <View android:background="@drawable/hr" android:layout_width="2.0px" android:layout_height="fill_parent" />
+                <RelativeLayout android:id="@id/switch_close" android:background="@drawable/switch_cell_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/switcher_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:scaleType="center" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@id/title_line" android:background="@drawable/switcher_line_h" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/switcher_space" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.nd.android.ilauncher.ui.view.NoScrollBarGridView android:id="@id/switch_gridview" android:background="#00e5e9eb" android:padding="2.0dip" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:listSelector="@null" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:numColumns="4" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/switcher_brightness_from" />
+                        <SeekBar android:gravity="center" android:layout_gravity="center" android:id="@id/brightness_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:maxHeight="2.0dip" android:max="255" android:progressDrawable="@drawable/custom_seekbar_progress" android:minHeight="2.0dip" android:thumb="@drawable/custom_seekbar_thumb" android:thumbOffset="2.0dip" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/switcher_brightness_to" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/switcher_volume_ring_from" />
+                        <SeekBar android:gravity="center" android:layout_gravity="center" android:id="@id/volume_ring_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:maxHeight="2.0dip" android:max="255" android:progressDrawable="@drawable/custom_seekbar_progress" android:minHeight="2.0dip" android:thumb="@drawable/custom_seekbar_thumb" android:thumbOffset="2.0dip" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/switcher_volume_ring_to" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/switcher_volume_media_from" />
+                        <SeekBar android:gravity="center" android:layout_gravity="center" android:id="@id/volume_media_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:maxHeight="2.0dip" android:max="255" android:progressDrawable="@drawable/custom_seekbar_progress" android:minHeight="2.0dip" android:thumb="@drawable/custom_seekbar_thumb" android:thumbOffset="2.0dip" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/switcher_volume_media_to" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/switcher_volume_alarm_from" />
+                        <SeekBar android:gravity="center" android:layout_gravity="center" android:id="@id/volume_alarm_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:maxHeight="2.0dip" android:max="255" android:progressDrawable="@drawable/custom_seekbar_progress" android:minHeight="2.0dip" android:thumb="@drawable/custom_seekbar_thumb" android:thumbOffset="2.0dip" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/switcher_volume_alarm_to" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

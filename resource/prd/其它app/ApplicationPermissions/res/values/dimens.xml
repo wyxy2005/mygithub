@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_icon_size">56.0dip</dimen>
+    <dimen name="ic_managed_size">25.0dip</dimen>
+    <dimen name="ic_number_size">30.0dip</dimen>
+</resources>

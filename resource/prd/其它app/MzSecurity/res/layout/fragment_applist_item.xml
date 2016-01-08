@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/listview_item_padding_left" android:paddingRight="@dimen/listview_item_padding_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/security_appsec_item_spinner_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/iv_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mz_arrow_next_right_normal" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/fragment_applist_item_image" android:layout_width="@dimen/security_item_image_height" android:layout_height="@dimen/security_item_image_height" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/applist_item_title_margin_image" android:layout_toLeftOf="@id/iv_next" android:layout_toRightOf="@id/fragment_applist_item_image" android:layout_centerVertical="true">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/applist_item_title_text_height" android:gravity="left" android:id="@id/fragment_applist_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="left" android:id="@id/fragment_applist_item_summery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

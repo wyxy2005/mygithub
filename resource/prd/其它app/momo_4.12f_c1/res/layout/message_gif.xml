@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.MGifImageView android:id="@id/message_gifview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layer_download" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/download_view_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:src="@drawable/ic_chat_def_emote" />
+        <ImageView android:layout_gravity="center" android:id="@id/download_view" android:layout_width="29.0dip" android:layout_height="5.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_loading_msgplus_02" />
+    </LinearLayout>
+</RelativeLayout>

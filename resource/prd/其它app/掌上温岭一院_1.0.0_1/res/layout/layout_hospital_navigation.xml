@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.baidu.mapapi.map.MapView android:id="@id/mapview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RadioGroup android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/bg_navigation_map" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_margin="@dimen/margins">
+            <ImageButton android:id="@id/hospital_navigation_bus" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_hospital_navigation_bus_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+            <ImageView android:layout_gravity="center" android:background="@null" android:layout_width="1.0dip" android:layout_height="wrap_content" android:src="@drawable/bg_dividing_line" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/hospital_navigation_driver" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_hospital_navigation_driver_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+            <ImageView android:layout_gravity="center" android:background="@null" android:layout_width="1.0dip" android:layout_height="wrap_content" android:src="@drawable/bg_dividing_line" android:contentDescription="@string/app_name" />
+            <ImageButton android:id="@id/hospital_navigation_walk" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_hospital_navigation_walk_selector" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+        </RadioGroup>
+    </FrameLayout>
+</LinearLayout>

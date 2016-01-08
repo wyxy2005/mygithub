@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffd3951d" android:gravity="center" android:background="@drawable/bg_floor_text_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hospital_floor_pic_descrip" />
+    <ImageView android:id="@id/hospital_view_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+</LinearLayout>

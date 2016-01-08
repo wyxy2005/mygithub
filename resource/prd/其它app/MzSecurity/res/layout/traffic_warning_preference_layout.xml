@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="#cc000000" android:id="@id/traffic_warning_preference_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:layout_marginTop="9.0dip" android:text="@string/mouthWarming" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginRight="25.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#7f000000" android:gravity="right" android:id="@id/warningValue" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="#7f000000" android:id="@id/warningPercent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <SeekBar android:id="@id/warningSeekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="13.0dip" android:max="100" />
+</LinearLayout>

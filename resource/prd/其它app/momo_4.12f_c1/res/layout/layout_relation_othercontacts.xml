@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_focus" style="@style/style_patterns_setting_item">
+        <ImageView android:src="@drawable/ic_contact_focus" style="@style/style_patterns_setting_item_icon" />
+        <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+            <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="关注" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                <com.immomo.momo.android.view.HandyTextView android:textColor="@color/text_content" android:layout_gravity="center_vertical" android:id="@id/tv_focuscount" android:layout_marginRight="10.0dip" style="@style/Text_List_Desc" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+            </LinearLayout>
+            <View style="@style/Line_Vertical" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_fans" style="@style/style_patterns_setting_item">
+        <ImageView android:src="@drawable/ic_contact_fans" style="@style/style_patterns_setting_item_icon" />
+        <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+            <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="粉丝" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                <com.immomo.momo.android.view.HandyTextView android:textColor="@color/text_content" android:layout_gravity="center_vertical" android:id="@id/tv_fanscount" android:layout_marginRight="10.0dip" style="@style/Text_List_Desc" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <FrameLayout android:id="@id/layout_btn" android:layout_alignParentBottom="true" style="@style/Style_BottomBar">
+        <Button android:id="@id/btn_feedback" android:layout_width="fill_parent" android:text="提交新反馈" style="@style/Style_Bottom_Btn" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_btn" android:layout_below="@id/layout_header">
+        <WebView android:scrollbarStyle="insideOverlay" android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="true" />
+    </LinearLayout>
+    <include layout="@layout/include_loading_indicator" />
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

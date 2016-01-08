@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/header_btn_container" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/header_view_borderline" android:background="#ff2d2d2d" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_header_defaul" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="56.0dip">
+        <ImageView android:id="@id/header_btn_img" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+        <com.immomo.momo.android.view.HandyTextView android:textColor="@color/header_btn_text_color" android:gravity="center" android:id="@id/header_btn_text" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:singleLine="true" style="@style/HeaderView_ButtonText" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="right" android:id="@id/iv_rightline" android:background="@drawable/btn_topbar_def_normal" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:meizu="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/color_actionbar_bg" android:paddingTop="@dimen/titlebar_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.95">
+            <com.meizu.safe.security.utils.TabLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/tab_container" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height">
+                <LinearLayout android:orientation="vertical" android:id="@id/tab0" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/titlebar_tab_first_margin">
+                    <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/tab_text_color" android:gravity="center" android:id="@id/tv_tab0" android:paddingLeft="@dimen/titlebar_tab_padding" android:paddingRight="@dimen/titlebar_tab_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tab_autostart" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/tab1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/titlebar_tab_margin">
+                    <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/tab_text_unselect_color" android:gravity="center" android:id="@id/tv_tab1" android:paddingLeft="@dimen/titlebar_tab_padding" android:paddingRight="@dimen/titlebar_tab_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tab_notify" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/tab2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/titlebar_tab_margin">
+                    <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/tab_text_unselect_color" android:gravity="center" android:id="@id/tv_tab2" android:paddingLeft="@dimen/titlebar_tab_padding" android:paddingRight="@dimen/titlebar_tab_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tab_safe" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/tab3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/titlebar_tab_margin">
+                    <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/tab_text_unselect_color" android:gravity="center" android:id="@id/tv_tab3" android:paddingLeft="@dimen/titlebar_tab_padding" android:paddingRight="@dimen/titlebar_tab_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tab_privacy" android:singleLine="true" />
+                </LinearLayout>
+            </com.meizu.safe.security.utils.TabLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/sildenotice_anchor" android:background="@color/tab_text_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <FrameLayout android:orientation="vertical" android:id="@id/sec_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/viewPager" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.meizu.common.widget.LoadingView android:layout_width="wrap_content" android:layout_height="wrap_content" meizu:mcLoadingRadius="6.0dip" meizu:mcRingWidth="2.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/text_loading" android:alpha="0.3" />
+    </LinearLayout>
+</FrameLayout>

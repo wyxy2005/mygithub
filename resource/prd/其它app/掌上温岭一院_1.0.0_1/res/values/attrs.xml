@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="swipeOpenOnLongPress" format="boolean" />
+    <attr name="swipeAnimationTime" format="integer" />
+    <attr name="swipeOffsetLeft" format="dimension" />
+    <attr name="swipeOffsetRight" format="dimension" />
+    <attr name="swipeCloseAllItemsWhenMoveList" format="boolean" />
+    <attr name="swipeFrontView" format="reference" />
+    <attr name="swipeBackView" format="reference" />
+    <attr name="swipeMode">
+        <enum name="none" value="0" />
+        <enum name="both" value="1" />
+        <enum name="right" value="2" />
+        <enum name="left" value="3" />
+    </attr>
+    <attr name="swipeActionLeft">
+        <enum name="reveal" value="0" />
+        <enum name="dismiss" value="1" />
+        <enum name="choice" value="2" />
+    </attr>
+    <attr name="swipeActionRight">
+        <enum name="reveal" value="0" />
+        <enum name="dismiss" value="1" />
+        <enum name="choice" value="2" />
+    </attr>
+    <attr name="swipeDrawableChecked" format="reference" />
+    <attr name="swipeDrawableUnchecked" format="reference" />
+    <attr name="progress" format="integer" />
+    <attr name="max" format="integer" />
+    <attr name="progress_unreached_color" format="color" />
+    <attr name="progress_reached_color" format="color" />
+    <attr name="progress_reached_bar_height" format="dimension" />
+    <attr name="progress_unreached_bar_height" format="dimension" />
+    <attr name="progress_text_size" format="dimension" />
+    <attr name="progress_text_color" format="color" />
+    <attr name="progress_text_offset" format="dimension" />
+    <attr name="numberProgressBarStyle" format="reference" />
+    <attr name="maskDrawable" format="reference" />
+    <attr name="borderDrawable" format="reference" />
+    <attr name="desaturateOnPress" format="boolean" />
+    <attr name="loopviewpager_width_weight" format="reference|integer" />
+    <attr name="loopviewpager_height_weight" format="reference|integer" />
+    <attr name="minTextSize" format="dimension" />
+    <attr name="precision" format="float" />
+    <attr name="sizeToFit" format="boolean" />
+    <attr name="wheelCenterBackgroud" format="reference" />
+    <attr name="shadowDrawable1" format="boolean" />
+    <attr name="shadowWidth1" format="dimension" />
+    <attr name="closeOnTapEnabled" format="boolean" />
+    <attr name="openOnTapEnabled" format="boolean" />
+    <attr name="offsetWidth" format="dimension" />
+    <attr name="stickTo">
+        <enum name="right" value="-1" />
+        <enum name="left" value="-2" />
+        <enum name="auto" value="0" />
+        <enum name="middle" value="-3" />
+        <enum name="top" value="-4" />
+        <enum name="bottom" value="-5" />
+    </attr>
+    <attr name="half_width" format="boolean" />
+    <attr name="padding_height" format="reference|dimension" />
+    <attr name="width_weight" format="reference|integer" />
+    <attr name="height_weight" format="reference|integer" />
+    <attr name="hasStickyHeaders" format="boolean" />
+    <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    <attr name="font" format="string" />
+    <attr name="pstsIndicatorColor" format="color" />
+    <attr name="pstsUnderlineColor" format="color" />
+    <attr name="pstsDividerColor" format="color" />
+    <attr name="pstsIndicatorHeight" format="dimension" />
+    <attr name="pstsUnderlineHeight" format="dimension" />
+    <attr name="pstsDividerPadding" format="dimension" />
+    <attr name="pstsTabPaddingLeftRight" format="dimension" />
+    <attr name="pstsScrollOffset" format="dimension" />
+    <attr name="pstsTabBackground" format="reference" />
+    <attr name="pstsShouldExpand" format="boolean" />
+    <attr name="pstsTextAllCaps" format="boolean" />
+    <attr name="ptrRefreshableViewBackground" format="reference|color" />
+    <attr name="ptrHeaderBackground" format="reference|color" />
+    <attr name="ptrHeaderTextColor" format="reference|color" />
+    <attr name="ptrHeaderSubTextColor" format="reference|color" />
+    <attr name="ptrMode">
+        <flag name="both" value="0x00000003" />
+        <flag name="disabled" value="0x00000000" />
+        <flag name="pullFromStart" value="0x00000001" />
+        <flag name="pullFromEnd" value="0x00000002" />
+        <flag name="manualOnly" value="0x00000004" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean" />
+    <attr name="ptrDrawable" format="reference" />
+    <attr name="ptrDrawableStart" format="reference" />
+    <attr name="ptrDrawableEnd" format="reference" />
+    <attr name="ptrOverScroll" format="reference|boolean" />
+    <attr name="ptrHeaderTextAppearance" format="reference" />
+    <attr name="ptrSubHeaderTextAppearance" format="reference" />
+    <attr name="ptrAnimationStyle">
+        <flag name="rotate" value="0x00000000" />
+        <flag name="flip" value="0x00000001" />
+    </attr>
+    <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+    <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+    <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+    <attr name="ptrAdapterViewBackground" format="reference|color" />
+    <attr name="ptrDrawableTop" format="reference" />
+    <attr name="ptrDrawableBottom" format="reference" />
+</resources>

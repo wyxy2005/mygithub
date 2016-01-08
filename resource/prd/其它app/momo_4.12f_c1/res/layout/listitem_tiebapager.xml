@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_tiebapager_item" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/tiebapager_tv" android:layout_width="@dimen/tiebapager_item_width" android:layout_height="@dimen/tiebapager_item_height" />
+</LinearLayout>

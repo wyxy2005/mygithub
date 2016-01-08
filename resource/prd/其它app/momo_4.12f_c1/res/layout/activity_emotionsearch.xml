@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.SearchHeaderLayout android:id="@id/layout_header" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.immomo.momo.android.view.MomoRefreshListView android:id="@id/listview_search" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_transition" android:groupIndicator="@null" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/layout_header" style="@style/Style_Scrollable" />
+    <com.immomo.momo.android.view.ListEmptyView android:id="@id/listview_emptyview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/layout_header" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:layout_gravity="top" android:id="@id/dialog_layout_root" android:paddingLeft="35.0dip" android:paddingRight="35.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_window" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/dialog_layout_title" android:padding="@dimen/dialog_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.immomo.momo.android.view.EmoteTextView android:textSize="17.0sp" android:gravity="left" android:id="@id/dialog_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" android:soundEffectsEnabled="true" style="@style/DialogTitle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/dialog_layout_content" android:paddingLeft="@dimen/dialog_padding" android:paddingRight="@dimen/dialog_padding" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Scrollable">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.immomo.momo.android.view.EmoteTextView android:textColor="@color/text_content" android:id="@id/dialog_tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/dialog_layout_button" android:background="@drawable/bg_dialog_btnbar" android:paddingTop="1.0px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/dilaog_button1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Button" android:layout_weight="1.0" style="@style/DialogButton.Left" />
+            <Button android:id="@id/dilaog_button2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Button" android:layout_weight="1.0" style="@style/DialogButton.Center" />
+            <Button android:id="@id/dilaog_button3" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Button" android:layout_weight="1.0" style="@style/DialogButton.Right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

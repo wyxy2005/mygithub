@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/geoamap_layout_btnbar" android:layout_below="@id/layout_header">
+        <com.amap.api.maps.MapView android:id="@id/mapview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/iv_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_map_pin" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/geoamap_layout_btnbar" android:layout_alignParentBottom="true" style="@style/Style_BottomBar">
+        <Button android:id="@id/btn_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="取消坐标" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+        <Button android:id="@id/btn_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="@string/dialog_btn_confim" android:layout_weight="1.0" style="@style/Style_Bottom_Btn" />
+    </LinearLayout>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

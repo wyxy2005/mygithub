@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CardListViewItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_layout" android:background="@drawable/bg_card_full" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/userlist_item_iv_face" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_userinfo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.EmoteTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:id="@id/userlist_item_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名字名字名字" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/userlist_item_layout_badgeContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/userlist_item_layout_genderbackgroud" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip">
+                            <ImageView android:id="@id/userlist_item_iv_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+                            <com.immomo.momo.android.view.HandyTextView android:textSize="9.0sp" android:textColor="@color/white" android:id="@id/userlist_item_tv_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="23" />
+                        </LinearLayout>
+                        <com.immomo.momo.android.view.BadgeView android:id="@id/userlist_bage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <com.immomo.momo.android.view.HandyTextView android:id="@id/hi_message_timestamp" android:text="5分钟前" style="@style/Text_List_Content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_card_inner_bottom" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.immomo.momo.android.view.EmoteTextView android:textSize="@dimen/listitem_content_mid" android:textColor="@color/text_content" android:id="@id/message_content" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:id="@id/tv_msg_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text_Notice_Bubble" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

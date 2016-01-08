@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_welcome" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.NewWelcomeView android:id="@id/welcomelogin_welcomeview" android:background="@color/bg_welcome" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="240.0dip" android:src="@drawable/index_cover_bottom" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.immomo.momo.android.view.FillWidthImageView android:layout_gravity="center_horizontal" android:background="@drawable/ic_welcome_btmlogo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        <View android:background="#8c151513" android:layout_width="fill_parent" android:layout_height="140.0dip" />
+    </LinearLayout>
+</RelativeLayout>

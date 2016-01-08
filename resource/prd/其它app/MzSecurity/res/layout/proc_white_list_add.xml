@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingTop="@dimen/virus_clean_fragment_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/add_proc_list" android:paddingTop="@dimen/overview_top_padding" android:paddingBottom="@dimen/smartbar_height" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.DeviceDefault.Light.ListView.Meizu.Partition" />
+    </RelativeLayout>
+    <com.meizu.common.widget.EmptyView android:id="@id/pro_list_empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" common:mcTitle="@string/trus_app_empty"
+      xmlns:common="http://schemas.android.com/apk/res/com.meizu.safe" />
+</RelativeLayout>

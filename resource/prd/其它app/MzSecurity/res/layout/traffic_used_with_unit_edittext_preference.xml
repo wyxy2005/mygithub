@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/traffi_manager_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/traffic_edit" android:background="@drawable/traffic_edit_text_background_color_limegreen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:selectAllOnFocus="true" android:maxLength="10" android:inputType="numberDecimal" style="@style/TrafficEditTextPreference_style" />
+        <TextView android:textSize="18.0sp" android:textColor="#4c000000" android:id="@id/Unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="220.0dip" android:layout_marginTop="35.0dip" android:text="@string/trafficUnit" />
+    </FrameLayout>
+</LinearLayout>

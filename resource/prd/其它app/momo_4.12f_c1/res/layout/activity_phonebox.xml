@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Style_Patterns">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/ic_setting_bind_intro_phone" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/momoid_titile" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_content" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号:" />
+                    <com.immomo.momo.android.view.ScrollingTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@id/tv_register_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_open" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/btn_phone_open" android:layout_marginTop="15.0dip" android:text="开启通讯录" style="@style/Style_SubmitButton" />
+                <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_content" android:textColorLink="@color/text_content" android:layout_gravity="center_horizontal" android:id="@id/tv_link_modify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="修改绑定手机" />
+                <com.immomo.momo.android.view.OpenContactView android:gravity="center_vertical" android:id="@id/opencontact_opencontactview" android:paddingTop="10.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_phone_bind" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_content" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minHeight="40.0dip" android:text="操作" />
+                <View android:layout_height="2.0px" style="@style/Line_Vertical" />
+                <RelativeLayout android:id="@id/layout_phone_add" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_phone_syn" android:minHeight="50.0dip" android:text="添加通讯录好友" style="@style/Text_List_Title" />
+                    <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </RelativeLayout>
+                <View style="@style/Line_Vertical" />
+                <RelativeLayout android:id="@id/layout_phone_stop" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_phone_syn" android:minHeight="50.0dip" android:text="停用通讯录" style="@style/Text_List_Title" />
+                    <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </RelativeLayout>
+                <View style="@style/Line_Vertical" />
+                <RelativeLayout android:id="@id/layout_phone_modify" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_phone_syn" android:minHeight="50.0dip" android:text="修改绑定手机" style="@style/Text_List_Title" />
+                    <ImageView android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

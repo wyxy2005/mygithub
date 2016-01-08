@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/profile_layout_bottom" android:layout_below="@id/layout_header" style="@style/Style_Patterns">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/setting_layout_strangernotice" style="@style/Style_Patterns_Content_Clickable_Setting">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                    <com.immomo.momo.android.view.HandyTextView android:text="陌生人消息提醒" style="@style/Text_List_Title" />
+                    <com.immomo.momo.android.view.HandyTextView android:layout_marginTop="3.0dip" android:text="陌生人向你打招呼时通知你" style="@style/Text_List_Desc" />
+                </LinearLayout>
+                <CheckBox android:id="@id/setting_cb_strangernotice" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+            <View style="@style/Line_Vertical" />
+            <RelativeLayout android:id="@id/setting_layout_groupnotice" style="@style/Style_Patterns_Content_Clickable_Setting">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                    <com.immomo.momo.android.view.HandyTextView android:text="群组提醒" style="@style/Text_List_Title" />
+                    <com.immomo.momo.android.view.HandyTextView android:layout_marginTop="3.0dip" android:text="好友加群及有加群申请时提醒你" style="@style/Text_List_Desc" />
+                </LinearLayout>
+                <CheckBox android:id="@id/setting_cb_groupnotice" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+            <View style="@style/Line_Vertical" />
+            <RelativeLayout android:id="@id/setting_layout_friendnotice" style="@style/Style_Patterns_Content_Clickable_Setting">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                    <com.immomo.momo.android.view.HandyTextView android:text="留言板提醒" style="@style/Text_List_Title" />
+                    <com.immomo.momo.android.view.HandyTextView android:layout_marginTop="3.0dip" android:text="好友发布留言及有评论时通知你" style="@style/Text_List_Desc" />
+                </LinearLayout>
+                <CheckBox android:id="@id/setting_cb_friendnotice" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+            <View style="@style/Line_Vertical" />
+            <RelativeLayout android:id="@id/setting_layout_tiebanotice" style="@style/Style_Patterns_Content_Clickable_Setting">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                    <com.immomo.momo.android.view.HandyTextView android:text="陌陌吧提醒" style="@style/Text_List_Title" />
+                    <com.immomo.momo.android.view.HandyTextView android:layout_marginTop="3.0dip" android:text="有新的话题和评论时通知你" style="@style/Text_List_Desc" />
+                </LinearLayout>
+                <CheckBox android:id="@id/setting_cb_tiebanotice" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

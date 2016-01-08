@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/welcome_imageview" android:background="@color/color_type_home_header" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/welcome_imageview_logo" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginTop="120.0dip" android:src="@drawable/ic_launcher120" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="@dimen/welcome_text_size" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/welcome_imageview_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/hospital_name_all" android:textScaleX="1.1" />
+</LinearLayout>

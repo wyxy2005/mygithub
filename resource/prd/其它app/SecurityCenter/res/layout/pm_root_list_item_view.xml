@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.miui.permcenter.root.RootListItemView android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@miui:style/Widget.ListView.Item.DoubleLine"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="@android:dimen/app_icon_size" android:layout_height="@android:dimen/app_icon_size" />
+    <TextView android:textAppearance="@269287519" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    <miui.widget.SlidingButton android:layout_gravity="center_vertical" android:id="@id/sliding_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.miui.permcenter.root.RootListItemView>

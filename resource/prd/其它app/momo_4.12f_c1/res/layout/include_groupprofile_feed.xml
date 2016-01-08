@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/groupfeed_layout" android:background="@drawable/bglistitem_selector" style="@style/Profile_Item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.immomo.momo.android.view.HandyTextView android:text="群空间" style="@style/Profile_Item_Text_Title" />
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/group_feed_count" style="@style/Profile_Item_Text_LeftNumeral" />
+    </LinearLayout>
+    <LinearLayout style="@style/Profile_Item_Right_Parent">
+        <LinearLayout android:layout_weight="1.0" style="@style/Profile_Item_Right_Info">
+            <com.immomo.momo.android.view.MEmoteTextView android:textColor="@color/text_content" android:ellipsize="end" android:id="@id/groupfeed_tv_tip" android:text="加入群后可以查看群空间" android:maxLines="1" style="@style/Profile_Item_Text_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/groupfeed_content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/groupfeed_iv_pic" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.immomo.momo.android.view.MEmoteTextView android:ellipsize="end" android:id="@id/groupfeed_tv_content" android:focusable="false" android:maxLines="2" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" style="@style/Profile_Item_Text_content" />
+                    </LinearLayout>
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/groupfeed_tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" style="@style/Profile_Item_Text_desc" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_feed_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_common_arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Line_Vertical" />
+    </LinearLayout>
+</LinearLayout>

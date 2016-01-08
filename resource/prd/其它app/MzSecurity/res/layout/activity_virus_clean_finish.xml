@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff4c4c4c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39.0dip" android:text="@string/virus_clean_finish" />
+    <ImageView android:layout_width="167.0dip" android:layout_height="167.0dip" android:layout_marginTop="47.0dip" android:src="@drawable/virus_clean_finish" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff4c4c4c" android:id="@id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="57.0dip" />
+    <View android:gravity="center_horizontal" android:background="#ffc9c8c8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="105.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="105.0dip" android:layout_marginBottom="18.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/rubbish_done_text" android:layout_marginEnd="12.0dip" />
+                <TextView android:id="@id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/rubbish_done_text" android:layout_marginEnd="12.0dip" />
+                <TextView android:id="@id/tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/rubbish_done_text" android:layout_marginEnd="12.0dip" />
+                <TextView android:id="@id/tv3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/rubbish_done_text" android:layout_marginEnd="12.0dip" />
+                <TextView android:id="@id/tv4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/rubbish_done_text" android:layout_marginEnd="12.0dip" />
+                <TextView android:id="@id/tv5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.immomo.momo.android.view.FillWidthImageView android:id="@id/createwcgroup_iv_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View style="@style/style_patterns_sectionbar" />
+            <TextView android:textSize="@dimen/text_view_content" android:textColor="@color/text_content" android:id="@id/createwcgroup_tv_notes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:minLines="2" />
+            <View style="@style/style_patterns_sectionbar" />
+            <EditText android:gravity="top|left|center" android:id="@id/createwcgroup_etv_desc" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_margin="10.0dip" android:hint="请填写群介绍或入群要求, 15-300字" />
+            <View style="@style/style_patterns_sectionbar" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/createwcgroup_layout_location" style="@style/Style_Patterns_Content_Clickable">
+                <TextView android:text="选择地点" style="@style/Patterns_Text_Left" />
+                <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_list_title" android:textColor="@color/text_content" android:gravity="right|center" android:id="@id/createwcgroup_tv_sitename" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="未选择" android:singleLine="true" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

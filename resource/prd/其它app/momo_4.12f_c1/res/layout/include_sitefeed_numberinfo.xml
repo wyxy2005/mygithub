@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:clickable="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingTop="1.0dip" android:paddingRight="8.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginTop="2.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_totalvisit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/text_undercard" android:gravity="center" android:id="@id/sitefeed_tv_visit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_undercard" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="到访" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:background="@color/devideline_undercard" android:layout_width="1.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_totalfeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_centerInParent="true">
+                    <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/text_undercard" android:gravity="center" android:id="@id/sitefeed_tv_feedcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_undercard" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="留言" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_groupcount" android:background="@drawable/bg_site_group" android:focusable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:background="@color/devideline_undercard" android:layout_width="1.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/childlayout_groupcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_centerInParent="true">
+                    <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/text_undercard" android:gravity="center" android:id="@id/sitefeed_tv_groupcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_undercard" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="群组" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:src="@drawable/ic_common_arrow_right" android:layout_alignLeft="@id/childlayout_groupcount" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+            <LinearLayout android:gravity="center" android:id="@id/layout_favor" android:background="@drawable/btn_default" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_heart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ic_site_fav_normal" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_undercard" android:id="@id/tv_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收藏地点" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/layout_address" android:background="@drawable/btn_default" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:minWidth="90.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ic_site_address" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_undercard" android:ellipsize="end" android:gravity="left|center" android:id="@id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="暂无地址" android:singleLine="true" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/ic_common_arrow_right" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/layout_more" android:background="@drawable/btn_default" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_feed_more" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_undercard" android:ellipsize="end" android:layout_gravity="right" android:id="@id/tv_foursquar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="地点信息来自Foursquare" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

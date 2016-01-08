@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_pickbar" android:layout_alignParentBottom="true" style="@style/Style_BottomBar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_pickok" android:layout_width="fill_parent" android:text="确定" style="@style/Style_Bottom_Btn" />
+    <HorizontalScrollView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/btn_pickok" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/seletec_images" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </HorizontalScrollView>
+</RelativeLayout>

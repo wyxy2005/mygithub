@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/button_delete" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@269090829" android:layout_marginTop="@269090829" android:layout_marginRight="@269090829" android:layout_marginBottom="@269090829" android:layout_weight="1.0" style="@miui:style/Widget.Button.Negative" />
+    <Button android:id="@id/button_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@269090829" android:layout_marginTop="@269090829" android:layout_marginBottom="@269090829" android:layout_weight="1.0" />
+    <Button android:id="@id/button_ok" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@269090829" android:layout_marginRight="@269090829" android:layout_marginBottom="@269090829" android:layout_weight="1.0" android:filterTouchesWhenObscured="true" />
+</LinearLayout>

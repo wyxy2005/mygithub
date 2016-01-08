@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory>
+        <CheckBoxPreference android:icon="@drawable/ic_launcher_quick_clean" android:title="@string/btn_text_quick_cleanup" android:key="@string/preference_key_shortcut_quick_cleanup" />
+        <CheckBoxPreference android:icon="@drawable/ic_launcher_rubbish_clean" android:title="@string/activity_title_garbage_cleanup" android:key="@string/preference_key_shortcut_optimize_center" />
+        <CheckBoxPreference android:icon="@drawable/ic_launcher_network_assistant" android:title="@string/activity_title_networkassistants" android:key="@string/preference_key_shortcut_network_assistant" />
+        <CheckBoxPreference android:icon="@drawable/ic_launcher_anti_spam" android:title="@string/activity_title_antispam" android:key="@string/preference_key_shortcut_antispam" />
+        <CheckBoxPreference android:icon="@drawable/ic_launcher_power_optimize" android:title="@string/activity_title_power_manager" android:key="@string/preference_key_shortcut_power_center" />
+        <CheckBoxPreference android:icon="@drawable/ic_launcher_virus_scan" android:title="@string/activity_title_antivirus" android:key="@string/preference_key_shortcut_virus_center" />
+        <CheckBoxPreference android:icon="@drawable/ic_launcher_license_manage" android:title="@string/activity_title_license_manager" android:key="@string/preference_key_shortcut_perm_center" />
+    </PreferenceCategory>
+</PreferenceScreen>

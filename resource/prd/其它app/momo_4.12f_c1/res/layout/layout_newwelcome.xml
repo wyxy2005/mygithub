@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_welcome" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.5">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+                <RelativeLayout android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                    <ImageView android:id="@id/welcomephoto_img_photo0" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <ImageView android:id="@id/welcomephoto_img_photo1" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                <RelativeLayout android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <ImageView android:id="@id/welcomephoto_img_photo2" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                    <ImageView android:id="@id/welcomephoto_img_photo3" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="9.0">
+            <RelativeLayout android:paddingLeft="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                <ImageView android:id="@id/welcomephoto_img_photo4" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+                <ImageView android:id="@id/welcomephoto_img_photo5" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.5">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="9.0">
+            <RelativeLayout android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                <ImageView android:id="@id/welcomephoto_img_photo6" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+                <ImageView android:id="@id/welcomephoto_img_photo7" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                <RelativeLayout android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <ImageView android:id="@id/welcomephoto_img_photo8" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex8" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                    <ImageView android:id="@id/welcomephoto_img_photo9" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex9" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+                <RelativeLayout android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                    <ImageView android:id="@id/welcomephoto_img_photo10" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex10" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <ImageView android:id="@id/welcomephoto_img_photo11" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex11" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <RelativeLayout android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="13.0">
+            <ImageView android:id="@id/welcomephoto_img_photo12" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex12" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+            <ImageView android:id="@id/welcomephoto_img_photo13" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex13" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0">
+            <ImageView android:id="@id/welcomephoto_img_photo14" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <LinearLayout android:background="#993a3a3a" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/welcomephoto_imge_sex14" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="right|center" android:id="@id/welcomephoto_tv_position14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

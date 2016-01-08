@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/background_normal" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Style_Scrollable"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/ic_group_creat_step4_str" android:layout_centerHorizontal="true" />
+            <com.immomo.momo.android.view.FillWidthImageView android:layout_gravity="center_horizontal" android:background="@drawable/ic_group_creat_step4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.immomo.momo.android.view.EmoteEditeText android:textColor="@color/black" android:gravity="top|left|center" android:id="@id/et_group_introduction" android:background="@drawable/edittext_default" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginBottom="8.0dip" android:hint="@string/foundgroup_step3_string1" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

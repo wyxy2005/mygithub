@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.HandyTextView android:id="@id/toptip_text" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_alignParentTop="true" style="@style/Text_TopTip_Pay" />
+    <ScrollView android:id="@id/scrollview_content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toptip_text">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" style="@style/style_patterns_setting_item">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                        <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                            <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="@string/payvip_mybalance" style="@style/Text_List_Title" />
+                            <com.immomo.momo.android.view.ScrollingTextView android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/tv_mybalance" android:text="" android:layout_weight="1.0" style="@style/Text_List_Desc" />
+                        </LinearLayout>
+                        <View style="@style/Line_Vertical" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/layout_mypayrecord" style="@style/style_patterns_setting_item">
+                    <LinearLayout style="@style/style_patterns_setting_item_right_parent">
+                        <LinearLayout style="@style/style_patterns_setting_item_right_info">
+                            <com.immomo.momo.android.view.HandyTextView android:gravity="left|center" android:layout_gravity="center_vertical" android:text="@string/payvip_mypay_record" android:layout_weight="1.0" style="@style/Text_List_Title" />
+                            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout style="@style/style_patterns_sectionbar_title_bg">
+                    <com.immomo.momo.android.view.HandyTextView android:text="选择充值金额" style="@style/style_patterns_sectionbar_title_text" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/layout_tip" android:visibility="gone" android:layout_alignParentTop="true" layout="@layout/common_newchat_notice" />
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

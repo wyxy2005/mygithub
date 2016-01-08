@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollview" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_header" style="@style/Style_Scrollable"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/profile_photo_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <ImageView android:id="@id/gameprofile_iv_appicon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitXY" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="18.0sp" android:textColor="@color/text_content" android:id="@id/gameprofile_tv_appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:singleLine="true" />
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_content" android:id="@id/gameprofile_tv_mcount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Button android:enabled="false" android:id="@id/gameprofile_btn_open" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="下载" style="@style/Style_SubmitButton" />
+            </LinearLayout>
+            <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/gameprofile_tv_eventnotice" android:background="@drawable/round_corner_blacktips" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+        <HorizontalScrollView android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip">
+                <ImageView android:id="@id/gameprofile_ic_cover_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="300.0dip" />
+                <ImageView android:id="@id/gameprofile_ic_cover_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="300.0dip" />
+                <ImageView android:id="@id/gameprofile_ic_cover_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="300.0dip" />
+                <ImageView android:id="@id/gameprofile_ic_cover_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="300.0dip" />
+                <ImageView android:id="@id/gameprofile_ic_cover_5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxHeight="300.0dip" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_content" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minHeight="40.0dip" android:text="内容提要" />
+            <View android:layout_height="2.0px" style="@style/Line_Vertical" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="15.0sp" android:id="@id/gameprofile_tv_appdesc" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_content" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minHeight="40.0dip" android:text="相关话题" />
+            <View android:layout_height="2.0px" style="@style/Line_Vertical" />
+            <LinearLayout android:orientation="vertical" android:id="@id/gameprofile_layout_tieba_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/gameprofile_layout_tieba_all" android:background="@drawable/bglistitem_selector_nomaltran" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/text_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="查看全部话题" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.immomo.momo.android.view.HandyTextView android:textSize="@dimen/text_view_desc" android:textColor="@color/text_content" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minHeight="40.0dip" android:text="信息" />
+            <View android:layout_height="2.0px" style="@style/Line_Vertical" />
+            <TableLayout android:id="@id/gameprofile_tbl_appinfo" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+                <TableRow android:gravity="center_vertical" android:layout_marginBottom="3.0dip">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="15.0sp" android:gravity="right" android:layout_marginRight="6.0dip" android:text="开发商:" />
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="15.0sp" android:id="@id/gameprofile_tv_developer" />
+                </TableRow>
+                <TableRow android:gravity="center_vertical" android:layout_marginBottom="3.0dip">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="15.0sp" android:gravity="right" android:layout_marginRight="6.0dip" android:text="更新:" />
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/gameprofile_tv_updatetime" />
+                </TableRow>
+                <TableRow android:gravity="center_vertical">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="15.0sp" android:gravity="right" android:layout_marginRight="6.0dip" android:text="版本:" />
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="15.0sp" android:id="@id/gameprofile_tv_versionname" />
+                </TableRow>
+                <TableRow android:gravity="center_vertical" android:layout_marginBottom="3.0dip">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="15.0sp" android:gravity="right" android:layout_marginRight="6.0dip" android:text="大小:" />
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/gameprofile_tv_size" />
+                </TableRow>
+                <TableRow android:gravity="center_vertical">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="15.0sp" android:gravity="right" android:layout_marginRight="6.0dip" android:text="说明:" />
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/gameprofile_tv_updatedesc" />
+                </TableRow>
+            </TableLayout>
+            <View android:id="@id/gameprofile_v_gotodriver" android:visibility="gone" android:layout_height="2.0px" style="@style/Line_Vertical" />
+            <LinearLayout android:gravity="center" android:id="@id/gameprofile_layout_goto" android:background="@drawable/bglistitem_selector_nomaltran" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_list_title" android:id="@id/gameprofile_tv_gototext" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+            </LinearLayout>
+            <View android:layout_height="2.0px" style="@style/Line_Vertical" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gameprofile_layout_ext" android:background="@drawable/bglistitem_selector_nomaltran" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

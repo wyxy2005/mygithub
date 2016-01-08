@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0.0" package="com.ucmed.wlyy"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="zj.health.patient.AppContext" android:allowBackup="true">
+        <meta-data android:name="UMENG_APPKEY" android:value="53f43b83fd98c5b014005e5e" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="WLYY" />
+        <activity android:label="@string/app_name" android:name="zj.health.patient.activitys.WelcomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.yaming.updata.manager.service.UpdataService" android:exported="false" />
+        <activity android:name="zj.health.patient.activitys.HomeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.WebClientActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.call.PullTestActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.floor.HospitalViewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.floor.HospitalFloorListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.register.RegisterNoteActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.register.DepartListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.register.RegisterBookScheduleListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.register.RegisterBookSubmitActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.ucmed.basichosptial.register.RegisterDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.register.RegisterDepartDoctorListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.register.RegisterDepartDoctorSubmitActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.ucmed.basichosptial.register.CommonRegisterDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.register.PatientNumberDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.register.PatientNumberListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.call.CallCheckMainActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.call.CallNumberListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.user.LoginActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.user.UserRegisterActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.ucmed.basichosptial.user.UpdatePassActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.user.UpdateUserInfoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.ucmed.basichosptial.user.UserRegisterHistoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.user.UserRegisterDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.report.ReportSearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.report.ReportListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.report.ReportJCDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.ucmed.basichosptial.report.ReportJYDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.hospital.doctor.DepartmentListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.hospital.doctor.DoctorSearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.hospital.doctor.DoctorListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.hospital.doctor.DoctorDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.hospital.navigation.HospitalDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.hospital.navigation.HospitalWebDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.hospital.navigation.HospitalLocationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.hospital.navigation.HospitalperiheryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.symptom.SymptomCheckActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.symptom.PossibleSymptomListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.symptom.QuestionListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.symptom.PossibleListAcvity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.symptom.PossibleDiseaseListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.article.ArticleCategoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.article.ArticleTabCategroryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.article.ArticleListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.article.ArticleDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.article.WeekArticleDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.article.MedinineNewsDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.article.WeekArticleDetail2Activity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.HealthCategoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.medicine.MedicineCategroyListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.medicine.MedicineClassListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.medicine.MedicineDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.medicine.MedicineSearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.medicine.MedicineFirstAidListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.medicine.MedicineTopListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.medicine.MedicineTopSecondListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.disease.DiseaseCategroyListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.disease.DiseaseLetterListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.disease.DiseaseSearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.disease.DiseaseDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.disease.DiseaseBodyListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.disease.DiseaseByBodyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.disease.DiseaseCommonListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.disease.DiseaseDepartFristListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.disease.DiseaseDepartSecondListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.disease.DiseaseByDepartActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.fristaid.FristAidFristListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.fristaid.FristAidSecondListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.fristaid.FristAidDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.assay.AssayCategoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.assay.AssaySearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.assay.AssaySecondListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.assay.AssayThridListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.assay.AssayDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.vaccine.VaccineActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.vaccine.VaccineAboutActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.vaccine.VaccineSearchActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.vaccine.VaccineDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.vaccine.VaccineListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.tools.ToolListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.tools.ToolHeptitesbActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.tools.ToolChildbrithActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.tools.ToolSmokeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.tools.ToolBMIActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.healthpedia.tools.ToolResultActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="zj.health.patient.activitys.more.MoreMainActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="zj.health.patient.activitys.more.MoreDisclaimerActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="zj.health.patient.activitys.more.FeedBackActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenLayout" android:windowSoftInputMode="stateHidden" />
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote" />
+    </application>
+</manifest>

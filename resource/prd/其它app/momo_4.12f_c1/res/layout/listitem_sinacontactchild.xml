@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_root" android:background="@drawable/bglistitem_selector_nomalfull" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:clickable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Style_Patterns_Content_Clickable">
+        <FrameLayout android:id="@id/userlist_item_layout_face" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip">
+            <ImageView android:id="@id/userlist_item_iv_face" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_common_def_header" android:scaleType="fitXY" />
+            <ImageView android:background="@drawable/bglistitem_selector_session_select" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.immomo.momo.android.view.EmoteTextView android:ellipsize="end" android:id="@id/tv_name1" android:singleLine="true" style="@style/Text_List_Title" />
+                <com.immomo.momo.android.view.EmoteTextView android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" style="@style/Text_List_Content" />
+            </LinearLayout>
+            <com.immomo.momo.android.view.EmoteTextView android:ellipsize="end" android:id="@id/tv_name2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" style="@style/Text_List_Desc" />
+        </LinearLayout>
+        <com.immomo.momo.android.view.HandyTextView android:id="@id/tv_operate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Text_List_Desc" />
+        <Button android:textSize="13.0sp" android:textColor="@color/text_content" android:id="@id/btn_operate" android:background="@drawable/btn_default_round" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="32.0dip" />
+        <ImageView android:id="@id/iv_arrow" android:background="@drawable/ic_common_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Item_Right" />
+    </LinearLayout>
+    <View android:background="@color/devideline_listview" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>
