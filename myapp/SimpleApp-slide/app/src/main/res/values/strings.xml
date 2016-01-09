@@ -5,4 +5,17 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <!--侧边导航栏-->
+    <string name="main_navgation_user">用户</string>
+    <string name="main_navgation_gesture">手势密码</string>
+    <string name="main_navgation_order">排行榜</string>
+    <string name="main_navgation_setting">设置</string>
+    <string name="main_navgation_help">帮助</string>
+    <string name="main_navgation_feedback">反馈</string>
+    <string name="main_navgation_nick">SimpleApp</string>
+    <string name="main_navgation_copyright">copyright for god530</string>
+    <!--主页内容-->
+    <string name="main_content_right_tv_in">本月收入</string>
+    <string name="main_content_right_tv_out">本月支出</string>
+    <string name="main_content_right_tv_remain">本月剩余</string>
 </resources>
