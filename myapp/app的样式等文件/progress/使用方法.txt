@@ -1,0 +1,7 @@
+        <ProgressBar
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:progressDrawable="@drawable/shape_progress"
+            android:indeterminateDrawable="@drawable/rotate_shape_progress"
+            android:gravity="center" />
