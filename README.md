@@ -21,3 +21,5 @@ https://github.com/github/gitignore
 变量命名快捷网站 http://unbug.github.io/codelf/
 ####
 Android 镜像使用帮助  http://mirrors.tuna.tsinghua.edu.cn/help/#AOSP
+####
+shape样式 http://keeganlee.me/post/android/20150830
