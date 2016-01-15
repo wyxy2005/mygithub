@@ -27,3 +27,5 @@ shape样式 http://keeganlee.me/post/android/20150830
 叶剑锋的个人主页, 写的文章非常不错. http://tech.glowing.com/cn/author/ryan/
 ####
 一年成为Emacs大神,这篇文章非常好.   http://blog.csdn.net/redguardtoo/article/details/7222501
+####
+Emacs全系列    http://wenku.baidu.com/link?url=DlpCV20ikkckVYDYCEwS43i6n43ChYm1Mz66x00KmDJ1Y3SRFCuLWG-kWRbFb129EZ1PwrrJ48fyA1NwzP_af_2OmbAHXlLZ3zGb3V1Jv7K
