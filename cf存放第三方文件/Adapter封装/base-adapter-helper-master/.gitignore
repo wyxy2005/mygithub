@@ -1,0 +1,10 @@
+.classpath
+.project
+.settings/
+target/
+.idea
+*.iml
+gen/
+gen-external-apklibs/
+out/
+twitter4j.properties
