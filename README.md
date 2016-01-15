@@ -19,3 +19,11 @@ www.handyun.com
 https://github.com/github/gitignore
 ####
 变量命名快捷网站 http://unbug.github.io/codelf/
+####
+Android 镜像使用帮助  http://mirrors.tuna.tsinghua.edu.cn/help/#AOSP
+####
+shape样式 http://keeganlee.me/post/android/20150830
+####
+叶剑锋的个人主页, 写的文章非常不错. http://tech.glowing.com/cn/author/ryan/
+####
+一年成为Emacs大神,这篇文章非常好.   http://blog.csdn.net/redguardtoo/article/details/7222501
