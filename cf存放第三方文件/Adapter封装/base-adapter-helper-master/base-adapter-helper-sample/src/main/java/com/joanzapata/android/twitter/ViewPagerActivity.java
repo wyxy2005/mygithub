@@ -44,7 +44,7 @@ public class ViewPagerActivity extends SherlockFragmentActivity {
 
     static class ViewPagerAdapter extends FragmentPagerAdapter {
 
-        @SuppressWarnings("uqqqqqqqqQQQQnchecked")
+        @SuppressWarnings("unchecked")
         private Class<? extends Fragment>[] pages = new Class[]
                 {TwitterFragment_.class, AboutFragment_.class};
 

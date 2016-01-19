@@ -29,3 +29,55 @@ shape样式 http://keeganlee.me/post/android/20150830
 一年成为Emacs大神,这篇文章非常好.   http://blog.csdn.net/redguardtoo/article/details/7222501
 ####
 Emacs全系列    http://wenku.baidu.com/link?url=DlpCV20ikkckVYDYCEwS43i6n43ChYm1Mz66x00KmDJ1Y3SRFCuLWG-kWRbFb129EZ1PwrrJ48fyA1NwzP_af_2OmbAHXlLZ3zGb3V1Jv7K
+
+Android源码设计模式分析一期发布
+http://blog.csdn.net/rss.html?type=column&column=android-dp
+
+gradle for android 使用手册
+http://www.open-open.com/doc/view/36d55dda12df4d5cb6fdc9bf7b1360ad
+
+gradle 教程(英文版)
+https://docs.gradle.org/current/userguide/introduction.html
+gradle 教程(中文版)
+http://ask.android-studio.org/?/article/7
+
+gradle for android (github版本)
+https://github.com/ChaosLeong/Gradle-Android-Plugin
+
+Android Plugin DSL Reference
+http://google.github.io/android-gradle-dsl/current/
+
+Gradle Android Plugin 中文手册
+https://chaosleong.gitbooks.io/gradle-for-android/content/basic_project_setup/basic_build_customization/manifest_entries.html
+
+Signing Your Applications
+http://developer.android.com/tools/publishing/app-signing.html
+
+DependencyHandler
+https://docs.gradle.org/current/dsl/org.gradle.api.artifacts.dsl.DependencyHandler.html
+
+Dependency Management Basics
+https://docs.gradle.org/current/userguide/artifact_dependencies_tutorial.html
+
+Android Tools Project Site -- Unit testing support
+http://tools.android.com/tech-docs/unit-testing-support
+
+Gradle User Guide
+https://docs.gradle.org/current/userguide/userguide.html
+
+Gradle User Guide (en)
+http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Resolving-conflicts-between-main-and-test-APK
+
+Multiple APK Support
+http://developer.android.com/google/play/publishing/multiple-apks.html
+
+Andorid Tools Project Site --- Resource Shrinking
+http://tools.android.com/tech-docs/new-build-system/resource-shrinking
+
+精通Groovy
+http://www.ibm.com/developerworks/cn/education/java/j-groovy/j-groovy.html
+
+
+
+
+
