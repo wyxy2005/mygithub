@@ -77,7 +77,8 @@ http://tools.android.com/tech-docs/new-build-system/resource-shrinking
 精通Groovy
 http://www.ibm.com/developerworks/cn/education/java/j-groovy/j-groovy.html
 
-
+Emacs 插件
+https://code.google.com/p/bamanzi-misc/downloads/detail?name=com.mulgasoft.emacsplus_3.6.2.zip
 
 
 
